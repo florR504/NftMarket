@@ -1,4 +1,7 @@
 # grupo_07_nft-markets
+
+URL repo: https://github.com/DHmatias/grupo_07_nft-markets.git
+
 Temática: 
 
 -Marketplace NFT
