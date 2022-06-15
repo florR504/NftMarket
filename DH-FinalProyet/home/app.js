@@ -12,7 +12,11 @@ app.get("/", (req, res)=>{
 app.get("/login", (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 });
-
+app.get("/productDetail", (req, res) => {
+    res.sendFile(
+      path.resolve(__dirname, "./views/productDetail/productDetail.html")
+    );
+  });
 app.listen(3031, () =>{
     console.log("Servidor corriendo en el puerto 3031")
 });
