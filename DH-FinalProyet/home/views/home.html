@@ -21,11 +21,9 @@
 <body>
     <!--Barra de navegación-->
     <nav>
-        <div class="menuylogo">
-            <button type="menu" class="buttonsofnav" id="menu"><i class="fas fa-bars" ></i></button>
-            <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="38px" id="logo">
-        </div>
-            <div class="separar"></div>
+        <button type="menu" class="buttonsofnav" id="menu"><i class="fas fa-bars" ></i></button>
+        <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="40px" id="logo">
+        <div class="separar"></div>
             <form action="#" method="get" >
                 <input type="text" placeholder="Qué estas buscando?" class="buscador" id="barraDeBusqueda">
                 <button type="submit" id="lupa" class="buttonsofnav">
@@ -33,9 +31,11 @@
                 </button>
             </form>
             <div class="separar"></div>
-            <button type="submit" class="buttonsofnav" id="botondeingresar">
-                Ingresá
-            </button>
+            <form method="get" action="/login">
+                <button type="submit" class="buttonsofnav" id="botondeingresar">
+                    Ingresá
+                </button>
+            </form>
             <button type="submit" class="buttonsofnav" id="botonderegistro">
                 Registrate
                <i class="fas fa-user"></i>
