@@ -9,7 +9,7 @@
   <li>@lourdesabustos</li>
 </ul>
 
-<h3>Marketplace NFT</h3>
+<h3>Tematica : Marketplace NFT</h3>
 
 <h4>Sitios de Referencia:</h4>
 <ul>
