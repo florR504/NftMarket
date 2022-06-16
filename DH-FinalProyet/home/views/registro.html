@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="registro" method="post">
+            <a href="/"><img src="/image/NFT MARKET LOGO.png" alt=""></a> 
+
+            <div class="form-box">
+                <label for="userName">Nombre:</label>
+                <input type="text" name="nombreU" id="userName" placeholder="Nombre" required minlength="4" maxlength="18">
+            </div>
+            <div class="form-box">
+                <label for="userName">Apellido:</label>
+                <input type="text" name="nombreU" id="userlastName" placeholder="Apellido" required minlength="4" maxlength="18">
+            </div>
+            <div class="form-box">
+                <label for="userEmail">Email:</label>
+                <input type="email" name="emailU" id="userEmail" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="form-box">
+                <label for="userPassword">Contraseña:</label>
+                <input type="password" name="contraseniaU" id="userPassword" required minlength="6">
+            </div>
+            <div class="form-box">
+                <label for="userPassword">Confirme su contraseña</label>
+                <input type="password" name="contraseniaU" id="userPassword2" required minlength="6">
+            </div>
+            <br>
+
+            <div class="form-term">
+                <label for="termsAndCondition">He leido y acepto los</label>
+                <a href="#">Terminos y Condiciones</a>
+                <input type="radio" id="termsAndCondition">
+
+            <div class="form-submit">
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+        <a href="/login">Ya tenes una cuenta? ingresa.</a> 
+        <a href="/">Pagina de inicio.</a>
+    </div>
+</body>
+</html>
