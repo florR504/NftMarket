@@ -1,0 +1,205 @@
+/*coleccion*/
+/*Barra de navegacion*/
+body{
+    background-color: rgba(248, 237, 244, 0.88);
+}
+nav {
+    background-color:rgba(245, 132, 0, 0.88);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.3rem;
+    
+}
+.buscador{
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    transition: all 450ms;
+    border-style: none;
+}
+.buscador:hover{
+    border-color: cyan;
+}
+#lupa{
+    
+    border-radius: 0.3rem;
+    border-color:rgba(149, 0, 0, 0.99);
+    background-color: rgba(149, 0, 0, 0.99) ;
+    color: white;
+}
+.buttonsofnav{
+    padding: 0.6rem;
+    border-color: rgba(149, 0, 0, 0.99);
+    border-radius: 0.3rem;
+    background-color: rgba(149, 0, 0, 0.99);
+    color: white;
+    transition: all 450ms;
+
+}
+.buttonsofnav:hover{
+   
+    border-radius: 0rem;
+    border-color: white;
+    background-color:rgba(149, 0, 0, 0.99);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    cursor: pointer;
+}
+.separar{
+    width: 20rem;
+}
+/*Banner*/
+
+.presentacion{
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://media4.giphy.com/media/ho0xXatV7b3Fo1ZRXN/giphy.gif?cid=ecf05e47na9fx8uwek5zjv9r5ygoxerrron8t73f7mvbvhdp&rid=giphy.gif&ct=g);
+    background-position: center;
+    background-size: 20rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+   
+}
+.coleccion-descripcion{
+    height: 12rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 1.2rem;
+    border-radius: 0.6rem;
+    background-color: white;
+
+}
+.parrafo-descripcion{
+    font-size: 18px;
+    width: 55rem;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.items-owners{
+    font-size: 23px;
+    width: 55rem;
+    margin-left: 10px;
+    color:rgba(123, 0, 255, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+/*Barra de busqueda*/
+.Barra-de-info{
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem;
+    border-radius: 0.6rem;
+    background-color: white;
+    
+}
+#barra-de-colecciones{
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+    border-style: none;
+    padding: 0.7rem;
+    width: 25rem;
+    background-color:white;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100); 
+
+}
+.Barra-de-info select{
+    border-radius: 0.3rem;
+    border-style: none;
+    padding: 0.7rem;
+    width: 25rem;
+    background-color:white;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100); 
+    margin-right: 1rem;
+}
+.option:not(:checked) {
+    background-color: white;
+  }
+select option{
+    background-color: rgba(248, 237, 244, 0.88) ;
+}
+
+.presentacion h2{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Coleccion de NFT's*/
+.coleccion{
+    background-color: white;
+    text-align: center;
+    width: 21.9rem;
+    height: 21rem;
+    border-color: gray;
+    border-radius: 0.6rem;
+    transition: all 450ms;
+}
+.coleccion:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.description{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+}
+.descripction-body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.slider-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    
+}
+.slider-container img{
+    border-radius: 0.6rem;
+    border-color: black;
+}
+.check{
+    color: cyan;
+    padding-top: 0.9rem;
+    padding-left: 0.3rem;
+}
+.separe{
+    height: 1.7rem;
+}
+/*footer*/
+.footer{
+    background-color: rgba(245, 132, 0, 0.88) ;
+    height: 9rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.redes{
+    background-color:rgba(245, 132, 0, 0.88);;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 0.5rem;
+}
+.iconos-de-redes{
+    color:gray;
+    border-radius: 0.3rem;
+    font-size: 1.7rem;
+    padding-right: 0.5rem;
+    transition: all 450ms;
+}
+.iconos-de-redes:hover{
+    text-shadow: 3px 1px 7px white;
+    color:rgba(245, 132, 0, 0.88);
+  
+}

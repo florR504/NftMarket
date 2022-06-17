@@ -90,6 +90,7 @@ h3:hover{
     padding-left: 4.8rem;
     padding-right: 4.8rem;
     transition: all 450ms;
+    border-style: none;
 }
 .buscador:hover{
     border-color: cyan;
@@ -275,7 +276,7 @@ a:hover{
 }
 /*Login*/
 .caja-de-login{
-    background-color: white;
+    background-color: rgba(248, 237, 244, 0.88);
     box-shadow: 0px 0px 10px gray;
     text-align: center;
     width: 25rem;
@@ -325,6 +326,7 @@ a:hover{
     border-style:double;
     width: 20rem;
     height: 2rem;
+    border-style: none;
 }
 .logo-login{
     margin-top:0.5rem;
@@ -336,7 +338,8 @@ a:hover{
 }
 .ingresar-con-google{
     border: none;
-    background-color: white;
+    background-color: rgba(248, 237, 244, 0.88);
+    
 }
 span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -349,6 +352,7 @@ span img{
 .separar{
     width: 20rem;
 }
+
 
 @media (max-width:361px) {
     /*barra de navegacion*/

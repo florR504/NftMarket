@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/coleccion.css">
+    <script src="https://kit.fontawesome.com/1dc71a7fda.js" crossorigin="anonymous"></script>
+    <title>NFT Market</title>
+</head>
+<body>
+    <body>
+        <!--Barra de navegación-->
+        <nav>
+            <button type="menu" class="buttonsofnav" id="menu"><i class="fas fa-bars" ></i></button>
+            <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="40px" id="logo">
+            <div class="separar"></div>
+                <form action="#" method="get" >
+                    <input type="text" placeholder="Qué estas buscando?" class="buscador" id="barraDeBusqueda">
+                    <button type="submit" id="lupa" class="buttonsofnav">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <div class="separar"></div>
+                <form method="get" action="/login">
+                    <button type="submit" class="buttonsofnav" id="botondeingresar">
+                        Ingresá
+                    </button>
+                </form>
+                <form method="get"  action="/registro">
+                    <button type="submit" class="buttonsofnav" id="botonderegistro">
+                        Registrate
+                       <i class="fas fa-user"></i>
+                    </button>
+                </form>
+        </nav>
+        <!--Presentacion de cada nft-->
+        <div class="presentacion">
+            <h2>Bored Ape</h2>
+        </div>
+        <div class="coleccion-descripcion">
+            <p class="parrafo-descripcion">
+                The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. 
+                Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to 
+                THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation.
+                 Visit www.BoredApeYachtClub.com for more details
+            </p>
+            <p class="items-owners">
+                10K items 6.4K owners
+            </p>
+
+        </div>
+    <!--Barra de búsqueda-->
+        <div class="Barra-de-info">
+            <form action="#" method="get">
+                <input type="text" placeholder="Buscá por nombre o atributo" id="barra-de-colecciones">
+                <button type="submit" id="lupa" class="buttonsofnav">
+                    <i class="fas fa-search"></i>
+                </button>
+           </form>
+           <select name="opciones" id="opciones">
+                <option class="option" value="porPrecioalto">De más caro a más barato</option>
+                <option class="option" value="porPreciobajo">De más barato a más caro</option>
+                <option class="option" value="MasPopulares">Más populares</option>
+                <option class="option" value="MenosPopulares">Menos populares</option>
+                <option class="option" value="MasRaros">Mayor rareza</option>
+            </select>
+        </div>
+    <!--coleccion-->
+    <div class="slider-container">
+        <div class="coleccion">
+            <a href="/coleccion">
+            <img class="slider-item" src="/imagenes/bored-ape/monoblanco.jpeg" alt="" width="350px" height="197px">
+            <div class="description">
+                <p>Bored Ape</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+                Bored Ape es una colección de más de 1000 NFT's totalmente únicos.Aprovéchalos ahora que su valor esta en alza!
+            </div>
+        </a>
+        </div>
+        <div class="coleccion">
+            <a href="/">
+            <img class="slider-item" src="/imagenes/bored-ape/monofuma.webp" alt="" width="350px" height="197px">
+            <div class="description">
+                <p>Super Mario</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+       
+            <div class="descripction-body">
+                Super Mario volvió?Super Mario jamás se fue.Consíguelo aquí.
+            </div>
+        </a>
+        </div>
+        <div class="coleccion">
+            <img class="slider-item" src="/imagenes/bored-ape/monogorro.webp" alt="" width="350px" height="197px">
+            <div class="description">
+                <p>Nature</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+                Las más facinantes imagenes de este planeta,literalmente.
+            </div>
+        </div> 
+        <div class="coleccion">
+            <img class="slider-item" src="/imagenes/bored-ape/monogolden.webp" alt="" width="350px" height="197px">
+            <div class="description">
+                <p>The Anonymus colection</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+                La cara más reconocible del mundo,ahora en Nft's
+            </div>
+        </div>
+    </div>  
+</div>
+<!--Separación-->
+<div class="separe"></div>
+<div>
+   <div class="slider-container">
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monorey.webp" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Oranges</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+               Las frutas sacadas de contexto pueden ser mas divertidas.Y con más valor.
+            </div>
+       </div>
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monosanto.webp" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Cool Cats</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+                Quién no ama a los gatos?Ahora en forma de NFT's!
+            </div>
+        </div>
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monomarino.jpg" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Lo-fi guy</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+               El lo-fi personificado en NFT's.
+            </div>
+        </div>
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monopizza.png" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Among Us</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+               Porque no merecen pasar de moda, los astronautas volvieron.Consiguelos aquí.
+            </div>
+        </div> 
+  </div>  
+</div>
+<!--Separación-->
+<div class="separe"></div>
+<div>
+    <div class="slider-container">
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monoleft.jpg" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Pink Pigs</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+                Enamorate de estos adorables personajes y coleccionalos a todos!
+            </div>
+        </div>
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monobebe.webp" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>No-creepy aliens</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+                Porque los aliens no tiene por qué dar miedo...Al menos hasta leer su precio.
+            </div>
+        </div>
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monorisa.jpg" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Creepy Micky</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+               Siempre las cosas antiguas dan miedo.Incluso Micky
+            </div>
+        </div>
+        <div class="coleccion"><img class="slider-item" src="/imagenes/bored-ape/monofuma.webp" alt=""  width="350px" height="197px">
+            <div class="description">
+                <p>Fashion Duck</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="descripction-body">
+               Estos amiguitos y sus oufits tan particulares estan de moda.Hazte dueño de una de estas piezas únicas!
+            </div>
+        </div> 
+</div>
+<div class="separe"></div>
+<footer>
+    <!--Contacto de redes-->
+      <div class="redes"></div>
+       <div class="footer">
+           <div>
+               <img src="/imagenes/Nftlogo.png" alt="" width="300rem">
+                   <a href="#"><span class="iconos-de-redes"><i class="fab fa-instagram"></i></span> </a>
+                   <a href="#"><span class="iconos-de-redes"><i class="fab fa-facebook-f"></i></span></a> 
+                    <a href="#"><span class="iconos-de-redes"><i class="fab fa-twitter"></i></span></a> 
+           </div>
+       </div>
+   </footer>
+      
+</body>
+</html>
