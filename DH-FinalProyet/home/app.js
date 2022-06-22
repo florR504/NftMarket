@@ -2,16 +2,14 @@ const express = require('express');
 const app = express();
 const path = require("path");
 const publicPath = path.resolve(__dirname, './public');
+const mainRouter = require('./routers/main')
+const rutaLogin = require('./routers/login')
 
 app.use(express.static(publicPath));
 
-app.get("/", (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/home.html"))
-});
+app.use("/login", rutaLogin);
+app.use("/",mainRouter );
 
-app.get("/login", (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/login.html"))
-});
 app.get("/productDetail", (req, res) => {
     res.sendFile(
       path.resolve(__dirname, "./views/productDetail/productDetail.html")
