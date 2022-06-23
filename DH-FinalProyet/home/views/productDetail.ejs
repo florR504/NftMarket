@@ -1,35 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>productDetail</title>
-    <script src="https://kit.fontawesome.com/1dc71a7fda.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styleDetail.css">
-    <link rel="stylesheet" href="/normalize.css">
-</head>
+<%- include('./partials/head')%>
+<link rel="stylesheet" href="/css/styleDetail.css">
 
 <body>
-    <nav>
-        <div class="menuylogo">
-            <button type="menu" class="buttonsofnav" id="menu">
-                <i class="fas fa-bars"></i></button>
-             <a href="/">
-                <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="38px" id="logo">
-            </a>
-        </div>
-        <div class="buscadoryregistro">
-            <form action="#" method="get">
-                <input type="text" placeholder="Qué estas buscando?" class="buscador" id="barraDeBusqueda">
-                <button type="submit" id="lupa" class="buttonsofnav">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-
-        </div>
-    </nav>
+ <!--Barra de navegacion-->
+    <%-include ('./partials/nav.ejs') %>
+<!--Detalle del producto-->
     <div class="detalleimg">
          <div class="titulo"><p>Detalle de producto</p></div> 
          <img src="https://media3.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=ecf05e471p07ez9eid5pdi5n7krhnmbqx8hpyrmr1m92zu94&rid=giphy.gif&ct=g" alt="Bored ape nft" height="400rem">
@@ -50,6 +27,8 @@
             <button>Añadir al carrito</button>
         </div>
     </div>
+    <!--Footer-->
+    <%-include('./partials/footer.ejs')%>
 
 </body>
 

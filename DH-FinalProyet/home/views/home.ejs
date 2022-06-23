@@ -1,48 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;0,700;1,200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/1dc71a7fda.js" crossorigin="anonymous"></script>
-    <title>NFT Market</title>
-</head>
+<%- include('./partials/head.ejs')%>
 <body>
     <!--Barra de navegación-->
-    <nav>
-        <button type="menu" class="buttonsofnav" id="menu"><i class="fas fa-bars" ></i></button>
-        <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="40px" id="logo">
-        <div class="separar"></div>
-            <form action="#" method="get" >
-                <input type="text" placeholder="Qué estas buscando?" class="buscador" id="barraDeBusqueda">
-                <button type="submit" id="lupa" class="buttonsofnav">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <div class="separar"></div>
-            <form method="get" action="/login">
-                <button type="submit" class="buttonsofnav" id="botondeingresar">
-                    Ingresá
-                </button>
-            </form>
-            <form method="get"  action="/registro">
-                <button type="submit" class="buttonsofnav" id="botonderegistro">
-                    Registrate
-                   <i class="fas fa-user"></i>
-                </button>
-            </form>
-    </nav>
+    <%-include ('./partials/nav.ejs') %> 
     <main>
         <!--Banner-->
         <div class="div-1">
@@ -224,20 +185,6 @@
   <!--Separación-->
  <div class="separe"></div>
  <!--Footer-->
-<footer>
- <!--Contacto de redes-->
-   <div class="redes"></div>
-    <div class="footer">
-        <div>
-            <img src="/imagenes/Nftlogo.png" alt="" width="300rem">
-                <a href="#"><span class="iconos-de-redes"><i class="fab fa-instagram"></i></span> </a>
-                <a href="#"><span class="iconos-de-redes"><i class="fab fa-facebook-f"></i></span></a> 
-                 <a href="#"><span class="iconos-de-redes"><i class="fab fa-twitter"></i></span></a> 
-        </div>
-    </div>
-</footer>
- 
-   
-    
-</body>
+ <%-include('./partials/footer.ejs')%>
+ </body>
 </html>
