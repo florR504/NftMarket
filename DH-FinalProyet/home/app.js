@@ -10,7 +10,7 @@ const rutaRegister = require('./routers/register')
 app.use(express.static(publicPath));
 app.use("/login", rutaLogin);
 app.use("/",mainRouter );
-app.use("/productDetail", rutaProductColeccion);
+app.use("/coleccion", rutaProductColeccion);
 app.use("/coleccion", rutaProductColeccion);
 app.use("/registro",rutaRegister );
 
