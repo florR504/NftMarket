@@ -7,6 +7,7 @@ const rutaLogin = require('./routers/login')
 const rutaProductColeccion = require('./routers/products')
 const rutaRegister = require('./routers/register')
 
+app.set('view engine', 'ejs');
 app.use(express.static(publicPath));
 app.use("/login", rutaLogin);
 app.use("/",mainRouter );

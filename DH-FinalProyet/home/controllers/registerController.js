@@ -1,7 +1,5 @@
-const path = require('path');
-
 const register = {
-      inicio: (req, res)=>{ res.sendFile(path.resolve(__dirname, "../views/registro.html")) },
+      inicio: (req, res)=>{ res.render('registro') },
 }
 
 module.exports = register;

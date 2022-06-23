@@ -1,7 +1,7 @@
-const path = require('path');
+
  const productos = {
-       coleccion : (req, res) => {res.sendFile(path.resolve(__dirname, '../views/coleccion.html'))},
-       detalle : (req, res) => {res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))}
+       coleccion : (req, res) => {res.render('coleccion')},
+       detalle : (req, res) => {res.render('productDetail')}
 
  }
 
