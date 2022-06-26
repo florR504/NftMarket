@@ -14,10 +14,10 @@ nav {
 
     
 .div-1 {
-    background-image: url(https://media4.giphy.com/media/3o7TKHFqNJfwpoP62A/giphy.gif?cid=ecf05e47px3u3wspduvfuxdgnb9ec7k3ipgzav4kc5zb9xha&rid=giphy.gif&ct=g);
+    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.18);
     background-blend-mode: darken;
     color: white;
     text-align: center;
@@ -120,7 +120,7 @@ h3:hover{
     cursor: pointer;
 }
 .guide{
-    color:  rgba(0, 0, 63, 0.992);
+    color:palevioletred;
     font-size: 1.8rem;
     font-family: 'Righteous', cursive;
 }
@@ -141,7 +141,7 @@ a:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .cajas{
-    background-color: white;
+    background-color:  white;
     box-shadow: 0px 0px 10px gray;
     text-align: center;
     width: 17.7rem;
@@ -153,6 +153,7 @@ a:hover{
 .cajas:hover{
     box-shadow: 0px 0px 10px cyan;
     cursor: pointer;
+    
 }
 .slider-container{
     display: flex;
@@ -162,18 +163,22 @@ a:hover{
 .icons{
     font-size: 2.7rem;
     padding-top: 0.6rem;
-    color:white;
-    background-color: rgba(245, 132, 0, 0.88);
+    color:orange;
+    background-image: url('../imagenes/fondo2.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.18);
+    background-blend-mode: darken;
     border-radius: 0.6rem;
     transition: all 450ms;
 }
 .icons:hover{
-    color: yellow;
+    color: white;
     font-size: 3rem;
-    background-image: url(https://media4.giphy.com/media/3o7TKHFqNJfwpoP62A/giphy.gif?cid=ecf05e47px3u3wspduvfuxdgnb9ec7k3ipgzav4kc5zb9xha&rid=giphy.gif&ct=g);
+    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.18);
     background-blend-mode: darken;
     
 }
@@ -293,7 +298,7 @@ a:hover{
 .login-body{
     width: 96.875rem;
     height: 50rem;
-    background-image: url(https://media4.giphy.com/media/3o7TKHFqNJfwpoP62A/giphy.gif?cid=ecf05e47px3u3wspduvfuxdgnb9ec7k3ipgzav4kc5zb9xha&rid=giphy.gif&ct=g);;
+    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);;
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
