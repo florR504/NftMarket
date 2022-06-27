@@ -11,7 +11,7 @@ body {
     background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
     background-size: cover;
     background-position: center;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.18);
     background-blend-mode: darken;
     position: absolute;
     display: flex;
@@ -35,7 +35,7 @@ body {
     position: relative;
     border-color: gray;
     background-blend-mode: darken;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
     background-color: rgba(248, 237, 244, 0.88);
     box-shadow: 0px 0px 10px gray;
@@ -68,10 +68,12 @@ form img {
 .form-box, .form-date, .form-select, .form-submit {
     display: flex;
     height: fit-content;
-    width: 90%;
+    width:65%;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+    
+    
 }
 .form-term{
     align-items: center;
@@ -101,8 +103,10 @@ label {
     font-size: 16px;
     outline: none;
     background-color: rgb(255, 255, 255);
-    border: 1px solid lightgrey;
+    border: none;
     color: rgb(85, 85, 85);
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
 .form-date input {
@@ -134,6 +138,8 @@ label {
     height: 32px;
     padding: 0 30px;
     outline: none;
+    margin-left: 30px;
+    margin-bottom: 20px;
     background-color: rgba(245, 132, 0, 0.88);
     color: white;
     border: 0;
@@ -151,12 +157,14 @@ a {
     color: rgb(84 105 255);
     text-decoration: none;
     margin-bottom: 6px;
-    font-size: 12px;
+    font-size: 14px;
+   
 }
 
 a:hover {
     text-decoration: underline;
 }
+
 
 @media(max-width: 1250px) {
     .registro {
