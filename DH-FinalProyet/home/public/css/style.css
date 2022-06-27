@@ -9,6 +9,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding:0.3rem;
+   /* position: fixed;*/
     
 }
 
@@ -296,12 +297,12 @@ a:hover{
   
 }
 .login-body{
-    width: 96.875rem;
-    height: 50rem;
+    width: 96rem;
+    height: 47rem;
     background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.18);
     background-blend-mode: darken;
     display: flex;
     justify-content: flex-end;
@@ -341,18 +342,28 @@ a:hover{
     padding-bottom: 0.3rem;
     border-radius: 0.3rem;
 }
+ button:hover{
+    cursor: pointer;
+
+}
 .ingresar-con-google{
     border: none;
-    background-color: rgba(248, 237, 244, 0.88);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
     
 }
 span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
+    
 }
 span img{
-    padding-top: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 0.3rem;
 }
 .separar{
     width: 20rem;
