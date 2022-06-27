@@ -4,13 +4,16 @@
 <link rel="stylesheet" href="/css/styleDetail.css">
 
 <body>
- <!--Barra de navegacion-->
+    <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
-<!--Detalle del producto-->
+    <!--Detalle del producto-->
     <div class="detalleimg">
-         <div class="titulo"><p>Detalle de producto</p></div> 
-         <img src="https://media3.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=ecf05e471p07ez9eid5pdi5n7krhnmbqx8hpyrmr1m92zu94&rid=giphy.gif&ct=g" alt="Bored ape nft" height="400rem">
-        
+        <div class="titulo">
+            <p>Detalle de producto</p>
+        </div>
+        <img src="https://media3.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=ecf05e471p07ez9eid5pdi5n7krhnmbqx8hpyrmr1m92zu94&rid=giphy.gif&ct=g"
+            alt="Bored ape nft" height="400rem">
+
 
         <div class="codigonft">
             <h3>Coleccion</h3>
@@ -26,9 +29,12 @@
             <p>Precio</p>
             <button>Añadir al carrito</button>
         </div>
+        <a href="/coleccion">
+            <button>BACK</button>
+        </a>
     </div>
     <!--Footer-->
-    <%-include('./partials/footer.ejs')%>
+    <!-- <%-include('./partials/footer.ejs')%> -->
 
 </body>
 
