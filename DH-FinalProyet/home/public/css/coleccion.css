@@ -176,6 +176,32 @@ select option{
 .separe{
     height: 1.7rem;
 }
+.buynow{
+  background-color: aqua;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  border-radius: 0.5rem;
+  transition: all 400ms;
+  ;
+  
+}
+.buynow:hover{
+  opacity: 100%;
+  background-color: aqua;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.4rem;
+  height: 3rem;
+
+}
 /*footer*/
 .footer{
     background-color: rgba(245, 132, 0, 0.88) ;
@@ -325,7 +351,7 @@ select option{
    }
    .coleccion{
     width: 53rem;
-    height: 60rem;
+    height: 65rem;
     
    }
    .coleccion img{
@@ -349,6 +375,17 @@ select option{
    }
   .separe{
     display: none;
+  }
+  .buynow{
+    height: 10rem;
+    font-size: 5rem;
+    
+  }
+  .buynow:hover{
+    height: 7rem;
+    font-size: 5rem;
+    margin-bottom: 20rem;
+
   }
   /*Footer*/
   .redes{
