@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 90px;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.productForm {
+    width: 100%;
+    max-width: 700px;
+    min-width: 400px;
+    height: fit-content;
+    background-color: rgba(248, 237, 244, 0.88);
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tituloForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.tituloForm input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid lightgrey;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+
+.descripcionForm { 
+    height: 160px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.descripcionForm textarea {
+    height: 110px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1em;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+}
+
+.categoriaForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.categoriaForm select {
+    width: 100%;
+    font-size: 1em;
+    height: 30px;
+    border: 1px solid lightgrey;
+    outline: none;
+    color: rgb(132, 147, 173);
+    border-radius: 4px;
+}
+
+.precioForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.precioForm label {
+    width: 100%;
+}
+
+.precioForm input{
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.imagenForm {
+    height: 40px;
+    justify-content: center;
+}
+
+.imagenForm label {
+    width: 297px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(132, 147, 173);
+}
+
+.imagenForm input {
+    display: none;
+}
+
+
+.imagenPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 300px;
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+}
+
+.submitForm {
+    justify-content: center;
+}
+
+.submitForm button {
+    background-color: #FEBD6A;
+    color: white;
+    outline: none;
+    border: 0;
+    line-height: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
