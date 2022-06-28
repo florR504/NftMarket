@@ -203,3 +203,186 @@ select option{
     color:rgba(245, 132, 0, 0.88);
   
 }
+@media (max-width:361px) {
+    /*barra de navegacion*/
+    #barraDeBusqueda{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+    #lupa{
+        display:none;
+    }
+   nav{
+    width: 54.6rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+   .buscadoryregistro{
+    display:contents;
+   }
+   #menu{
+     padding: 1.5rem;
+     border-radius: 0.6rem;
+     margin-right: 4.6rem;
+     font-size: 3rem;
+   }
+   .menuylogo{
+    margin: 0rem;
+   }
+   .menuylogo #menu i{
+    font-size: 3rem;
+   }
+   .buscadoryregistro{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+   .buscadoryregistro button{
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+   }
+   .separar{
+    width: 0rem;
+   }
+  #botonderegistro{
+    font-size: 2.5rem;
+    padding: 1rem;
+   }
+  #botondeingresar{
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-left: 4rem;
+   }
+   /*banner*/
+   .presentacion{
+    width: 55.2rem;
+    height: 65rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    
+   }
+  .coleccion-descripcion{
+    height: 15rem;
+    width: 55.2rem;
+  }
+  .parrafo-descripcion{
+    display: none;
+  }
+  .items-owners{
+    font-size: 4rem;
+    padding-left: 3rem;
+  }
+  .Barra-de-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55.2rem;
+    height: 20rem;
+  }
+  .Barra-de-info form{
+    width: 10rem;
+    height: 4rem;
+  }
+   /*main*/
+   main{
+    width: 54rem;
+    
+   }
+   .guide{
+    display: none;
+   }
+   .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    margin-top: 40rem;
+    align-items: center;
+    margin-left: 1rem;
+    
+   
+   }
+   .div-2{
+    display: flex;
+    flex-direction: column;
+    width: 54rem;
+    height: 30rem;
+   }
+   .cajas{
+    width: 54rem;
+    height: 20rem;
+    
+   }
+   .space{
+    width: 100%;
+    height: 20rem;
+    margin-top: 40rem;
+   }
+   .space h2{
+    font-size: 7rem;
+   }
+   .slider-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
+   }
+   .coleccion{
+    width: 45rem;
+    height: 45rem;
+    margin: 2rem;
+   }
+   .coleccion img{
+    width: 45rem;
+    height: 25rem;
+   }
+  .coleccion .description{
+    font-size: 3rem;
+  }
+  .descripction-body{
+    font-size: 2rem;
+    padding: 0.3rem;
+  }
+  .icons{
+    font-size: 8rem;
+  }
+  .cajas h4{
+    font-size:2rem ;
+  }
+  .cajas p{
+    font-size: 2rem;
+  }
+  /*Footer*/
+  .redes{
+    width: 55rem;
+  }
+  .footer{
+    width: 55rem;
+  }
+}
+@media (min-width:769px) {
+    .contenedor{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      row-gap: 0.3rem;
+      margin: 0.3rem;
+    }
+    .cajas{
+      margin: 0.3rem;
+    }
+     
+  }
