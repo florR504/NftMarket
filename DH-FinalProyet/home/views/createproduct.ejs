@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/productCreate.css" />
-
-  <title>Nueva Publicación</title>
-
-</head>
-
+  <%- include('./partials/head.ejs')%>
+  <link rel="stylesheet" href="/css/productCreate.css" />
+ <title>Crear NFT</title>
 <body>
+  <main class="fondo">
+  <%-include ('./partials/nav.ejs') %> 
+ 
   <div class="productForm">
     <div class="logo">
       <a href="/">
         <img src="/imagenes/Nftlogo.png" alt="Nft" />
       </a>
+      <i class="fas fa-paint-brush"></i>
     </div>
 
-    <h2>Publicar NFT</h2>
+    <h4>Publicar NFT</h4>
 
     <form action="/product/create" method="post" enctype="multipart/form-data">
       <div class="tituloForm">
@@ -55,7 +52,9 @@
   </div>
   
   <br>
-  
+</main>
+   <!--Footer-->
+ <%-include('./partials/footer.ejs')%>
     
 </body>
 

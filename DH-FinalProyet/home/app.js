@@ -13,6 +13,7 @@ app.use("/login", rutaLogin);
 app.use("/",mainRouter );
 app.use("/coleccion", rutaProductColeccion);
 app.use("/coleccion", rutaProductColeccion);
+app.use('/coleccion', rutaProductColeccion)
 app.use("/registro",rutaRegister );
 
 app.listen(3031, () =>{
