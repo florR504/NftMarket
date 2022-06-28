@@ -21,44 +21,39 @@
   
 </ul>
 
+<hr>
+
 <h4> Tablero de Trello </h4>
 https://trello.com/invite/b/PiDySFQK/e0192faa4a80919be537a0ddc05607ce/proyecto-integrador
+
+<hr>
 
 <h4> URL repo: </h4>
 https://github.com/DHmatias/grupo_07_nft-markets.git
 
-<h4>Presentacion de los integrantes del grupo</4>
-
 <hr>
+
+<h4>Presentacion de los integrantes del grupo</4>
 
 <h6>Nicolás Del Fiol</h6>
  
  Tengo 32 años, vivo en Mendoza, estudio ing. Petróleo, trabajo en las cámaras de seguridad del municipio de Las Heras. Es la primera experiencia en el mundo de la programación.
 
-<hr>
-
 <h6>Matías Mancilla</h6>
 
 Vivo en La Plata. Es  mi primer acercamiento al mundo de la programación.
-
-<hr>
 
 <h6>Florencia Rodriguez</h6>
 
 Hola! Soy Flor Rodriguez, tengo 24 años y vivo en Caballito.No tengo ningun conocimiento previo ni experiencia en programacion, pero me encantaria dedicarme a esto a futuro.
 
-<hr>
-
 <h6>Francisco Vaquero</h6>
 
  Tengo 18 años, vivo en Buenos Aires, me interesa todo lo que tiene que ver con la tecnología.
-<hr>
 
 <h6>Tomas Orlandini</h6>
 
 Tengo 20 años, vivo en Buenos Aires, Argentina, estoy estudiando Marketing en la UCA y me interesaría aprender sobre los lenguajes de programación.
-
-<hr>
 
 <h6>Lourdes Bustos</h6>
 
