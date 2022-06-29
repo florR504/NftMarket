@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head.ejs')%>
-<body>
-    <!--Barra de navegación-->
-    <%-include ('./partials/nav.ejs') %> 
-    <STYLE>A {text-decoration: none;} </STYLE>
-    <main>
+    <!--head-->
+    <%- include('./partials/head.ejs')%>
+    <body>
+        <!--Barra de navegación-->
+        <%-include ('./partials/nav.ejs') %> 
+        <STYLE>A {text-decoration: none;} </STYLE>
+        <main>
         <!--Banner-->
-        <div class="div-1">
-           <h1>Descubre</h1>
-           <h2>Admira</h2>
-           <h3>Obtiene</h3>
-           <button type="submit" class="buttonsofbody">Más información</button>
-        </div>
+            <div class="div-1">
+                <h1>Descubre</h1>
+                <h2>Admira</h2>
+                <h3>Obtiene</h3>
+                <button type="submit" class="buttonsofbody">Más información</button>
+            </div>
         <!--Guía y cajas-->
-        <div class="div-2">
-        <p class="guide">
-            Hazte dueño de piezas de arte únicas. <br>
-            Invierte en NFT's y genera ganancias. <br>
-            Conviértete en un coleccionador <br>
-            <a href="#">Estás listo?</a>  
-        </p>
-        <div class="contenedor">
-    <a href="/coleccion/createProduct">
-        <div class="cajas">
-            <div class="icons">
-                 <i class="fas fa-paint-brush"></i>
-            </div>
-             <h4>Conviertete en un artista!</h4>
-             <p>Crea y vende tus propios NFT's</p>
+            <div class="div-2">
+                <p class="guide">
+                    Hazte dueño de piezas de arte únicas. <br>
+                     Invierte en NFT's y genera ganancias. <br>
+                    Conviértete en un coleccionador <br>
+                     <a href="#">Estás listo?</a>  
+                 </p>
+                <div class="contenedor">
+                    <a href="/coleccion/createProduct">
+                    <div class="cajas">
+                        <div class="icons">
+                            <i class="fas fa-paint-brush"></i>
+                         </div>
+                        <h4>Conviertete en un artista!</h4>
+                        <p>Crea y vende tus propios NFT's</p>
+                    </div>
+                    </a>
+                    <div class="cajas" >
+                        <div class="icons">
+                            <i class="fas fa-shopping-cart"></i>
+                         </div>
+                        <h4>Organiza tus compras</h4>
+                        <p>Tus productos te esperan!</p>
+                    </div>
+                    <div class="cajas">
+                        <div class="icons">
+                            <i class="fas fa-level-up-alt" ></i>
+                         </div>
+                        <h4>Tus inversiones, en alza</h4>
+                        <p>Los valores de los NFT's aumentan cada día</p>
+                    </div>
+                </div>
         </div>
-    </a>
-        <div class="cajas" >
-            <div class="icons">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-            <h4>Organiza tus compras</h4>
-             <p>Tus productos te esperan!</p>
-        </div>
-        <div class="cajas">
-            <div class="icons">
-                <i class="fas fa-level-up-alt" ></i>
-            </div>
-            <h4>Tus inversiones, en alza</h4>
-            <p>Los valores de los NFT's aumentan cada día</p>
-        </div>
-         </div>
-    </div>
      <!--Colecciones-->
-    <div class="space">
-     <h2>Colecciones:</h2>
-    </div>
+        <div class="space">
+            <h2>Colecciones:</h2>
+        </div>
     <div >
         <div class="slider-container">
             <div class="coleccion">
                 <a href="/coleccion">
-                <img class="slider-item" src="https://media3.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=ecf05e471p07ez9eid5pdi5n7krhnmbqx8hpyrmr1m92zu94&rid=giphy.gif&ct=g" alt="" width="350px" height="197px">
-                <div class="description">
-                    <p>Bored Ape</p>
-                    <span class="check"><i class="fas fa-check-circle"></i></span>
-                </div>
-                <div class="descripction-body">
+                    <img class="slider-item" src="https://media3.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=ecf05e471p07ez9eid5pdi5n7krhnmbqx8hpyrmr1m92zu94&rid=giphy.gif&ct=g" alt="" width="350px" height="197px">
+                    <div class="description">
+                        <p>Bored Ape</p>
+                        <span class="check"><i class="fas fa-check-circle"></i></span>
+                    </div>
+                     <div class="descripction-body">
                     Bored Ape es una colección de más de 1000 NFT's totalmente únicos.Aprovéchalos ahora que su valor esta en alza!
-                </div>
-            </a>
+                     </div>
+                </a>
             </div>
             <div class="coleccion">
                 <a href="/">
-                <img class="slider-item" src="https://lh3.googleusercontent.com/vpJFZRfBl9ghj9IinaDB3w3xScD9AHwuXxpId50Yo80bw1Tt1BOhJg5pltBN-_wJwA0aCyHbcxIbXNnQ1cKd9xlc5ATdJUL4Yy3kDQ=s168" alt="" width="350px" height="197px">
-                <div class="description">
-                    <p>CyberKongz VX</p>
-                    <span class="check"><i class="fas fa-check-circle"></i></span>
-                </div>
+                     <img class="slider-item" src="https://lh3.googleusercontent.com/vpJFZRfBl9ghj9IinaDB3w3xScD9AHwuXxpId50Yo80bw1Tt1BOhJg5pltBN-_wJwA0aCyHbcxIbXNnQ1cKd9xlc5ATdJUL4Yy3kDQ=s168" alt="" width="350px" height="197px">
+                    <div class="description">
+                        <p>CyberKongz VX</p>
+                        <span class="check"><i class="fas fa-check-circle"></i></span>
+                    </div>
            
-                <div class="descripction-body">
+                     <div class="descripction-body">
                     CyberKongz VX are unique and randomly generated 3D NFT Social Avatars
                      for the Metaverse and upcoming interoperability with The Sandbox
-                </div>
-            </a>
+                     </div>
+                 </a>
             </div>
             <div class="coleccion">
                 <img class="slider-item" src="/imagenes/ethilizards/ethilizards.png" alt="" width="350px" height="197px">
@@ -227,10 +228,10 @@
                 </div>
             </div> 
     
-</main>
+        </main>
   <!--Separación-->
- <div class="separe"></div>
+        <div class="separe"></div>
  <!--Footer-->
- <%-include('./partials/footer.ejs')%>
- </body>
+        <%-include('./partials/footer.ejs')%>
+    </body>
 </html>
