@@ -176,6 +176,32 @@ select option{
 .separe{
     height: 1.7rem;
 }
+.buynow{
+  background-color: aqua;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  border-radius: 0.5rem;
+  transition: all 400ms;
+  ;
+  
+}
+.buynow:hover{
+  opacity: 100%;
+  background-color: aqua;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.4rem;
+  height: 3rem;
+
+}
 /*footer*/
 .footer{
     background-color: rgba(245, 132, 0, 0.88) ;
@@ -215,7 +241,7 @@ select option{
         display:none;
     }
    nav{
-    width: 54.6rem;
+    width: 59.5rem;
     height: 8rem;
     display: flex;
     flex-direction: row;
@@ -260,7 +286,7 @@ select option{
    }
    /*banner*/
    .presentacion{
-    width: 55.2rem;
+    width: 60.5rem;
     height: 65rem;
     display: flex;
     justify-content: center;
@@ -272,7 +298,7 @@ select option{
    }
   .coleccion-descripcion{
     height: 15rem;
-    width: 55.2rem;
+    width: 59rem;
   }
   .parrafo-descripcion{
     display: none;
@@ -286,67 +312,51 @@ select option{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55.2rem;
+    width: 57rem;
     height: 20rem;
   }
-  .Barra-de-info form{
-    width: 10rem;
-    height: 4rem;
+  .Barra-de-info input{
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+  }
+
+  .Barra-de-info select{
+    height: 5rem;
+    width: 40rem;
+    font-size: 1rem;
   }
    /*main*/
    main{
-    width: 54rem;
+    width: 53rem;
     
    }
-   .guide{
-    display: none;
-   }
-   .contenedor{
+
+   .slider-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     row-gap: 2rem;
-    margin-top: 40rem;
     align-items: center;
     margin-left: 1rem;
-    
+    }
+
+  .check{
    
-   }
-   .div-2{
-    display: flex;
-    flex-direction: column;
-    width: 54rem;
-    height: 30rem;
-   }
-   .cajas{
-    width: 54rem;
-    height: 20rem;
-    
-   }
-   .space{
-    width: 100%;
-    height: 20rem;
-    margin-top: 40rem;
-   }
-   .space h2{
-    font-size: 7rem;
-   }
-   .slider-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7%;
-    justify-content: center;
-    align-items: center;
+    color: cyan;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+    font-size: 2.5rem;
    }
    .coleccion{
-    width: 45rem;
-    height: 45rem;
-    margin: 2rem;
+    width: 53rem;
+    height: 65rem;
+    
    }
    .coleccion img{
-    width: 45rem;
-    height: 25rem;
+    width: 53rem;
+    height: 45rem;
    }
   .coleccion .description{
     font-size: 3rem;
@@ -355,22 +365,36 @@ select option{
     font-size: 2rem;
     padding: 0.3rem;
   }
-  .icons{
-    font-size: 8rem;
+   
+  .slider-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
+   }
+  .separe{
+    display: none;
   }
-  .cajas h4{
-    font-size:2rem ;
+  .buynow{
+    height: 10rem;
+    font-size: 5rem;
+    
   }
-  .cajas p{
-    font-size: 2rem;
+  .buynow:hover{
+    height: 7rem;
+    font-size: 5rem;
+    margin-bottom: 20rem;
+
   }
   /*Footer*/
   .redes{
-    width: 55rem;
+    width: 60.1rem;
   }
   .footer{
-    width: 55rem;
+    width: 60.1rem;
   }
+  
 }
 @media (min-width:769px) {
     .contenedor{
