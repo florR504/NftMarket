@@ -16,6 +16,8 @@ app.use("/coleccion", rutaProductColeccion);
 app.use('/coleccion', rutaProductColeccion)
 app.use("/registro",rutaRegister );
 
+
+
 app.listen(3031, () =>{
     console.log("Servidor corriendo en el puerto 3031")
 });

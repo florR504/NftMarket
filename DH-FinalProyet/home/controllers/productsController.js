@@ -1,6 +1,7 @@
 
  const productos = {
        coleccion : (req, res) => {res.render('coleccion')},
+
        detalle1 : (req, res) => {res.render('productDetail1')},
        detalle2 : (req, res) => {res.render('productDetail2')},
        detalle3 : (req, res) => {res.render('productDetail3')},
@@ -13,6 +14,7 @@
        detalle10 : (req, res) => {res.render('productDetail10')},
        detalle11 : (req, res) => {res.render('productDetail11')},
        detalle12 : (req, res) => {res.render('productDetail12')},
+       
        crear: (req, res) => {res.render('createproduct')}
  }
 
