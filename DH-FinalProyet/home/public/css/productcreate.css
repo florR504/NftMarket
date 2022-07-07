@@ -60,14 +60,14 @@ form div {
 }
 
 .descripcionForm { 
-    height: 160px;
+    height: 50px;
     justify-content: flex-start;
     font-size: 1.1em;
     color: rgb(132, 147, 173);
 }
 
-.descripcionForm textarea {
-    height: 110px;
+.descripcionForm input {
+    height: 30px;
     width: 100%;
     padding: 5px;
     font-size: 1.1em;
@@ -117,6 +117,8 @@ form div {
 .imagenForm {
     height: 40px;
     justify-content: center;
+    margin: 5px;
+    padding: 5px;
 }
 
 .imagenForm label {
@@ -163,6 +165,8 @@ form div {
     width: 100%;
     max-width: 300px;
     cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .logo {

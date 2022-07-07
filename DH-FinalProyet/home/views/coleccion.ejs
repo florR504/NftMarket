@@ -42,13 +42,13 @@
     <div class="slider-container">
         <div class="coleccion">
             <a href="/coleccion/productDetail1">
-                <img class="slider-item" src="/imagenes/bored-ape/monoblanco.jpeg" alt="" width="350px" height="197px">
+                <img class="slider-item" src= <%= products[0].imagen %>  alt="" width="350px" height="197px">
                 <div class="description">
-                    <p>4645</p>
+                    <p><%= products[0].name %> </p>
                      <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
                 <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[0].price %> 
                 </div>
                 <div class="buynow">
                     Buy now!
@@ -57,13 +57,13 @@
         </div>
         <div class="coleccion">
             <a href="/coleccion/productDetail2">
-                <img class="slider-item" src="/imagenes/bored-ape/monofuma.webp" alt="" width="350px" height="197px">
+                <img class="slider-item" src=<%= products[1].imagen %>  alt="" width="350px" height="197px">
                 <div class="description">
-                    <p>8546</p>
+                    <p><%= products[1].name %> </p>
                     <span class="check"><i class="fas fa-check-circle"></i></span>
                  </div>
                 <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[1].price %> 
                 </div>
                 <div class="buynow">
                     Buy now!
@@ -72,13 +72,13 @@
         </div>
         <div class="coleccion">
             <a href="/coleccion/productDetail3">
-            <img class="slider-item" src="/imagenes/bored-ape/monogorro.webp" alt="" width="350px" height="197px">
+            <img class="slider-item" src=<%= products[2].imagen %>  alt="" width="350px" height="197px">
             <div class="description">
-                <p>2541</p>
+                <p><%= products[2].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[2].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -87,13 +87,13 @@
         </div> 
         <div class="coleccion">
             <a href="/coleccion/productDetail4">
-            <img class="slider-item" src="/imagenes/bored-ape/monogolden.webp" alt="" width="350px" height="197px">
+            <img class="slider-item" src= <%= products[3].imagen %>  alt="" width="350px" height="197px">
             <div class="description">
-                <p>1478</p>
+                <p><%= products[3].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[3].price %> 
             </div>
         
             <div class="buynow">
@@ -109,13 +109,13 @@
    <div class="slider-container">
         <div class="coleccion">
             <a href="/coleccion/productDetail5">
-            <img class="slider-item" src="/imagenes/bored-ape/monorey.webp" alt=""  width="350px" height="197px">
+            <img class="slider-item" src=<%= products[4].imagen %>  alt=""  width="350px" height="197px">
             <div class="description">
-                <p>9542</p>
+                <p><%= products[4].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[4].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -126,11 +126,11 @@
             <a href="/coleccion/productDetail6">
             <img class="slider-item" src="/imagenes/bored-ape/monosanto.webp" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>8742</p>
+                <p><%= products[5].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price: <%= products[5].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -141,11 +141,11 @@
             <a href="/coleccion/productDetail7">
             <img class="slider-item" src="/imagenes/bored-ape/monomarino.jpg" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>6584</p>
+                <p><%= products[6].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[6].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -156,11 +156,11 @@
             <a href="/coleccion/productDetail8">
             <img class="slider-item" src="/imagenes/bored-ape/monopizza.png" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>1489</p>
+                <p><%= products[7].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price: <%= products[7].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -177,11 +177,11 @@
             <a href="/coleccion/productDetail9">
             <img class="slider-item" src="/imagenes/bored-ape/monoleft.jpg" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>8547</p>
+                <p><%= products[8].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[8].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -192,11 +192,11 @@
             <a href="/coleccion/productDetail10">
             <img class="slider-item" src="/imagenes/bored-ape/monobebe.webp" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>2569</p>
+                <p><%= products[9].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[9].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -207,11 +207,11 @@
             <a href="/coleccion/productDetail11">
             <img class="slider-item" src="/imagenes/bored-ape/monorisa.jpg" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>1549</p>
+                <p><%= products[10].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[10].price %> 
             </div>
             <div class="buynow">
                 Buy now!
@@ -222,11 +222,11 @@
             <a href="/coleccion/productDetail12">
             <img class="slider-item" src="/imagenes/bored-ape/ultimomono.jpg" alt=""  width="350px" height="197px">
             <div class="description">
-                <p>7458</p>
+                <p><%= products[11].name %> </p>
                 <span class="check"><i class="fas fa-check-circle"></i></span>
             </div>
             <div class="descripction-body">
-                price: $dfdfh
+                price:<%= products[11].price %> 
             </div>
             <div class="buynow">
                 Buy now!
