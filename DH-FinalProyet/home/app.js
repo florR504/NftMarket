@@ -13,6 +13,7 @@ app.use("/login", rutaLogin);
 app.use("/",mainRouter );
 app.use("/coleccion", rutaProductColeccion);
 app.use("/registro",rutaRegister );
+
 //le indica a express que vamos a trabajar con JSON//
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());

@@ -39,201 +39,30 @@
             </select>
         </div>
     <!--coleccion-->
-    <div class="slider-container">
+    <% for( let i = 0; i < products.length; i++ ) { %>
+        <% if (i == 0 || i%4 == 0) { %>
+            <div class="slider-container">
+        <% } %>
         <div class="coleccion">
             <a href="/coleccion/productDetail1">
-                <img class="slider-item" src= <%= products[0].imagen %>  alt="" width="350px" height="197px">
+                <img class="slider-item" src= "<%= products[i].imagen %>"  alt="" width="350px" height="197px">
                 <div class="description">
-                    <p><%= products[0].name %> </p>
+                    <p><%= products[i].name %> </p>
                      <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
                 <div class="descripction-body">
-                price:<%= products[0].price %> 
+                price:<%= products[i].price %> 
                 </div>
                 <div class="buynow">
                     Buy now!
                 </div>
             </a>
         </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail2">
-                <img class="slider-item" src=<%= products[1].imagen %>  alt="" width="350px" height="197px">
-                <div class="description">
-                    <p><%= products[1].name %> </p>
-                    <span class="check"><i class="fas fa-check-circle"></i></span>
-                 </div>
-                <div class="descripction-body">
-                price:<%= products[1].price %> 
-                </div>
-                <div class="buynow">
-                    Buy now!
-                </div>
-             </a>
-        </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail3">
-            <img class="slider-item" src=<%= products[2].imagen %>  alt="" width="350px" height="197px">
-            <div class="description">
-                <p><%= products[2].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[2].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-        </a>
-        </div> 
-        <div class="coleccion">
-            <a href="/coleccion/productDetail4">
-            <img class="slider-item" src= <%= products[3].imagen %>  alt="" width="350px" height="197px">
-            <div class="description">
-                <p><%= products[3].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[3].price %> 
-            </div>
-        
-            <div class="buynow">
-                Buy now!
-             </div>
-            </a>
-        </div>
-    </div>  
-</div>
-<!--Separación-->
-<div class="separe"></div>
-<div>
-   <div class="slider-container">
-        <div class="coleccion">
-            <a href="/coleccion/productDetail5">
-            <img class="slider-item" src=<%= products[4].imagen %>  alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[4].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[4].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-       </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail6">
-            <img class="slider-item" src="/imagenes/bored-ape/monosanto.webp" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[5].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price: <%= products[5].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-        </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail7">
-            <img class="slider-item" src="/imagenes/bored-ape/monomarino.jpg" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[6].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[6].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-        </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail8">
-            <img class="slider-item" src="/imagenes/bored-ape/monopizza.png" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[7].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price: <%= products[7].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-            </a>
-        </div> 
-  </div>  
-</div>
-<!--Separación-->
-<div class="separe"></div>
-<div>
-    <div class="slider-container">
-        <div class="coleccion">
-            <a href="/coleccion/productDetail9">
-            <img class="slider-item" src="/imagenes/bored-ape/monoleft.jpg" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[8].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[8].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-        </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail10">
-            <img class="slider-item" src="/imagenes/bored-ape/monobebe.webp" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[9].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[9].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-        </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail11">
-            <img class="slider-item" src="/imagenes/bored-ape/monorisa.jpg" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[10].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[10].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-        </div>
-        <div class="coleccion">
-            <a href="/coleccion/productDetail12">
-            <img class="slider-item" src="/imagenes/bored-ape/ultimomono.jpg" alt=""  width="350px" height="197px">
-            <div class="description">
-                <p><%= products[11].name %> </p>
-                <span class="check"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="descripction-body">
-                price:<%= products[11].price %> 
-            </div>
-            <div class="buynow">
-                Buy now!
-             </div>
-             </a>
-        </div> 
-    </div>
+       <% if ((i + 1)%4 == 0 || i == products.length - 1) { %>
+         </div>
+         <div class="separe"></div> 
+        <% } %>
+    <% } %>
     <div class="separe"></div>
 <!--Footer-->
      <%-include('./partials/footer.ejs')%>

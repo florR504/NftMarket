@@ -55,11 +55,9 @@ const productos = {
       name: req.body.name,
       price: req.body.price,
       oddity: req.body.oddity,
-      imagen: req.file.filename,
+      imagen: '/uploads/' + req.file.filename,
     };
-    console.log(req.file.filename);
     products.push(newProduct);
-    console.log(products);
     productsJson = JSON.stringify(products, null, 4);
     fs.writeFileSync(productsFilePath, productsJson);
     res.redirect("/coleccion");
