@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head')%>
-<link rel="stylesheet" href="/css/styleDetail.css">
+  <%- include('./partials/head')%>
+  <link rel="stylesheet" href="/css/styleDetail.css" />
 
-<body>
+  <body>
     <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
     <!--Detalle del producto-->
     <div class="detalleimg">
-         <div class="titulo"><p>4546</p></div> 
-         <img src="/imagenes/bored-ape/monoblanco.jpeg" alt="Bored ape nft" height="400rem">
-        
+      <div class="titulo">
+        <p>4546</p>
+        <div></div>
+        <button>Editar</button>
+      </div>
+      <img
+        src="/imagenes/bored-ape/monoblanco.jpeg"
+        alt="Bored ape nft"
+        height="400rem"
+      />
 
-        <div class="codigonft">
-            <h4>Coleccion: Bored Ape</h4>
-            <div class="codigo">
-                <h4>Codigo NFT:</h4>
-                <h4>00012556</h4>
-            </div>
-
+      <div class="codigonft">
+        <h4>Coleccion: Bored Ape</h4>
+        <div class="codigo">
+          <h4>Codigo NFT:</h4>
+          <h4>00012556</h4>
         </div>
+      </div>
 
-
-        <div class="precio">
-            <p>Precio</p>
-            <button>Añadir al carrito</button>
-        </div>
-        <a href="/coleccion">
-            <button>BACK</button>
-        </a>
+      <div class="precio">
+        <p>Precio</p>
+        <button>Añadir al carrito</button>
+      </div>
+      <a href="/coleccion">
+        <button>BACK</button>
+      </a>
     </div>
     <!--Footer-->
     <!-- <%-include('./partials/footer.ejs')%> -->
-
-</body>
-
+  </body>
 </html>

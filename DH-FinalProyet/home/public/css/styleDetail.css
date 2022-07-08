@@ -160,6 +160,15 @@ button:hover {
 .titulo{
     background-color: #cecdcd;
     color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.titulo div{
+    width: 14rem;
+}
+.titulo button{
+    margin: 0.7rem;
 }
 a button {
     margin-bottom: 5rem;
