@@ -60,8 +60,24 @@ const productos = {
     products.push(newProduct);
     productsJson = JSON.stringify(products, null, 4);
     fs.writeFileSync(productsFilePath, productsJson);
-    res.redirect("/coleccion");
+    res.redirect("/productos");
   },
+  editForm:(req, res) =>{
+     res.render("editProduct", {products})
+  },
+  editar:(req,res)=> {
+    let idIngresado = req.params.id
+
+    for(i = 0; i < products.length; i ++){
+      if(products[i].id == idIngresado){
+        products[i].name = req.body.name,
+        products[i].price = req.body.price,
+        products[i].oddity = req.body.oddity,
+        products[i].imagen = '/uploads/' + req.file.filename
+      }
+    }
+    res.redirect('/productos')
+  }
 };
 
 module.exports = productos;

@@ -31,6 +31,8 @@ router.get('/productDetail11', productsController.detalle11);
 router.get('/productDetail12', productsController.detalle12);
 
 router.get('/createProduct', productsController.crear );
-router.post('/createProduct', upload.single("imagen"), productsController.store )
+router.post('/createProduct', upload.single("imagen"), productsController.store );
+router.get('/productDetail1/:id/edit', productsController.editForm);
+router.put('/productDetail1/:id/edit',upload.single("imagen"), productsController.editar);
 
 module.exports = router;

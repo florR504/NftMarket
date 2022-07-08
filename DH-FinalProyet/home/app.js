@@ -6,12 +6,15 @@ const mainRouter = require('./routers/main')
 const rutaLogin = require('./routers/login')
 const rutaProductColeccion = require('./routers/products')
 const rutaRegister = require('./routers/register')
+const methodOverride = require('method-override')
+
 
 app.set('view engine', 'ejs');
+app.use(methodOverride('_method'))
 app.use(express.static(publicPath));
 app.use("/login", rutaLogin);
 app.use("/",mainRouter );
-app.use("/coleccion", rutaProductColeccion);
+app.use("/productos", rutaProductColeccion);
 app.use("/registro",rutaRegister );
 
 //le indica a express que vamos a trabajar con JSON//

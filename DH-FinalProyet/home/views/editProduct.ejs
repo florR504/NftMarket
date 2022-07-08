@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head')%>
+
+  <body>
+    <!--Barra de navegacion-->
+    <%-include ('./partials/nav.ejs') %>
+    <!--Detalle del producto-->
+    <div class="detalleimgEdit">
+      <form action="/productos/editProduct?_method=put" method="post" enctype="multipart/form-data">
+        <input type="text" name="titulo-nft" placeholder="  Nombre de Nft" />
+        <figure>
+          <img
+            src="<%= products.imagen ? products.imagen : '/imagenes/default-placeholder.png' %> "
+            alt="Imagen del Nft"
+            width="500rem"
+            height="500rem"
+          />
+        </figure>
+
+        <input type="file" id="imagen-nft" name="imagen" required />
+
+        <input type="text" name="coleccion" placeholder="  Coleccion" />
+
+        <input type="text" name="price" placeholder="  Precio" />
+
+        <input type="text" name="oddity" placeholder="   Rareza" />
+
+        <button>Modificar Nft</button>
+      </form>
+    </div>
+    <!--Footer-->
+    <!-- <%-include('./partials/footer.ejs')%> -->
+  </body>
+</html>
