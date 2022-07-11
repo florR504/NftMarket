@@ -7,7 +7,7 @@
     <%-include ('./partials/nav.ejs') %>
     <!--Detalle del producto-->
     <div class="detalleimgEdit">
-      <form action="/productos/editProduct?_method=put" method="post" enctype="multipart/form-data">
+      <form action="/productos/editProduct/?_method=put" method="post" enctype="multipart/form-data">
         <input type="text" name="titulo-nft" placeholder="  Nombre de Nft" />
         <figure>
           <img
@@ -26,7 +26,7 @@
 
         <input type="text" name="oddity" placeholder="   Rareza" />
 
-        <button>Modificar Nft</button>
+        <button type="submit">Modificar Nft</button>
       </form>
     </div>
     <!--Footer-->
