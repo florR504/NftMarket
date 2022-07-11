@@ -9,36 +9,30 @@
     <!--Detalle del producto-->
     <div class="detalleimg">
       <div class="titulo">
-        <p>4546</p>
-        <div></div>
-        <a href="/productos/productDetail1/:id/edit">
+         <%= producto.name %> 
+        <!-- <a href="/productos/productDetail1/:id/edit">
           <button>Editar</button>
-        </a>
+        </a> -->
         
       </div>
-      <img
-        src="/imagenes/bored-ape/monoblanco.jpeg"
-        alt="Bored ape nft"
-        height="400rem"
-      />
+      <img alt="Bored ape nft" src="<%= producto.imagen%> " height="400rem" />
 
       <div class="codigonft">
-        <h4>Coleccion: Bored Ape</h4>
+        <h4>Coleccion: <%= producto.coleccion %> </h4>
         <div class="codigo">
-          <h4>Codigo NFT:</h4>
-          <h4>00012556</h4>
+          <h4>Codigo NFT: <%= producto.name %> </h4>
         </div>
       </div>
 
       <div class="precio">
-        <p>Precio</p>
+        <p>Precio: <%= producto.price %> </p>
         <button>Añadir al carrito</button>
       </div>
-      <a href="/coleccion">
+      <a href="/productos">
         <button>BACK</button>
       </a>
     </div>
     <!--Footer-->
-    <!-- <%-include('./partials/footer.ejs')%> -->
+    <!-- %-include('./partials/footer.ejs')%> -->
   </body>
 </html>

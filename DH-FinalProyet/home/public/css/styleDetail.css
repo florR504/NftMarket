@@ -160,9 +160,7 @@ button:hover {
 .titulo{
     background-color: #cecdcd;
     color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+   align-items: center;
 }
 .titulo div{
     width: 14rem;

@@ -40,18 +40,19 @@
         </div>
     <!--coleccion-->
     <% for( let i = 0; i < products.length; i++ ) { %>
+        <% let product = products[i] %> 
         <% if (i == 0 || i%4 == 0) { %>
             <div class="slider-container">
         <% } %>
         <div class="coleccion">
-            <a href="/productos/productDetail1">
-                <img class="slider-item" src= "<%= products[i].imagen %>"  alt="" width="350px" height="197px">
+            <a href="/productos/productDetail/<%= product.id %>">
+                <img class="slider-item" src= "<%= product.imagen %>"  alt="" width="350px" height="197px">
                 <div class="description">
-                    <p><%= products[i].name %> </p>
+                    <p><%= product.name %> </p>
                      <span class="check"><i class="fas fa-check-circle"></i></span>
                 </div>
                 <div class="descripction-body">
-                price:<%= products[i].price %> 
+                price:<%= product.price %> 
                 </div>
                 <div class="buynow">
                     Buy now!
