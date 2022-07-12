@@ -6,7 +6,8 @@ const mainRouter = require('./routers/main')
 const rutaLogin = require('./routers/login')
 const rutaProductColeccion = require('./routers/products')
 const rutaRegister = require('./routers/register')
-const methodOverride = require('method-override')
+const usersRoutes = require("./routers/users");
+const methodOverride = require('method-override');
 
 
 app.set('view engine', 'ejs');

@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Lourdes Andrea ",
+        "apellido": " Bustos",
+        "email": "lourdesabustos@gmail.com",
+        "contrasena": "nose1302"
+    },
+    {
+        "nombre": "Pepito",
+        "apellido": "Aurelio",
+        "email": "pepito.aurelio@gmail.com",
+        "contrasena": "dieta18"
+    },
+    {
+        "nombre": "Bruno",
+        "apellido": "Bustos",
+        "email": "lourdesabustos@gmail.com",
+        "contrasena": [
+            "sdasdasdad",
+            "sadasdSFASF"
+        ]
+    },
+    {
+        "nombre": "Bruno",
+        "apellido": "Bustos",
+        "email": "lourdesabustos@gmail.com",
+        "contrasena": [
+            "NOSE1302",
+            "NOSE1302"
+        ]
+    }
+]
