@@ -9,11 +9,11 @@
     },
     {
         "id": 2,
-        "name": 8546,
-        "price": 12000,
-        "oddity": 5,
+        "price": "12000",
+        "oddity": "5",
         "coleccion": "Bored Ape",
-        "imagen": "/imagenes/bored-ape/monofuma.webp"
+        "imagen": "/uploads/imagen-1657674614919",
+        "name": "8546"
     },
     {
         "id": 3,

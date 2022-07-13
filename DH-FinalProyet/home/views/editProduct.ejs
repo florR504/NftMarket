@@ -7,11 +7,11 @@
     <%-include ('./partials/nav.ejs') %>
     <!--Detalle del producto-->
     <div class="detalleimgEdit">
-      <form action="/productos/editProduct/?_method=put" method="post" enctype="multipart/form-data">
-        <input type="text" name="titulo-nft" placeholder="  Nombre de Nft" />
+      <form method="POST" action="/productos/productDetail/<%= product.id %>/edit?_method=PUT" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Nombre de Nft" />
         <figure>
           <img
-            src="<%= products.imagen ? products.imagen : '/imagenes/default-placeholder.png' %> "
+            src="<%= product.imagen ? product.imagen : '/imagenes/default-placeholder.png' %> "
             alt="Imagen del Nft"
             width="500rem"
             height="500rem"

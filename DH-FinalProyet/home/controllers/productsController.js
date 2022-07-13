@@ -11,13 +11,12 @@ const productos = {
 
   detalle: (req, res) => {
     const idProduct = req.params.id;
-    console.log ("ID DE PRODUCTO", idProduct);
     const producto = products.filter (function(elemento) {
       if (idProduct == elemento.id) {
         return elemento;
       }
     });
-    console.log ("PRODUCTO", producto [0]);
+  
     res.render ("productDetail", {producto: producto[0]});
   },
     
@@ -37,20 +36,30 @@ const productos = {
     fs.writeFileSync(productsFilePath, productsJson);
     res.redirect("/productos");
   },
+  
   editForm:(req, res) =>{
-     res.render("editProduct", {products})
+    const idProduct = req.params.id;
+    const product = products.filter(function(elemento) {
+      if (idProduct == elemento.id) {
+        return elemento;
+      }
+    });
+     res.render("editProduct", {product: product[0]})
   },
+  
   editar:(req,res)=> {
-    let idIngresado = req.params.id
+    let idIngresado = parseInt(req.params.id, 10);
 
     for(i = 0; i < products.length; i ++){
-      if(products[i].id == idIngresado){
+      if(products[i].id === idIngresado){
         products[i].name = req.body.name,
         products[i].price = req.body.price,
         products[i].oddity = req.body.oddity,
         products[i].imagen = '/uploads/' + req.file.filename
       }
     }
+    let productsJson = JSON.stringify(products, null, 4)
+    fs.writeFileSync(productsFilePath, productsJson)
     res.redirect('/productos')
   }
 };
