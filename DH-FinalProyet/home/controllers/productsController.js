@@ -20,7 +20,7 @@ const productos = {
     res.render ("productDetail", {producto: producto[0]});
   },
     
-    crear: (req, res) => {
+  crear: (req, res) => {
     res.render("createproduct");
   },
   store: (req, res) => {
@@ -61,6 +61,17 @@ const productos = {
     let productsJson = JSON.stringify(products, null, 4)
     fs.writeFileSync(productsFilePath, productsJson)
     res.redirect('/productos')
+  },
+  eliminar:(req, res) =>{
+    const IdEliminar = req.params.id;
+    let newProducts = products.filter(function(nft){
+      return nft.id != IdEliminar;
+  })
+   let productsJson = JSON.stringify(products, null, 4)
+   fs.writeFileSync(productsFilePath, productsJson)
+   res.redirect('/productos')
+
+   res.send(newProducts)
   }
 };
 

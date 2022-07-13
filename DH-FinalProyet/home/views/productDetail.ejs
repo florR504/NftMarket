@@ -28,9 +28,10 @@
         <p>Precio: <%= producto.price %> </p>
         <button>Añadir al carrito</button>
       </div>
-      <a href="/productos">
-        <button>BACK</button>
-      </a>
+     <form action="/productos/productDetail/<%=producto.id%>?_method=DELETE">
+      <button>Eliminar</button>
+     </form>
+
     </div>
     <!--Footer-->
     <!-- %-include('./partials/footer.ejs')%> -->
