@@ -28,7 +28,7 @@
         <p>Precio: <%= producto.price %> </p>
         <button>Añadir al carrito</button>
       </div>
-     <form action="/productos/productDetail/<%=producto.id%>?_method=DELETE">
+     <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
       <button>Eliminar</button>
      </form>
 

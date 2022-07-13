@@ -94,12 +94,5 @@
         "oddity": 9,
         "coleccion": "Bored Ape",
         "imagen": "/imagenes/bored-ape/ultimomono.jpg"
-    },
-    {
-        "id": 13,
-        "name": "practicaDelete",
-        "price": "221",
-        "oddity": "5",
-        "imagen": "/uploads/imagen-1657675128092"
     }
 ]

@@ -6,7 +6,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
 const productos = {
   coleccion: (req, res) => {
-    res.render("coleccion", { products });
+    res.render("coleccion", { products: products });
   },
 
   detalle: (req, res) => {
@@ -67,11 +67,10 @@ const productos = {
     let newProducts = products.filter(function(nft){
       return nft.id != IdEliminar;
   })
-   let productsJson = JSON.stringify(products, null, 4)
+   let productsJson = JSON.stringify(newProducts, null, 4)
    fs.writeFileSync(productsFilePath, productsJson)
    res.redirect('/productos')
-
-   res.send(newProducts)
+   
   }
 };
 
