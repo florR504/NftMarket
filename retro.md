@@ -28,3 +28,18 @@ Tratar de todos los dias, ir mejorando el proyecto.
 ...
 
 <h4>Dejar de hacer</h4>
+
+<h2>Sprint 4</h2>
+<h4>Comenzar a hacer</h4>
+Ir mas al dia con las clases
+
+<h4>Hacer más</h4>
+En las reuniones ver las dudas que tiene cada uno, y tratar entre todos mejorar ciertas funcionalidades.
+
+<h4>Continuar haciendo</h4>
+Dividir tareas y en Trello ir comentando los avances
+
+<h4>Hacer menos</h4>
+
+
+<h4>Dejar de hacer</h4>

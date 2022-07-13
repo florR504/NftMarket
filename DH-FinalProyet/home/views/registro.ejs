@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <form action="/views/home.html" class="registro" method="post">
+        <form action="/registro" class="registro" method="post" enctype="multipart/form-data">
             <a href="/"><img src="/imagenes/Nftlogo.png" alt="" ></a> 
 
             <div class="form-box">
-                <label for="userName">Nombre:</label>
+                <label for="nombreU">Nombre:</label>
                 <input type="text" name="nombreU" id="userName"  required minlength="4" maxlength="18">
             </div>
             <div class="form-box">
-                <label for="userName">Apellido:</label>
-                <input type="text" name="nombreU" id="userlastName" required minlength="4" maxlength="18">
+                <label for="apellidoU">Apellido:</label>
+                <input type="text" name="apellidoU" id="userlastName" required minlength="4" maxlength="18">
             </div>
             <div class="form-box">
                 <label for="userEmail">Email:</label>
