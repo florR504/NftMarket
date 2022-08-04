@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/registro.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <form action="/registro" class="registro" method="post" enctype="multipart/form-data">
+<!--head-->
+<%- include('./partials/head.ejs')%>
+<body class="body-register">
+    <%-include ('./partials/nav.ejs') %> 
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <div class="container" >
+        <div class="contenedor_register">
+        <form class="form-register" action="/registro" class="registro" method="post" enctype="multipart/form-data">
             <a href="/"><img src="/imagenes/Nftlogo.png" alt="" ></a> 
 
             <div class="form-box">
@@ -33,17 +31,22 @@
                 <input type="password" name="contraseniaU" id="userPassword2" required minlength="6">
             </div>
             <br>
+            <div class="avatar_registro ">
+                <label for="avatar">Sube aquí tu avatar:</label>
+                <input type="file" id="avatar" name="avatar">
+            </div>
 
             <div class="form-term">
-                <label for="termsAndCondition">He leido y acepto los</label>
-                <a href="#">Terminos y Condiciones</a>
+                <a href="#"> He leido y acepto los terminos y condiciones</a>
                 <input type="radio" id="termsAndCondition">
+            </div>
 
             <div class="form-submit">
                 <button type="submit">Registrarse</button>
             </div>
         </form>
-        <a href="/login">Ya tenes una cuenta? ingresa.</a> 
+    </div>
+         
         
     </div>
 </body>

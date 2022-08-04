@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+    <title>Perfil</title>
+</head>
+<body>
+    <!--Nav Bar-->
+    <%-include ('./partials/nav.ejs') %> 
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <!--Body-->
+<div class="profile_container">
+<div>
+    <div class="profile_imagen">
+        <img src="/imagenes/default-placeholder.png" alt="">
+        <p> Nombre Apellido</p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis datos
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis suscripciones 
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis ventas
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis favoritos
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Editar perfil
+        </p>
+    </div>
+</div>
+<div class="profile_misNfts">
+    <div class="mis_nft">Mis Nft's</div>
+    <div class="coleccion" style="background-color:beige ;">
+        <a href="/productos">
+            <img class="slider-item" src="/imagenes/bored-ape/monogorro.webp" alt="" width="350px" height="197px">
+            <div class="description">
+                <p>34545</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+
+
+    
+</body>
+</html>
