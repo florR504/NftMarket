@@ -12,6 +12,22 @@ nav {
    /* position: fixed;*/
     
 }
+.Img_Usuario_nav img {
+     width: 2rem;
+     height: 2rem;
+     border-radius: 50%;
+
+}
+.Img_Usuario_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Img_Usuario_nav p {
+    margin-left: 0.5rem;
+}
+
 
     
 .div-1 {
@@ -197,7 +213,7 @@ a:hover{
 .coleccion{
     background-color: white;
     text-align: center;
-    width: 21.9rem;
+    width: 22rem;
     height: 21rem;
     border-color: gray;
     border-radius: 0.6rem;
@@ -366,7 +382,7 @@ span img{
     padding-top: 0.3rem;
 }
 .separar{
-    width: 20rem;
+    width: 15rem;
 }
 /*Formulario de edicion*/
 .detalleimgEdit {
@@ -401,6 +417,243 @@ span img{
     margin-left: 18rem;
     margin-bottom: 2rem;
 }
+/*Registro*/
+* {
+    /*box-sizing: border-box;*/
+    /*margin: 0;
+    padding: 0;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contenedor_register{
+    width: 60rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 17rem;
+}
+
+.body-register {
+    
+    
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(0, 0, 0, 0.18);
+    background-blend-mode: darken;
+    position: absolute;
+  
+    
+}
+.container{
+    
+    width: 95rem;
+    height: 45rem;
+    margin: 0;
+   
+    
+}
+.registro {
+    
+    min-width: 900px;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-color: gray;
+    background-blend-mode: darken;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
+    background-color: rgba(248, 237, 244, 0.88);
+    box-shadow: 0px 0px 10px gray;
+    
+    
+}
+
+.form-register {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+form img {
+    margin-top: 10px;
+    height: 90%;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex ;
+   
+    
+
+}
+
+.form-box, .form-date, .form-select, .form-submit {
+    display: flex;
+    height: fit-content;
+    width:65%;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+}
+.form-term{
+    margin-right: 1rem;
+    
+
+}
+.form-submit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 1.5rem;
+}
+label {
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+.form-box input {
+  
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(85, 85, 85);
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+}
+
+.form-date input {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgrey;
+    color: rgb(85, 85, 85);
+}
+
+.form-select select {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgrey;
+    color: rgb(85, 85, 85);
+}
+.avatar_registro {
+    margin-right: 18rem;
+    margin-bottom: 2rem;
+
+}
+.form-submit button {
+    display: flex;
+    height: 32px;
+    padding: 0 30px;
+    outline: none;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(245, 132, 0, 0.88);
+    color: white;
+    border: 0;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input:focus, select:focus{
+    border: 1px solid #39c;
+}
+/*Profile*/
+.profile_imagen img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    
+    
+}
+.profile_imagen p {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+.profile_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: flex-end;
+    background-color: white;
+    margin-top: 4rem;
+    width: 30rem;
+    height: 5rem;
+    margin-left: 10rem;
+    border-radius: 0.5rem;
+    
+}
+.profile_misDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    background-color: white;
+    width: 30rem;
+    height: 5rem;
+    margin-left: 10rem;
+    margin-top: 1.2rem;
+}
+.profile_misDatos p {
+    font-size: 1.5rem;
+    font-style: arial;
+    
+}
+.profile_misNfts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 45rem;
+    height: 36rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+.profile_container {
+   display: flex;
+   
+    
+}
+.profile_misNfts .mis_nft {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 3rem;
+   font-size:2rem ;
+   background-color: bisque;
+   width: 20rem;
+   height: 4rem;
+}
+
 
 @media (max-width:361px) {
     /*barra de navegacion*/
@@ -584,20 +837,51 @@ span img{
   }
   .caja-de-login input{
     width: 16rem ;
-  }
+}
+/*registro*/
+  .registro {
+    width: 95%;
+    min-width: 300px;
+    padding: 10px;
 }
 
+.registro div {
+    width: 100%;
+}
+
+.form-box input {
+    width: 100%;
+}
+
+.form-submit button {
+    width: 100px;
+}
+
+}
+
+
 @media (min-width:769px) {
-  .contenedor{
+.contenedor{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     row-gap: 0.3rem;
     margin: 0.3rem;
-  }
-  .cajas{
-    margin: 0.3rem;
-  }
-   
 }
+.cajas{
+    margin: 0.3rem;
+}
+
+/*register*/
+.registro {
+  width: 50%;
+  min-width: 500px;
+  margin: auto;
+
+}
+
+.form-box input {
+  width: 100%;
+}
+} 

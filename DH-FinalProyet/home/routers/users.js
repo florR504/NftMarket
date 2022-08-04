@@ -6,5 +6,6 @@ let usersController = require('../controllers/usersController');
 
 router.get('/', usersController.inicio);
 
+
 module.exports = router;
 

@@ -13,8 +13,8 @@ const methodOverride = require('method-override');
 app.set('view engine', 'ejs');
 app.use(methodOverride('_method'))
 app.use(express.static(publicPath));
-app.use("/login", rutaLogin);
-app.use("/",mainRouter );
+app.use("/", rutaLogin);
+app.use("/home",mainRouter );
 app.use("/productos", rutaProductColeccion);
 app.use("/registro",rutaRegister );
 

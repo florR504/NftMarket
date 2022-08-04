@@ -4,4 +4,5 @@ const loginController = require('../controllers/loginController')
 
 router.get('/', loginController.ingresar)
 
+
 module.exports = router;

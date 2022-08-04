@@ -1,11 +1,11 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /*box-sizing: border-box;*/
+    /*margin: 0;
+    padding: 0;*/
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
+.body-register {
     width: 100%;
     height: 100%;
     background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
@@ -17,14 +17,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .container{
     
-    margin: auto;
+    width: 500rem;
+    height: 45rem;
+    margin: 0;
     
 }
 .registro {
-    width: 40%;
+    
     min-width: 900px;
     height: 100%;
     background-size: cover;
@@ -50,6 +53,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
 }
 
 form img {
@@ -164,6 +168,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 
 
 @media(max-width: 1250px) {
