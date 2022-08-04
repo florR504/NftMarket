@@ -24,13 +24,13 @@ body {
     width: 100%;
     max-width: 700px;
     min-width: 400px;
-   /* height: fit-content;*/
+    height: 40rem;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
     padding: 10px;
     margin-bottom: 20px;
-    margin-left: 45rem;
+    margin-left: 25rem;
     margin-top: 2rem;
 }
 
@@ -47,6 +47,7 @@ form div {
     justify-content: flex-start;
     font-size: 1.1em;
     color: rgb(132, 147, 173);
+ 
 }
 
 .tituloForm input {
@@ -60,10 +61,13 @@ form div {
 }
 
 .descripcionForm { 
+  
     height: 50px;
     justify-content: flex-start;
     font-size: 1.1em;
     color: rgb(132, 147, 173);
+    margin-top: 1rem;
+    
 }
 
 .descripcionForm input {
@@ -98,6 +102,7 @@ form div {
     justify-content: flex-start;
     font-size: 1.1em;
     color: rgb(132, 147, 173);
+    margin-top: 1rem;
 }
 
 .precioForm label {
@@ -117,7 +122,7 @@ form div {
 .imagenForm {
     height: 40px;
     justify-content: center;
-    margin: 5px;
+    margin-top: 5rem;
     padding: 5px;
 }
 
@@ -151,6 +156,7 @@ form div {
 
 .submitForm {
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .submitForm button {
