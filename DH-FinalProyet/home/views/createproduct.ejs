@@ -2,7 +2,7 @@
 <html lang="en">
 
   <%- include('./partials/head.ejs')%>
-  <link rel="stylesheet" href="/css/productCreate.css" />
+ 
  <title>Crear NFT</title>
 <body>
   <main class="fondo">
@@ -15,10 +15,7 @@
       </a>
       <i class="fas fa-paint-brush"></i>
     </div>
-
-  
-
-    <form action="/productos/createProduct" method="post" enctype="multipart/form-data">
+    <form class="form_create" action="/productos/createProduct" method="post" enctype="multipart/form-data">
       <div class="imagenForm">
         <label for="imagenPrincipal">Seleccionar Imagen</label>
         <input type="file" name="imagen" id="imagenPrincipal" accept="image/*" />

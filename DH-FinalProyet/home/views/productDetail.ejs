@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head')%>
-  <link rel="stylesheet" href="/css/styleDetail.css" />
-
-  <body>
+ <body style="background-color: rgba(0, 0, 0, 0.12) ;">
     <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
     <!--Detalle del producto-->
     <div class="detalleimg">
       <div class="titulo">
          <%= producto.name %> 
-        
-         </div>
+      </div>
       <a href="/productos/productDetail/<%=producto.id%>/edit">
-        <button>Editar</button>
+        <button class="button_product">Editar</button>
       </a> 
-      <img alt="Bored ape nft" src="<%= producto.imagen%> " height="400rem" />
+      <img class="img_detail" alt="Bored ape nft" src="<%= producto.imagen%> " height="400rem" />
 
       <div class="codigonft">
         <h4>Coleccion: <%= producto.coleccion %> </h4>
@@ -26,14 +23,14 @@
 
       <div class="precio">
         <p>Precio: <%= producto.price %> </p>
-        <button>Añadir al carrito</button>
+        <button class="button_product">Añadir al carrito</button>
       </div>
      <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
-      <button>Eliminar</button>
+      <button class="button_product">Eliminar</button>
      </form>
 
     </div>
     <!--Footer-->
-    <!-- %-include('./partials/footer.ejs')%> -->
+     <%-include('./partials/footer.ejs')%>
   </body>
 </html>
