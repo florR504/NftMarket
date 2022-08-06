@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head')%>
- <body style="background-color: rgba(0, 0, 0, 0.12) ;">
+ <body style="background-color: white;">
     <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
     <!--Detalle del producto-->
+  <div class= 'productDetail_container'>
     <div class="detalleimg">
       <div class="titulo">
          <%= producto.name %> 
       </div>
-      <a href="/productos/productDetail/<%=producto.id%>/edit">
-        <button class="button_product">Editar</button>
-      </a> 
+    
       <img class="img_detail" alt="Bored ape nft" src="<%= producto.imagen%> " height="400rem" />
 
       <div class="codigonft">
@@ -20,16 +19,34 @@
           <h4>Codigo NFT: <%= producto.name %> </h4>
         </div>
       </div>
+    
+    </div>
+    <div class="detalleimg">
+      <div class="titulo">
+        <%= producto.name %> 
+     </div>
+     <a href="/productos/productDetail/<%=producto.id%>/edit">
+       <button class="button_product">Editar</button>
+     </a> 
+     
 
-      <div class="precio">
-        <p>Precio: <%= producto.price %> </p>
-        <button class="button_product">Añadir al carrito</button>
-      </div>
-     <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
-      <button class="button_product">Eliminar</button>
-     </form>
+     <div class="codigonft">
+       <h4>Coleccion: <%= producto.coleccion %> </h4>
+       <div class="codigo">
+         <h4>Codigo NFT: <%= producto.name %> </h4>
+       </div>
+     </div>
+
+     <div class="precio">
+       <p>Precio: <%= producto.price %> </p>
+       <button class="button_product">Añadir al carrito</button>
+     </div>
+    <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
+     <button class="button_product">Eliminar</button>
+    </form>
 
     </div>
+  </div>
     <!--Footer-->
      <%-include('./partials/footer.ejs')%>
   </body>
