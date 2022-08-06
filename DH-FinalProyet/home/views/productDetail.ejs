@@ -22,28 +22,21 @@
     
     </div>
     <div class="detalleimg">
-      <div class="titulo">
-        <%= producto.name %> 
-     </div>
-     <a href="/productos/productDetail/<%=producto.id%>/edit">
-       <button class="button_product">Editar</button>
-     </a> 
-     
-
-     <div class="codigonft">
-       <h4>Coleccion: <%= producto.coleccion %> </h4>
-       <div class="codigo">
-         <h4>Codigo NFT: <%= producto.name %> </h4>
-       </div>
-     </div>
-
-     <div class="precio">
-       <p>Precio: <%= producto.price %> </p>
-       <button class="button_product">Añadir al carrito</button>
-     </div>
-    <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
-     <button class="button_product">Eliminar</button>
-    </form>
+      <div class="codigonft">
+        <img src="/imagenes/ventas.png" alt="">
+      </div>
+      <div class="precio">
+        <p>Precio: <%= producto.price %> </p>
+      </div>
+    <div class="productDetailButtons">
+      <a href="/productos/productDetail/<%=producto.id%>/edit">
+        <button class="button_product">Editar</button>
+      </a> 
+      <button class="button_product">Añadir al carrito</button>
+      <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
+        <button class="button_product">Eliminar</button>
+      </form>
+    </div>  
 
     </div>
   </div>
