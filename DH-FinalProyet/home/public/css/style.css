@@ -16,7 +16,7 @@ nav {
     align-items: center;
     padding:0.3rem;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-   /* position: fixed;*/
+    position: fixed;
     
 }
 #barraDeBusqueda{
@@ -39,6 +39,7 @@ nav {
 .Img_Usuario_nav p {
     margin-left: 0.5rem;
     color: gray;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -56,11 +57,11 @@ nav {
     padding-top: 1rem;
     padding-bottom:3rem;
     flex-wrap: wrap;
-    
+    padding-top: 6rem;
 }
 
 h1{
-   font-family: 'Source Code Pro', monospace;;
+    font-family: 'Poppins', sans-serif;
    font-weight: 700;
    font-size: 4.8rem;
    margin-bottom: 1rem;
@@ -73,7 +74,7 @@ h1:hover{
 
 }
 h2{
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 3.6rem;
     margin: 0.6rem;
@@ -87,7 +88,7 @@ h2:hover{
 
 }
 h3{
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 2.4rem;
     margin: 0.6rem;
@@ -108,6 +109,7 @@ h3:hover{
     background-color:rgb(32, 129, 226);
     color: white;
     transition: all 450ms;
+
     
 }
 .buttonsofbody:hover{
@@ -124,6 +126,7 @@ h3:hover{
     padding-right: 4.8rem;
     transition: all 450ms;
     border-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 .buscador:hover{
     border-color: cyan;
@@ -141,6 +144,7 @@ h3:hover{
     border:none;
     color:gray;
     transition: all 450ms;
+    font-family: 'Poppins', sans-serif;
 
 }
 .buttonsofnav:hover{
@@ -159,9 +163,7 @@ a{
     color: black;
     transition: all 450ms;
 }
-a:hover{
-    color: purple;
-}
+
 .div-2{
     display: flex;
     justify-content:space-around;
@@ -205,6 +207,7 @@ a:hover{
     background-blend-mode: darken;
     border-radius: 0.6rem;
     transition: all 450ms;
+
 }
 .icons:hover{
     color: white;
@@ -235,7 +238,8 @@ a:hover{
     border-color: gray;
     border-radius: 0.6rem;
     transition: all 450ms;
-    box-shadow: 0px 0px 2px gray
+    box-shadow: 0px 0px 2px gray;
+   
 }
 .coleccion:hover{
     box-shadow: 0px 0px 10px gray;
@@ -306,11 +310,11 @@ a:hover{
 }
 
 .cajas h4{
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
     
 }
 .cajas p{
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
     opacity: 0;
     transition: all 450ms;
 }
@@ -321,7 +325,7 @@ a:hover{
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
 .check{
@@ -333,7 +337,7 @@ a:hover{
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 
 }
@@ -351,6 +355,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
   
 }
 .login-body{
@@ -364,7 +369,7 @@ a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: 'Poppins', sans-serif;
     
 }
 .boton-ingresar{
@@ -374,6 +379,7 @@ a:hover{
     border-color: white;
     color: white;
     transition: all 450ms;
+    font-family: 'Poppins', sans-serif;
 }
 .boton-ingresar:hover{
     box-shadow: 0px 0px 10px gray;
@@ -390,6 +396,7 @@ a:hover{
     width: 20rem;
     height: 2rem;
     border-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 .logo-login{
     margin-top:0.5rem;
@@ -398,6 +405,7 @@ a:hover{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     border-radius: 0.3rem;
+    font-family: 'Poppins', sans-serif;
 }
  button:hover{
     cursor: pointer;
@@ -410,10 +418,11 @@ a:hover{
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    font-family: 'Poppins', sans-serif;
     
 }
 span{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 17px;
     
@@ -423,7 +432,7 @@ span img{
     padding-top: 0.3rem;
 }
 .separar{
-    width: 15rem;
+    width: 21.5rem;
 }
 /*Formulario de edicion*/
 .detalleimgEdit {
@@ -437,6 +446,7 @@ span img{
     justify-content: center;
     background-color: #cecdcd;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    font-family: 'Poppins', sans-serif;
 }
 .detalleimgEdit img{
     box-shadow: 0px 0px 3px rgb(100, 100, 100);
@@ -451,26 +461,29 @@ span img{
     margin-left: 8rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .detalleimgEdit button{
     width: 10rem;
     margin-left: 18rem;
     margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 /*Registro*/
 * {
     /*box-sizing: border-box;*/
     /*margin: 0;
     padding: 0;*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 .contenedor_register{
     width: 60rem;
     background-color: white;
-    margin-top: 2rem;
+    margin-top: 7rem;
     margin-left: 17rem;
     box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    
 }
 
 .body-register {
@@ -508,6 +521,7 @@ span img{
     box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
     background-color: rgba(248, 237, 244, 0.88);
     box-shadow: 0px 0px 10px gray;
+    font-family: 'Poppins', sans-serif;
     
     
 }
@@ -642,7 +656,7 @@ input:focus, select:focus{
     align-items: center;
     flex-direction: flex-end;
     background-color: white;
-    margin-top: 4rem;
+    margin-top: 7rem;
     width: 30rem;
     height: 5rem;
     margin-left: 10rem;
@@ -673,7 +687,7 @@ input:focus, select:focus{
     background-color: white;
     width: 45rem;
     height: 36rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
     margin-left: 2rem;
     border-radius: 1rem;
 }
@@ -877,6 +891,8 @@ input:focus, select:focus{
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
+    padding-top: 4rem;
+  
    
 }
 .coleccion-descripcion{
@@ -887,20 +903,23 @@ input:focus, select:focus{
     margin: 1.2rem;
     border-radius: 0.6rem;
     background-color: white;
+    
 
 }
 .parrafo-descripcion{
     font-size: 18px;
     width: 55rem;
     margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .items-owners{
     font-size: 23px;
     width: 55rem;
     margin-left: 10px;
+    margin-bottom: 2rem;
+    
     color:rgba(123, 0, 255, 1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 
 }
@@ -951,7 +970,7 @@ select option{
 
 
 .buynow{
-  background-color: aqua;
+  background-color: rgb(32, 129, 226);
   font-size: 20px;
   color: white;
   font-weight: bold;
@@ -963,12 +982,12 @@ select option{
   opacity: 0%;
   border-radius: 0.5rem;
   transition: all 400ms;
-  ;
+  font-family: 'Poppins', sans-serif;
   
 }
 .buynow:hover{
   opacity: 100%;
-  background-color: aqua;
+  background-color: rgb(32, 129, 226);
   font-size: 20px;
   color: white;
   font-weight: bold;
@@ -990,7 +1009,7 @@ select option{
 }
 
 .detalleimg {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     text-align: center;
     margin-top: 3rem;
@@ -1010,6 +1029,7 @@ select option{
 .codigonft {
     margin: 5rem 5rem 5rem 5rem;
     border: 2px solid #f5f5f5;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -1025,6 +1045,7 @@ select option{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -1040,7 +1061,7 @@ select option{
     transition: all 450ms;
     margin-bottom: 1.35rem;
     font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 10rem;
     
 }
@@ -1056,6 +1077,7 @@ select option{
 
 .precio {
     margin-bottom: 4rem;
+    font-family: 'Poppins', sans-serif;
     
 }
 .titulo{
@@ -1063,12 +1085,15 @@ select option{
     color: black;
    align-items: center;
    margin: 1rem;
+   font-family: 'Poppins', sans-serif;
 }
 .titulo div{
     width: 14rem;
+    font-family: 'Poppins', sans-serif;
 }
 .titulo button{
     margin: 0.7rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -1136,7 +1161,6 @@ select option{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    
    }
    .div-1 button{
     padding: 3rem;
