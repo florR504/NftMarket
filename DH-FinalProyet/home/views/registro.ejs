@@ -12,29 +12,63 @@
 
             <div class="form-box">
                 <label for="nombreU">Nombre:</label>
-                <input type="text" name="nombreU" id="userName"  required minlength="4" maxlength="18">
+                <input 
+                type="text" 
+                name="nombreU" 
+                id="userName"
+                class="<%= locals.errores && errores.nombreU ? 'input_error': null %> "
+                value="<%= locals.old && old.nombreU ? old.nombreU : null %> " >
             </div>
+             <% if (locals.errores && errores.nombreU) { %>
+              <p class="error"><%=errores.nombreU.msg %></p>
+             <% } %>
             <div class="form-box">
                 <label for="apellidoU">Apellido:</label>
-                <input type="text" name="apellidoU" id="userlastName" required minlength="4" maxlength="18">
+                <input
+                 type="text"
+                 name="apellidoU"
+                 id="userlastName" 
+                 class="<%= locals.errores && errores.apellidoU ? 'input_error': null %> "
+                 value="<%= locals.old && old.apellidoU ? old.apellidoU : null %> ">
             </div>
+            <% if (locals.errores && errores.apellidoU) { %>
+                <p class="error"><%=errores.apellidoU.msg %></p>
+               <% } %>
             <div class="form-box">
                 <label for="userEmail">Email:</label>
-                <input type="email" name="emailU" id="userEmail" placeholder="ejemplo@correo.com" required>
+                <input 
+                type="email" 
+                name="emailU" 
+                id="userEmail" 
+                class="<%= locals.errores && errores.emailU ? 'input_error': null %> "
+                value="<%= locals.old && old.emailU ? old.emailU : null %> " >
             </div>
+            <% if (locals.errores && errores.emailU) { %>
+                <p class="error"><%=errores.emailU.msg %></p>
+               <% } %>
             <div class="form-box">
                 <label for="userPassword">Contraseña:</label>
-                <input type="password" name="contraseniaU" id="userPassword" required minlength="6">
+                <input 
+                type="password" 
+                name="contraseniaU" 
+                id="userPassword" 
+                class="<%= locals.errores && errores.contraseniaU ? 'input_error': null %> ">
             </div>
-            <div class="form-box">
-                <label for="userPassword">Confirme su contraseña</label>
-                <input type="password" name="contraseniaU" id="userPassword2" required minlength="6">
-            </div>
-            <br>
+            <% if (locals.errores && errores.contraseniaU) { %>
+                <p class="error"><%=errores.contraseniaU.msg %></p>
+               <% } %>
+          
             <div class="avatar_registro ">
                 <label for="avatar">Sube aquí tu avatar:</label>
-                <input type="file" id="avatar" name="avatar">
+                <input
+                 type="file" 
+                 id="avatar"
+                 name="avatar"
+                 class="<%= locals.errores && errores.avatar ? 'input_error': null %> ">
             </div>
+            <% if (locals.errores && errores.avatar) { %>
+                <p class="error"><%=errores.avatar.msg %></p>
+               <% } %>
 
             <div class="form-term">
                 <a href="#"> He leido y acepto los terminos y condiciones</a>

@@ -418,6 +418,7 @@ a{
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    margin-left: 4.5rem;
     font-family: 'Poppins', sans-serif;
     
 }
@@ -432,7 +433,7 @@ span img{
     padding-top: 0.3rem;
 }
 .separar{
-    width: 21.5rem;
+    width: 21rem;
 }
 /*Formulario de edicion*/
 .detalleimgEdit {
@@ -476,6 +477,19 @@ span img{
     /*margin: 0;
     padding: 0;*/
     font-family: 'Poppins', sans-serif;
+}
+.error{
+    color:  rgba(179, 0, 0, 1);
+    font-size: smaller;
+    margin-right: 26rem;
+    margin-top: 0rem;
+}
+.input_error{
+    border-color: rgba(179, 0, 0, 1);
+    background-image: url('../imagenes/error.png');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 590px;
 }
 .contenedor_register{
     width: 60rem;
@@ -536,7 +550,7 @@ span img{
 
 }
 
-form img {
+.form_img {
     margin-top: 10px;
     height: 90%;
     width: 90%;

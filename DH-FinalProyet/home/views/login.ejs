@@ -15,24 +15,41 @@
                 <img src="/imagenes/Nftlogo.png" alt="" width="160rem" height="50rem" >
             </div>
             <div class="separacion-login"></div>
-             <form action="#" method="post">
+             <form action="/" method="POST" enctype="multipart/form-data" >
                 <div><label for="usuario">Usuario:</label></div>
-                    <input type="text" placeholder="Email o usuario" id="usuario" class="input-login">
+                    <input 
+                    type="email"
+                    placeholder="Email o usuario" 
+                    id="usuario" 
+                    class="input-login"<%= locals.errors && errors.Email_login ? 'input_error' : null %>  
+                    name="email_login">
+                <% if (locals.errors && errors.email_login) { %>
+                 <p class="error"><%= errors.email_login.msg %> </p>
+                <% } %>
+                 
                 <div class="separacion-login"></div>
                 <div><label for="contraseña">contraseña:</label></div> 
-                    <input type="password" id="contraseña" class="input-login" >
-             </form>
-             <div class="separacion-login"></div>
-            <a href="#">Olvidaste tu Contraseña?</a>
-            <button class="ingresar-con-google">
-                <span>Ingresar con</span>
-                <span><img src="imagenes/google-small.png" alt="" width="85px" height="28px"></span>
-            </button>
-            <form method="get" action="/home">
-                <button type="submit" class="boton-ingresar">Ingresar</button>
-            </form>
+                    <input type="password" id="contraseña" class="input-login" name="password_login">
+                 <% if (locals.errors && errors.password_login) { %>
+                    <p class="error"><%= errors.password_login.msg %> </p>
+                 <% } %>
+
+                 <div class="separacion-login"></div>
+                 <a href="#">Olvidaste tu Contraseña?</a>
+                 <button class="ingresar-con-google">
+                     <span>Ingresar con</span>
+                     <span><img src="imagenes/google-small.png" alt="" width="85px" height="28px"></span>
+                 </button>
             
-            <p>No tienes una cuenta?<a href="/registro">Registrate.</a></p>
+                     <button type="submit" class="boton-ingresar">Ingresar</button>
+                 
+                 
+                 <p>No tienes una cuenta?<a href="/registro">Registrate.</a></p>
+                 
+
+
+             </form>
+           
        </div>
     </div>
     
