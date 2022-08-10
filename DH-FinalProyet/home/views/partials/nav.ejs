@@ -11,13 +11,15 @@
             </button>
         </form>
         <div class="separar"></div>
+        <% if (locals.isLogged) { %>
         <div class="Img_Usuario_nav">
-            <img src="/imagenes/default-placeholder.png" alt="">
-            <a href="/home/profile">
-                <p>Mi perfil  <i class="fas fa-angle-down"></i></p>
+            <img src="/uploads/<%= locals.userLogged.avatar %> " alt="">
+            <a href="/profile">
+                <p>Hi <%= locals.userLogged.name %>   <i class="fas fa-angle-down"></i></p>
             </a>
         </div>
-        <form method="get" action="/">
+      <% } else { %>
+          <form method="get" action="/">
             <button type="submit" class="buttonsofnav" id="botondeingresar">
                Login
             </button>
@@ -27,4 +29,5 @@
                 Registrate
          </button>
         </form>
+        <% } %> 
 </nav>

@@ -11,17 +11,17 @@ const register = {
             if(errores.isEmpty()){
             //Si no hay errores pero el email ya esta en la base de datos,
             //debe saltar el error de que ya se encuentra registrado el email
-            let userInDB = User.findByField('emailU', req.body.emailU);
+            let userInDB = User.findByField('email', req.body.email);
             if(userInDB){
-                return res.render('registro', {errores:{emailU:{msg: 'Este email ya esta registrado'}},
+                return res.render('registro', {errores:{email:{msg: 'Este email ya esta registrado'}},
                 old: req.body
                 });
             }
             
-            let hash = req.body.contraseniaU;
+            let hash = req.body.password;
             let userToCreate = {
                   ... req.body,
-                  contraseniaU:bcryptjs.hashSync( hash, 10) ,
+                  password:bcryptjs.hashSync( hash, 10) ,
                   avatar:req.file.filename
             }
             

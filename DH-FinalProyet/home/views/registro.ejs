@@ -8,54 +8,54 @@
     <div class="container" >
         <div class="contenedor_register">
         <form class="form-register" action="/registro" class="registro" method="post" enctype="multipart/form-data">
-            <a href="/"><img src="/imagenes/Nftlogo.png" alt="" ></a> 
+            <a href="/home"><img src="/imagenes/Nftlogo.png" alt="" ></a> 
 
             <div class="form-box">
                 <label for="nombreU">Nombre:</label>
                 <input 
                 type="text" 
-                name="nombreU" 
+                name="name" 
                 id="userName"
-                class="<%= locals.errores && errores.nombreU ? 'input_error': null %> "
-                value="<%= locals.old && old.nombreU ? old.nombreU : null %> " >
+                class="<%= locals.errores && errores.name ? 'input_error': null %> "
+                value="<%= locals.old && old.name ? old.name : null %> " >
             </div>
-             <% if (locals.errores && errores.nombreU) { %>
-              <p class="error"><%=errores.nombreU.msg %></p>
+             <% if (locals.errores && errores.name) { %>
+              <p class="error"><%=errores.name.msg %></p>
              <% } %>
             <div class="form-box">
                 <label for="apellidoU">Apellido:</label>
                 <input
                  type="text"
-                 name="apellidoU"
+                 name="lastName"
                  id="userlastName" 
-                 class="<%= locals.errores && errores.apellidoU ? 'input_error': null %> "
-                 value="<%= locals.old && old.apellidoU ? old.apellidoU : null %> ">
+                 class="<%= locals.errores && errores.lastName ? 'input_error': null %> "
+                 value="<%= locals.old && old.lastName ? old.lastName : null %> ">
             </div>
-            <% if (locals.errores && errores.apellidoU) { %>
-                <p class="error"><%=errores.apellidoU.msg %></p>
+            <% if (locals.errores && errores.lastName) { %>
+                <p class="error"><%=errores.lastName.msg %></p>
                <% } %>
             <div class="form-box">
                 <label for="userEmail">Email:</label>
                 <input 
                 type="email" 
-                name="emailU" 
+                name="email" 
                 id="userEmail" 
-                class="<%= locals.errores && errores.emailU ? 'input_error': null %> "
-                value="<%= locals.old && old.emailU ? old.emailU : null %> " >
+                class="<%= locals.errores && errores.email ? 'input_error': null %> "
+                value="<%= locals.old && old.email ? old.email : null %> " >
             </div>
-            <% if (locals.errores && errores.emailU) { %>
-                <p class="error"><%=errores.emailU.msg %></p>
+            <% if (locals.errores && errores.email) { %>
+                <p class="error"><%=errores.email.msg %></p>
                <% } %>
             <div class="form-box">
                 <label for="userPassword">Contraseña:</label>
                 <input 
                 type="password" 
-                name="contraseniaU" 
+                name="password" 
                 id="userPassword" 
-                class="<%= locals.errores && errores.contraseniaU ? 'input_error': null %> ">
+                class="<%= locals.errores && errores.password ? 'input_error': null %> ">
             </div>
-            <% if (locals.errores && errores.contraseniaU) { %>
-                <p class="error"><%=errores.contraseniaU.msg %></p>
+            <% if (locals.errores && errores.password) { %>
+                <p class="error"><%=errores.password.msg %></p>
                <% } %>
           
             <div class="avatar_registro ">

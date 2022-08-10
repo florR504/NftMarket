@@ -12,8 +12,8 @@
 <div class="profile_container">
 <div>
     <div class="profile_imagen">
-        <img src="/imagenes/default-placeholder.png" alt="">
-        <p> Nombre Apellido</p>
+        <img src="/uploads/<%= user.avatar %> " alt="">
+        <p><%= user.name %> </p>
     </div>
     <div class="profile_misDatos">
         <p>
@@ -36,9 +36,12 @@
         </p>
     </div>
     <div class="profile_misDatos">
-        <p>
-        Editar perfil
-        </p>
+        <a href="/logout">
+            <p>
+            Cerrar sesión
+            </p>
+        </a>
+       
     </div>
 </div>
 <div class="profile_misNfts">

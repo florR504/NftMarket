@@ -15,26 +15,19 @@
                 <img src="/imagenes/Nftlogo.png" alt="" width="160rem" height="50rem" >
             </div>
             <div class="separacion-login"></div>
-             <form action="/" method="POST" enctype="multipart/form-data" >
+             <form action="/" method="post">
                 <div><label for="usuario">Usuario:</label></div>
-                    <input 
-                    type="email"
-                    placeholder="Email o usuario" 
-                    id="usuario" 
-                    class="input-login"<%= locals.errors && errors.Email_login ? 'input_error' : null %>  
-                    name="email_login">
-                <% if (locals.errors && errors.email_login) { %>
-                 <p class="error"><%= errors.email_login.msg %> </p>
-                <% } %>
-                 
-                <div class="separacion-login"></div>
+                    <input type="email" placeholder="Email o usuario" id="usuario" class="input-login" name="email">
+                    <% if (locals.errors && errors.email) { %>
+                        <p class="error"><%= errors.email.msg %> </p>
+                      <% } %>
+               <div class="separacion-login"></div>
                 <div><label for="contraseña">contraseña:</label></div> 
-                    <input type="password" id="contraseña" class="input-login" name="password_login">
-                 <% if (locals.errors && errors.password_login) { %>
-                    <p class="error"><%= errors.password_login.msg %> </p>
-                 <% } %>
-
-                 <div class="separacion-login"></div>
+                    <input type="password" id="contraseña" class="input-login" name="password">
+                <% if (locals.errors && errors.password) { %>
+                  <p class="error"><%= errors.password.msg %> </p>
+                <% } %>
+                <div class="separacion-login"></div>
                  <a href="#">Olvidaste tu Contraseña?</a>
                  <button class="ingresar-con-google">
                      <span>Ingresar con</span>
