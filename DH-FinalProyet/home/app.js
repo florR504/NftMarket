@@ -6,7 +6,6 @@ const mainRouter = require('./routers/main')
 const rutaLogin = require('./routers/login')
 const rutaProductColeccion = require('./routers/products')
 const rutaRegister = require('./routers/register')
-const usersRoutes = require("./routers/users");
 const methodOverride = require('method-override');
 const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');

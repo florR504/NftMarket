@@ -40,5 +40,13 @@
   "email": "pruebadh@gmail.com",
   "password": "$2a$10$QVnElX/LHQPlixMVw4jx6utJUFXr67lMvW2x88O7y62RxJysw41.G",
   "avatar": "avatar-1660082700026"
+ },
+ {
+  "id": 6,
+  "name": " Flor",
+  "lastName": " Rodriguez",
+  "email": "florenciar504@gmail.com",
+  "password": "$2a$10$ydIRs74qnAU2VwsKXOUgMeXq11TxNl1AkFM7IG3dy6IDSTMqKmRJW",
+  "avatar": "avatar-1660093217590"
  }
 ]
