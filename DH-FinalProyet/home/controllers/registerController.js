@@ -7,7 +7,7 @@ const register = {
      
       guardar: (req, res) => {
             const errores = validationResult(req);
-
+            console.log(req.body)
             if(errores.isEmpty()){
             //Si no hay errores pero el email ya esta en la base de datos,
             //debe saltar el error de que ya se encuentra registrado el email
@@ -28,6 +28,7 @@ const register = {
             User.create(userToCreate)
             res.redirect("/home");
       }else {
+           
             res.render('registro', {errores: errores.mapped(), old: req.body})
       
             }

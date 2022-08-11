@@ -17,7 +17,7 @@
                 name="name" 
                 id="userName"
                 class="<%= locals.errores && errores.name ? 'input_error': null %> "
-                value="<%= locals.old && old.name ? old.name : null %> " >
+                value="<%= locals.old && old.name ? old.name : null %>" >
             </div>
              <% if (locals.errores && errores.name) { %>
               <p class="error"><%=errores.name.msg %></p>
@@ -29,7 +29,7 @@
                  name="lastName"
                  id="userlastName" 
                  class="<%= locals.errores && errores.lastName ? 'input_error': null %> "
-                 value="<%= locals.old && old.lastName ? old.lastName : null %> ">
+                 value="<%= locals.old && old.lastName ? old.lastName : null %>">
             </div>
             <% if (locals.errores && errores.lastName) { %>
                 <p class="error"><%=errores.lastName.msg %></p>

@@ -267,7 +267,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagenes/adan.jpg');
+    background-image: url('../imagenes/coleccionBackground.jpg');
     background-size: cover;
     background-position: center;
     margin: 1.2rem;
@@ -386,6 +386,15 @@ a{
     border-radius: 0.3rem;
     
 
+}
+.recordarme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    margin-left: 5.5rem;
+    
 }
 .separacion-login{
     height: 1rem;
