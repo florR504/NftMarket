@@ -60,3 +60,15 @@ Trello , actualizar las tareas de acuerdo a los avances, seguir informandonos vi
 
 <h4>Dejar de hacer</h4>
 
+<h2>Sprint 6</h2>
+<h4>Comenzar a hacer</h4>
+
+<h4>Hacer más</h4>
+
+<h4>Continuar haciendo</h4>
+
+<h4>Hacer menos</h4>
+
+
+<h4>Dejar de hacer</h4>
+
