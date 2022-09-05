@@ -17,13 +17,13 @@
             <div class="separacion-login"></div>
              <form action="/" method="post">
                 <div><label for="usuario">Usuario:</label></div>
-                    <input type="email" placeholder="Email o usuario" id="usuario" class="input-login" name="email">
+                    <input type="email" placeholder="Email o usuario" id="usuario" class="input-login <%= locals.errors && errors.email ? 'input_error': null%>" name="email">
                     <% if (locals.errors && errors.email) { %>
                         <p class="error"><%= errors.email.msg %> </p>
                       <% } %>
                <div class="separacion-login"></div>
                 <div><label for="contraseña">contraseña:</label></div> 
-                    <input type="password" id="contraseña" class="input-login" name="password">
+                    <input type="password" id="contraseña" class="input-login <%= locals.errors && errors.password ? 'input_error': null%> " name="password">
                 <% if (locals.errors && errors.password) { %>
                   <p class="error"><%= errors.password.msg %> </p>
                 <% } %>
