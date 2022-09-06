@@ -1,32 +1,52 @@
 [
-    {
-        "nombre": "Lourdes Andrea ",
-        "apellido": " Bustos",
-        "email": "lourdesabustos@gmail.com",
-        "contrasena": "nose1302"
-    },
-    {
-        "nombre": "Pepito",
-        "apellido": "Aurelio",
-        "email": "pepito.aurelio@gmail.com",
-        "contrasena": "dieta18"
-    },
-    {
-        "nombre": "Bruno",
-        "apellido": "Bustos",
-        "email": "lourdesabustos@gmail.com",
-        "contrasena": [
-            "sdasdasdad",
-            "sadasdSFASF"
-        ]
-    },
-    {
-        "nombre": "Bruno",
-        "apellido": "Bustos",
-        "email": "lourdesabustos@gmail.com",
-        "contrasena": [
-            "NOSE1302",
-            "NOSE1302"
-        ]
-    }
+ {
+  "id": 1,
+  "name": "Lourdes Andrea ",
+  "lastName": " Bustos",
+  "email": "lourdesabustos@gmail.com",
+  "password": "nose1302"
+ },
+ {
+  "id": 2,
+  "name": "Pepito",
+  "lastName": "Aurelio",
+  "email": "pepito.aurelio@gmail.com",
+  "password": "dieta18"
+ },
+ {
+  "id": 3,
+  "name": "Bruno",
+  "lastName": "Bustos",
+  "email": "lourdesabustos@gmail.com",
+  "password": [
+   "sdasdasdad",
+   "sadasdSFASF"
+  ]
+ },
+ {
+  "id": 4,
+  "name": "Bruno",
+  "lastName": "Bustos",
+  "email": "lourdesabustos@gmail.com",
+  "password": [
+   "NOSE1302",
+   "NOSE1302"
+  ]
+ },
+ {
+  "id": 5,
+  "name": " prueba",
+  "lastName": " prueba",
+  "email": "pruebadh@gmail.com",
+  "password": "$2a$10$QVnElX/LHQPlixMVw4jx6utJUFXr67lMvW2x88O7y62RxJysw41.G",
+  "avatar": "avatar-1660082700026"
+ },
+ {
+  "id": 6,
+  "name": " Flor",
+  "lastName": " Rodriguez",
+  "email": "florenciar504@gmail.com",
+  "password": "$2a$10$ydIRs74qnAU2VwsKXOUgMeXq11TxNl1AkFM7IG3dy6IDSTMqKmRJW",
+  "avatar": "avatar-1660093217590"
+ }
 ]

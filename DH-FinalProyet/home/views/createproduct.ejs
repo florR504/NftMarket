@@ -2,7 +2,7 @@
 <html lang="en">
 
   <%- include('./partials/head.ejs')%>
-  <link rel="stylesheet" href="/css/productCreate.css" />
+ 
  <title>Crear NFT</title>
 <body>
   <main class="fondo">
@@ -15,10 +15,11 @@
       </a>
       <i class="fas fa-paint-brush"></i>
     </div>
-
-    <h4>Publicar NFT</h4>
-
-    <form action="/productos/createProduct" method="post" enctype="multipart/form-data">
+    <form class="form_create" action="/productos/createProduct" method="post" enctype="multipart/form-data">
+      <div class="imagenForm">
+        <label for="imagenPrincipal">Seleccionar Imagen</label>
+        <input type="file" name="imagen" id="imagenPrincipal" accept="image/*" />
+      </div>
       <div class="tituloForm">
         <label for="titulo">Titulo del NFT:</label>
         <input type="text" name="name" id="titulo" />
@@ -27,27 +28,12 @@
         <label for="descripcion">Nivel de rareza:</label>
         <input name="oddity" id="descripcion"></input>
       </div>
-      <div class="categoriaForm">
-        <!--<label for="categoria">Selecciona la coleccion:</label>
-        <select name="categoria" id="categoria">
-          <option value="Bored-Ape">Bored Ape</option>
-        </select>-->
-      </div>
-      
       <div class="precioForm">
         <label for="precio">Precio:</label>
         <input type="number" name="price" id="precio" step="0.01" />
       </div>
-      <div class="imagenPrincipal">
-        <h5>Agregar NFT</h5>
-        <div class="imagenForm">
-          <label for="imagenPrincipal">Seleccionar Imagen</label>
-          <input type="file" name="imagen" id="imagenPrincipal" accept="image/*" />
-         
-         <br>
-         <br>
       <div class="submitForm">
-        <button type="submit">Publicar</button>
+        <button type="submit">Publicar Nft</button>
       </div>
     </form>
   </div>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+    <title>Perfil</title>
+</head>
+<body style="background-color: rgba(236, 236, 236, 0.88);">
+    <!--Nav Bar-->
+    <%-include ('./partials/nav.ejs') %> 
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <!--Body-->
+<div class="profile_container">
+<div>
+    <div class="profile_imagen">
+        <img src="/uploads/<%= user.avatar %> " alt="">
+        <p><%= user.name %> </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis datos
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis suscripciones 
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis ventas
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <p>
+        Mis favoritos
+        </p>
+    </div>
+    <div class="profile_misDatos">
+        <a href="/logout">
+            <p>
+            Cerrar sesión
+            </p>
+        </a>
+       
+    </div>
+</div>
+<div class="profile_misNfts">
+    <div class="mis_nft">Mis Nft's</div>
+    <div class="coleccion" style="background-color:beige ;">
+        <img class="slider-item" src="/imagenes/bored-ape/monogorro.webp" alt="" width="350px" height="197px">
+            <div class="description">
+                <p>34545</p>
+                <span class="check"><i class="fas fa-check-circle"></i></span>
+            </div>
+    </div>
+</div>
+</div>
+
+
+    
+</body>
+</html>

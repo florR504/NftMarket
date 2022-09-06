@@ -46,6 +46,7 @@ Dividir tareas y en Trello ir comentando los avances
 <h4>Dejar de hacer</h4>
 
 <h2>Sprint 5</h2>
+
 <h4>Comenzar a hacer</h4>
 Dividir mas equitativamente las tareas
 
@@ -56,19 +57,24 @@ Utilizar las daily no solo para dividir tareas, sino tambien para ver como nos p
 Trello , actualizar las tareas de acuerdo a los avances, seguir informandonos via wsp de los cambios que originamos en el trabajo integrador.
 
 <h4>Hacer menos</h4>
-
+Hacer tan espaciadas las reuniones sin un cronograma fijo
 
 <h4>Dejar de hacer</h4>
+Quedarnos con dudas
 
 <h2>Sprint 6</h2>
+
 <h4>Comenzar a hacer</h4>
+No dejar que se acumulen pequeñas cosas para evitar tener mas trabajo en los futuros sprint
 
 <h4>Hacer más</h4>
+Realizar mas reuniones , y sacarnos las dudas entre nosotros
 
 <h4>Continuar haciendo</h4>
+Trello , actualizar las tareas de acuerdo a los avances, seguir informandonos via wsp de los cambios que originamos en el trabajo integrador.
 
 <h4>Hacer menos</h4>
-
+Dejar pasar tanto tiempo entre reuniones
 
 <h4>Dejar de hacer</h4>
-
+Quedarnos con dudas

@@ -1,21 +1,37 @@
+const {validationResult} = require('express-validator');
+const bcryptjs = require('bcryptjs')
+const User = require('../LogicUserModel/User.js')
+
 const register = {
       inicio: (req, res) => { res.render('registro') },
+     
       guardar: (req, res) => {
-            const path = require("path");
-            const fs = require("fs");
-            const usersFilePath = path.join(__dirname, "../data/users.json");
-            const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
-
-            let usuarioNuevo = {
-                  nombre: req.body.nombreU,
-                  apellido: req.body.apellidoU,
-                  email: req.body.emailU,
-                  contrasena: req.body.contraseniaU,
+            const errores = validationResult(req);
+            console.log(req.body)
+            if(errores.isEmpty()){
+            //Si no hay errores pero el email ya esta en la base de datos,
+            //debe saltar el error de que ya se encuentra registrado el email
+            let userInDB = User.findByField('email', req.body.email);
+            if(userInDB){
+                return res.render('registro', {errores:{email:{msg: 'Este email ya esta registrado'}},
+                old: req.body
+                });
             }
-            users.push(usuarioNuevo)
-            usersJson = JSON.stringify(users, null, 4);
-            fs.writeFileSync(usersFilePath, usersJson);
-            res.redirect("/registro");
+            
+            let hash = req.body.password;
+            let userToCreate = {
+                  ... req.body,
+                  password:bcryptjs.hashSync( hash, 10) ,
+                  avatar:req.file.filename
+            }
+            
+            User.create(userToCreate)
+            res.redirect("/home");
+      }else {
+           
+            res.render('registro', {errores: errores.mapped(), old: req.body})
+      
+            }
       }
 }
 

@@ -1,37 +1,70 @@
-body{
-    background-color:rgba(0, 0, 0, 0.12);
+
+
+.background{ /*En revision*/
+    height: 780px;
+    background-image: url('../imagenes/Gris.jpg');
+    background-size: cover;
+    background-color: white;
+    /*filter: blur(8px);*/
 }
 
 nav {
-    background-color:rgba(245, 132, 0, 0.88);
+    background-color:white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding:0.3rem;
-   /* position: fixed;*/
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ 
     
 }
+#barraDeBusqueda{
+    
+    box-shadow: 0px 0px 3px rgb(100, 100, 100) ;
+}
+.Img_Usuario_nav img {
+     width: 2rem;
+     height: 2rem;
+     border-radius: 50%;
+
+}
+.Img_Usuario_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.Img_Usuario_nav p {
+    margin-left: 0.5rem;
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+}
+
 
     
 .div-1 {
-    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
+    display: flex;
+    justify-content:space-around;
+    margin-top: 0rem;
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.18);
     background-blend-mode: darken;
     color: white;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom:3rem;
     flex-wrap: wrap;
+    padding-top: 6rem;
 }
 
 h1{
-   font-family: 'Source Code Pro', monospace;;
+    font-family: 'Poppins', sans-serif;
    font-weight: 700;
    font-size: 4.8rem;
-   margin: 0.6rem;
+   margin-bottom: 1rem;
    text-shadow: 3px 3px 3px black;
    transition: all 450ms;
 }
@@ -41,7 +74,7 @@ h1:hover{
 
 }
 h2{
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 3.6rem;
     margin: 0.6rem;
@@ -55,7 +88,7 @@ h2:hover{
 
 }
 h3{
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 2.4rem;
     margin: 0.6rem;
@@ -71,16 +104,17 @@ h3:hover{
 
 .buttonsofbody{
     padding: 0.96rem;
-    border-color: rgba(149, 0, 0, 0.99);
+    border: none;
     border-radius: 0.3rem;
-    background-color:rgba(149, 0, 0, 0.99);
+    background-color:rgb(32, 129, 226);
     color: white;
     transition: all 450ms;
+
     
 }
 .buttonsofbody:hover{
     border-color: white;
-    background-color: rgba(149, 0, 0, 0.99);
+    background-color: rgb(32, 129, 226);
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     cursor: pointer;
 
@@ -92,6 +126,7 @@ h3:hover{
     padding-right: 4.8rem;
     transition: all 450ms;
     border-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 .buscador:hover{
     border-color: cyan;
@@ -99,24 +134,23 @@ h3:hover{
 #lupa{
     
     border-radius: 0.3rem;
-    border-color:rgba(149, 0, 0, 0.99);
-    background-color: rgba(149, 0, 0, 0.99) ;
+    border-color:rgb(32, 129, 226);
+    background-color:rgb(32, 129, 226) ;
     color: white;
 }
 .buttonsofnav{
     padding: 0.6rem;
-    border-color: rgba(149, 0, 0, 0.99);
-    border-radius: 0.3rem;
-    background-color: rgba(149, 0, 0, 0.99);
-    color: white;
+    background-color: white;
+    border:none;
+    color:gray;
     transition: all 450ms;
+    font-family: 'Poppins', sans-serif;
 
 }
 .buttonsofnav:hover{
    
     border-radius: 0rem;
     border-color: white;
-    background-color:rgba(149, 0, 0, 0.99);
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     cursor: pointer;
 }
@@ -129,13 +163,12 @@ a{
     color: black;
     transition: all 450ms;
 }
-a:hover{
-    color: purple;
-}
+
 .div-2{
     display: flex;
     justify-content:space-around;
-    align-items: center;   
+    align-items: center;
+    margin-top: 1rem;   
 }
 
 .article{
@@ -161,10 +194,12 @@ a:hover{
     justify-content: space-around;
     flex-wrap: nowrap;
 }
+
+
 .icons{
     font-size: 2.7rem;
     padding-top: 0.6rem;
-    color:orange;
+    color:white;
     background-image: url('../imagenes/fondo2.png');
     background-size: cover;
     background-position: center;
@@ -172,6 +207,7 @@ a:hover{
     background-blend-mode: darken;
     border-radius: 0.6rem;
     transition: all 450ms;
+
 }
 .icons:hover{
     color: white;
@@ -197,46 +233,71 @@ a:hover{
 .coleccion{
     background-color: white;
     text-align: center;
-    width: 21.9rem;
+    width: 22rem;
     height: 21rem;
     border-color: gray;
     border-radius: 0.6rem;
     transition: all 450ms;
+    box-shadow: 0px 0px 2px gray;
+   
 }
 .coleccion:hover{
     box-shadow: 0px 0px 10px gray;
+}
+.coleccion2{
+    background-color: white;
+    text-align: center;
+    width: 35rem;
+    height: 24rem;
+    border-color: gray;
+    border-radius: 0.6rem;
+    transition: all 450ms;
+    box-shadow: 0px 0px 2px gray
+}
+.coleccion2 img {
+    width: 35rem ;
+    height: 20rem;
+    
+}
+.coleccion2 .description{
+    margin-right: 25rem;
 }
 .space{
     height: 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://media3.giphy.com/media/kg0dqRN6bcQsIOVTPp/giphy.gif?cid=ecf05e478l2bkjc1sw1t0daaeb5t2f8g1l3oo72h91bw0gwo&rid=giphy.gif&ct=g);
+    background-image: url('../imagenes/coleccionBackground.jpg');
     background-size: cover;
     background-position: center;
     margin: 1.2rem;
     border-radius: 0.6rem;
    
 }
+.space h2{
+    font-size: 4.2rem;
+    color: black;
+}
 .separe{
     height: 1.7rem;
 }
 .footer{
-    background-color: rgba(245, 132, 0, 0.88) ;
+    background-color: rgb(32, 129, 226) ;
     height: 9rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
 }
 .redes{
-    background-color:rgba(245, 132, 0, 0.88);;
+    background-color:rgba(229, 133, 78, 0.09);
     display: flex;
     justify-content:flex-end;
     align-items: center;
-    height: 0.5rem;
+    height: 0.2rem;
 }
 .iconos-de-redes{
-    color:gray;
+    color:white;
     border-radius: 0.3rem;
     font-size: 1.7rem;
     padding-right: 0.5rem;
@@ -244,16 +305,16 @@ a:hover{
 }
 .iconos-de-redes:hover{
     text-shadow: 3px 1px 7px white;
-    color:rgba(245, 132, 0, 0.88);
+    color:white;
   
 }
 
 .cajas h4{
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
     
 }
 .cajas p{
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
     opacity: 0;
     transition: all 450ms;
 }
@@ -264,7 +325,7 @@ a:hover{
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
 .check{
@@ -276,7 +337,7 @@ a:hover{
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 
 }
@@ -294,6 +355,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
   
 }
 .login-body{
@@ -307,22 +369,32 @@ a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: 'Poppins', sans-serif;
     
 }
 .boton-ingresar{
     margin-top: 2.5rem;
     padding: 0.4rem 0.8rem;
-    background-color: rgba(245, 132, 0, 0.88);
+    background-color: rgb(32, 129, 226);
     border-color: white;
     color: white;
     transition: all 450ms;
+    font-family: 'Poppins', sans-serif;
 }
 .boton-ingresar:hover{
     box-shadow: 0px 0px 10px gray;
     border-radius: 0.3rem;
     
 
+}
+.recordarme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    margin-left: 5.5rem;
+    
 }
 .separacion-login{
     height: 1rem;
@@ -333,6 +405,7 @@ a:hover{
     width: 20rem;
     height: 2rem;
     border-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 .logo-login{
     margin-top:0.5rem;
@@ -341,6 +414,7 @@ a:hover{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     border-radius: 0.3rem;
+    font-family: 'Poppins', sans-serif;
 }
  button:hover{
     cursor: pointer;
@@ -353,10 +427,12 @@ a:hover{
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    margin-left: 4.5rem;
+    font-family: 'Poppins', sans-serif;
     
 }
 span{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 17px;
     
@@ -366,7 +442,7 @@ span img{
     padding-top: 0.3rem;
 }
 .separar{
-    width: 20rem;
+    width: 21rem;
 }
 /*Formulario de edicion*/
 .detalleimgEdit {
@@ -380,6 +456,7 @@ span img{
     justify-content: center;
     background-color: #cecdcd;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    font-family: 'Poppins', sans-serif;
 }
 .detalleimgEdit img{
     box-shadow: 0px 0px 3px rgb(100, 100, 100);
@@ -394,13 +471,654 @@ span img{
     margin-left: 8rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .detalleimgEdit button{
     width: 10rem;
     margin-left: 18rem;
     margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
+/*Registro*/
+* {
+    /*box-sizing: border-box;*/
+    /*margin: 0;
+    padding: 0;*/
+    font-family: 'Poppins', sans-serif;
+}
+.error{
+    color:  rgba(179, 0, 0, 1);
+    font-size: smaller;
+    margin-right: 26rem;
+    margin-top: 0rem;
+}
+.input_error{
+    border-color: rgba(179, 0, 0, 1);
+    background-image: url('../imagenes/error.png');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 590px;
+}
+.contenedor_register{
+    width: 60rem;
+    background-color: white;
+    margin-top: 3rem;
+    margin-left: 17rem;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    
+}
+
+.body-register {
+    
+    
+    background-size: cover;
+    background-position: center;
+    background-color:white;
+    background-blend-mode: darken;
+    position: absolute;
+  
+    
+}
+.container{
+    
+    width: 95rem;
+    height: 45rem;
+    margin: 0;
+   
+    
+}
+.registro {
+    
+    min-width: 900px;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-color: gray;
+    background-blend-mode: darken;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
+    background-color: rgba(248, 237, 244, 0.88);
+    box-shadow: 0px 0px 10px gray;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.form-register {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.form_img {
+    margin-top: 10px;
+    height: 90%;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex ;
+   
+    
+
+}
+
+.form-box, .form-date, .form-select, .form-submit {
+    display: flex;
+    height: fit-content;
+    width:65%;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+}
+.form-term{
+    margin-right: 1rem;
+    
+
+}
+.form-submit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 1.5rem;
+}
+label {
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+.form-box input {
+  
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+    background-color:rgba(0, 0, 0, 0.05);
+    border-color:white ;
+    border-radius: 4px;
+   
+}
+
+.form-date input {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgrey;
+    color: rgb(85, 85, 85);
+}
+
+.form-select select {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgrey;
+    color: rgb(85, 85, 85);
+}
+.avatar_registro {
+    margin-right: 18rem;
+    margin-bottom: 2rem;
+
+}
+.form-submit button {
+    display: flex;
+    height: 32px;
+    padding: 0 30px;
+    outline: none;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(32, 129, 226);
+    color: white;
+    border: 0;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input:focus, select:focus{
+    border: 1px solid #39c;
+}
+/*Profile*/
+.profile_imagen img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    
+    
+}
+.profile_imagen p {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.profile_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: flex-end;
+    background-color: white;
+    margin-top: 3rem;
+    width: 30rem;
+    height: 5rem;
+    margin-left: 10rem;
+    border-radius: 0.5rem;
+    
+}
+.profile_misDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    background-color: white;
+    width: 30rem;
+    height: 5rem;
+    margin-left: 10rem;
+    margin-top: 1.2rem;
+}
+.profile_misDatos p {
+    font-size: 1rem;
+    font-style: arial;
+    
+}
+.profile_misNfts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 45rem;
+    height: 36rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+.profile_container {
+   display: flex;
+   
+    
+}
+.profile_misNfts .mis_nft {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 3rem;
+   font-size:2rem ;
+   width: 20rem;
+   height: 4rem;
+}
+/*Create_product*/
+.productForm {
+    width: 100%;
+    max-width: 700px;
+    min-width: 400px;
+    height: 40rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 25rem;
+    margin-top: 2rem;
+}
+
+.form_create div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tituloForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+ 
+}
+
+.tituloForm input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid lightgrey;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+
+.descripcionForm { 
+  
+    height: 50px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+    margin-top: 1rem;
+    
+}
+
+.descripcionForm input {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1em;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+}
+
+.categoriaForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.categoriaForm select {
+    width: 100%;
+    font-size: 1em;
+    height: 30px;
+    border: 1px solid lightgrey;
+    outline: none;
+    color: rgb(132, 147, 173);
+    border-radius: 4px;
+}
+
+.precioForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+    margin-top: 1rem;
+}
+
+.precioForm label {
+    width: 100%;
+}
+
+.precioForm input{
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.imagenForm {
+    height: 40px;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 5px;
+}
+
+.imagenForm label {
+    width: 297px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(132, 147, 173);
+}
+
+.imagenForm input {
+    display: none;
+}
+
+
+.imagenPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 300px;
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+}
+
+.submitForm {
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.submitForm button {
+    background-color: rgb(32, 129, 226);
+    color: white;
+    outline: none;
+    border: 0;
+    line-height: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo i{
+    font-size: 3rem;
+}
+.fondo{
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.18);
+    /*background-blend-mode: darken;*/
+}
+/*Coleccion*/
+.presentacion{
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../imagenes/bored-ape/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    padding-top: 4rem;
+  
+   
+}
+.coleccion-descripcion{
+    height: 12rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 1.2rem;
+    border-radius: 0.6rem;
+    background-color: white;
+    
+
+}
+.parrafo-descripcion{
+    font-size: 18px;
+    width: 55rem;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.items-owners{
+    font-size: 23px;
+    width: 55rem;
+    margin-left: 10px;
+    margin-bottom: 2rem;
+    
+    color:rgba(123, 0, 255, 1);
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+/*Barra de busqueda*/
+.Barra-de-info{
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem;
+    border-radius: 0.6rem;
+    background-color: white;
+    
+}
+#barra-de-colecciones{
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+    border-style: none;
+    padding: 0.7rem;
+    width: 25rem;
+    background-color:white;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100); 
+
+}
+.Barra-de-info select{
+    border-radius: 0.3rem;
+    border-style: none;
+    padding: 0.7rem;
+    width: 25rem;
+    background-color:white;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100); 
+    margin-right: 1rem;
+}
+.option:not(:checked) {
+    background-color: white;
+  }
+select option{
+    background-color: rgba(248, 237, 244, 0.88) ;
+}
+
+.presentacion h2{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Coleccion de NFT's*/
+
+
+.buynow{
+  background-color: rgb(32, 129, 226);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  border-radius: 0.5rem;
+  transition: all 400ms;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.buynow:hover{
+  opacity: 100%;
+  background-color: rgb(32, 129, 226);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.4rem;
+  height: 3rem;
+
+}
+
+
+
+
+
+/*Product_detail*/
+.productDetail_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.detalleimg {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    border:none;
+    transition: all 450ms;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgb(219, 216, 216);
+}
+.detalleimg img{
+    box-shadow: 0px 0px 3px rgb(100, 100, 100);
+}
+
+.codigonft {
+    margin: 5rem 5rem 5rem 5rem;
+    border: 2px solid #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.codigonft:hover {
+    box-shadow: 0px 0px 10px rgb(201, 186, 186);
+}
+.codigonft img{
+    width: 35rem;
+    height: 28rem;
+}
+.productDetailButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+.button_product {
+    padding: 0.96rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(219, 216, 216);
+    color: black;
+    transition: all 450ms;
+    margin-bottom: 1.35rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 10rem;
+    
+}
+
+
+.button_product:hover {
+    border-color: rgb(100, 100, 100);
+    background-color:  rgb(32, 129, 226);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    cursor: pointer;
+
+}
+
+.precio {
+    margin-bottom: 4rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.titulo{
+    background-color: white;
+    color: black;
+   align-items: center;
+   margin: 1rem;
+   font-family: 'Poppins', sans-serif;
+}
+.titulo div{
+    width: 14rem;
+    font-family: 'Poppins', sans-serif;
+}
+.titulo button{
+    margin: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 @media (max-width:361px) {
     /*barra de navegacion*/
@@ -466,7 +1184,6 @@ span img{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    
    }
    .div-1 button{
     padding: 3rem;
@@ -584,20 +1301,233 @@ span img{
   }
   .caja-de-login input{
     width: 16rem ;
-  }
+}
+/*registro*/
+  .registro {
+    width: 95%;
+    min-width: 300px;
+    padding: 10px;
 }
 
+.registro div {
+    width: 100%;
+}
+
+.form-box input {
+    width: 100%;
+}
+
+.form-submit button {
+    width: 100px;
+}
+/*Product_detail*/
+.detalleimg {
+    width: 45rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.img_detail {
+    margin-top: 5rem;
+    width: 45rem;
+    height: 30rem;
+}
+/*coleccion*/
+#barraDeBusqueda{
+    display: none;
+}
+#logo{
+    display: none;
+}
+#lupa{
+    display:none;
+}
+nav{
+width: 59.5rem;
+height: 8rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.buscadoryregistro{
+display:contents;
+}
+#menu{
+ padding: 1.5rem;
+ border-radius: 0.6rem;
+ margin-right: 4.6rem;
+ font-size: 3rem;
+}
+.menuylogo{
+margin: 0rem;
+}
+.menuylogo #menu i{
+font-size: 3rem;
+}
+.buscadoryregistro{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.buscadoryregistro button{
+width: 12rem;
+height: 5rem;
+font-size: 2rem;
+}
+.separar{
+width: 0rem;
+}
+#botonderegistro{
+font-size: 2.5rem;
+padding: 1rem;
+}
+#botondeingresar{
+font-size: 2.5rem;
+padding: 1rem;
+margin-left: 4rem;
+}
+/*banner*/
+.presentacion{
+width: 60.5rem;
+height: 65rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+background-size: cover;
+
+}
+.coleccion-descripcion{
+height: 15rem;
+width: 59rem;
+}
+.parrafo-descripcion{
+display: none;
+}
+.items-owners{
+font-size: 4rem;
+padding-left: 3rem;
+}
+.Barra-de-info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 57rem;
+height: 20rem;
+}
+.Barra-de-info input{
+height: 5rem;
+width: 50rem;
+margin-bottom: 2rem;
+}
+
+.Barra-de-info select{
+height: 5rem;
+width: 40rem;
+font-size: 1rem;
+}
+/*main*/
+main{
+width: 53rem;
+
+}
+
+.slider-container{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+row-gap: 2rem;
+align-items: center;
+margin-left: 1rem;
+}
+
+.check{
+
+color: cyan;
+padding-top: 3.5rem;
+padding-left: 1rem;
+font-size: 2.5rem;
+}
+.coleccion{
+width: 53rem;
+height: 65rem;
+
+}
+.coleccion img{
+width: 53rem;
+height: 45rem;
+}
+.coleccion .description{
+font-size: 3rem;
+}
+.descripction-body{
+font-size: 2rem;
+padding: 0.3rem;
+}
+
+.slider-container{
+display: flex;
+flex-wrap: wrap;
+gap: 7%;
+justify-content: center;
+align-items: center;
+}
+.separe{
+display: none;
+}
+.buynow{
+height: 10rem;
+font-size: 5rem;
+
+}
+.buynow:hover{
+height: 7rem;
+font-size: 5rem;
+margin-bottom: 20rem;
+
+}
+/*Footer*/
+.redes{
+width: 60.1rem;
+}
+.footer{
+width: 60.1rem;
+}
+
+
+
+}
+
+
+
 @media (min-width:769px) {
-  .contenedor{
+.contenedor{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     row-gap: 0.3rem;
     margin: 0.3rem;
-  }
-  .cajas{
-    margin: 0.3rem;
-  }
-   
 }
+.cajas{
+    margin: 0.3rem;
+}
+
+/*register*/
+.registro {
+  width: 50%;
+  min-width: 500px;
+  margin: auto;
+
+}
+
+.form-box input {
+  width: 100%;
+}
+} 
