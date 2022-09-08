@@ -3,6 +3,7 @@ const path = require("path");
 
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+const productjsonRepository = require('../repositories/productJsonRepository')
 
 const productos = {
   coleccion: (req, res) => {
@@ -31,10 +32,13 @@ const productos = {
       oddity: req.body.oddity,
       imagen: '/uploads/' + req.file.filename,
     };
-    products.push(newProduct);
+    /*products.push(newProduct);
     productsJson = JSON.stringify(products, null, 4);
-    fs.writeFileSync(productsFilePath, productsJson);
+    fs.writeFileSync(productsFilePath, productsJson);*/
+    productjsonRepository.save(newProduct);
+
     res.redirect("/productos");
+
   },
   
   editForm:(req, res) =>{
@@ -49,7 +53,7 @@ const productos = {
   
   editar:(req,res)=> {
     let idIngresado = parseInt(req.params.id, 10);
-
+    
     for(i = 0; i < products.length; i ++){
       if(products[i].id === idIngresado){
         products[i].name = req.body.name,
@@ -58,8 +62,11 @@ const productos = {
         products[i].imagen = '/uploads/' + req.file.filename
       }
     }
-    let productsJson = JSON.stringify(products, null, 4)
-    fs.writeFileSync(productsFilePath, productsJson)
+  
+    /*let productsJson = JSON.stringify(products, null, 4)
+    fs.writeFileSync(productsFilePath, productsJson)*/
+  
+    productjsonRepository.change(products);
     res.redirect('/productos')
   },
   eliminar:(req, res) =>{
@@ -67,8 +74,10 @@ const productos = {
     let newProducts = products.filter(function(nft){
       return nft.id != IdEliminar;
   })
-   let productsJson = JSON.stringify(newProducts, null, 4)
-   fs.writeFileSync(productsFilePath, productsJson)
+   /*let productsJson = JSON.stringify(newProducts, null, 4)
+   fs.writeFileSync(productsFilePath, productsJson)*/
+
+   productjsonRepository.delete(newProducts);
    res.redirect('/productos')
    
   }
