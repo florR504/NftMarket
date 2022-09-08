@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*
+body {
+    width: 100%;
+    height: fit-content;
+    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 90px;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: nowrap;
+}*/
+
+
+.productForm {
+    width: 100%;
+    max-width: 700px;
+    min-width: 400px;
+   /* height: fit-content;*/
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin:auto;
+    margin-top: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tituloForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.tituloForm input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid lightgrey;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+
+.descripcionForm { 
+    height: 50px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.descripcionForm input {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1em;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+}
+
+.categoriaForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.categoriaForm select {
+    width: 100%;
+    font-size: 1em;
+    height: 30px;
+    border: 1px solid lightgrey;
+    outline: none;
+    color: rgb(132, 147, 173);
+    border-radius: 4px;
+}
+
+.precioForm {
+    height: 70px;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    color: rgb(132, 147, 173);
+}
+
+.precioForm label {
+    width: 100%;
+}
+
+.precioForm input{
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.imagenForm {
+    height: 40px;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.imagenForm label {
+    width: 297px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 2px rgb(20 31 56 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(132, 147, 173);
+}
+
+.imagenForm input {
+    display: none;
+}
+
+
+.imagenPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 300px;
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+}
+
+.submitForm {
+    justify-content: center;
+}
+
+.submitForm button {
+    background-color: #FEBD6A;
+    color: white;
+    outline: none;
+    border: 0;
+    line-height: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo i{
+    font-size: 3rem;
+}
+.fondo{
+    background-image: url(../imagenes/lapices.2jpg.jpg);
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.18);
+    /*background-blend-mode: darken;*/
+}
+/*nav*/
+nav {
+    background-color:rgba(245, 132, 0, 1);
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    align-items: center;
+    padding:0.3rem;
+    
+    
+    
+}
+
+.buscador{
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    transition: all 450ms;
+    border-style: none;
+}
+.buscador:hover{
+    border-color: cyan;
+}
+#lupa{
+    
+    border-radius: 0.3rem;
+    border-color:rgba(149, 0, 0, 0.99);
+    background-color: rgba(149, 0, 0, 0.99) ;
+    color: white;
+}
+.buttonsofnav{
+    padding: 0.6rem;
+    border-color: rgba(149, 0, 0, 0.99);
+    border-radius: 0.3rem;
+    background-color: rgba(149, 0, 0, 0.99);
+    color: white;
+    transition: all 450ms;
+
+}
+.buttonsofnav:hover{
+   
+    border-radius: 0rem;
+    border-color: white;
+    background-color:rgba(149, 0, 0, 0.99);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    cursor: pointer;
+}
+.separar{
+    width: 20rem;
+}
+
+

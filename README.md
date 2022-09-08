@@ -24,8 +24,7 @@
 <hr>
 
 <h4> Tablero de Trello </h4>
-https://trello.com/invite/b/PiDySFQK/e0192faa4a80919be537a0ddc05607ce/proyecto-integrador
-
+https://trello.com/w/proyectonftmarket
 <hr>
 
 <h4> URL repo: </h4>
