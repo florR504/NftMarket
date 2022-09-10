@@ -4,9 +4,25 @@ const path = require("path");
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const productjsonRepository = require('../repositories/productJsonRepository')
+const db = require('../database/models');
+
+const sequelize = db.sequelize;
 
 const productos = {
-  coleccion: (req, res) => {
+  coleccion: async function(req, res){
+    const nftsList = await db.Nfts.findAll()
+    res.render('coleccion', {products : nftsList});
+},
+  detalle: async function(req, res){
+    const idProduct = parseInt(req.params.id, 10);
+    const producto = await db.Nfts.findByPk(idProduct,{
+      include: [{
+          association : 'coleccion'
+      }]
+  })
+  res.render('productDetail', {producto: producto})
+}
+  /*coleccion: (req, res) => {
     res.render("coleccion", { products: products });
   },
 
@@ -32,10 +48,10 @@ const productos = {
       oddity: req.body.oddity,
       imagen: '/uploads/' + req.file.filename,
     };
-    /*products.push(newProduct);
-    productsJson = JSON.stringify(products, null, 4);
-    fs.writeFileSync(productsFilePath, productsJson);*/
-    productjsonRepository.save(newProduct);
+    
+    products.push(newProduct);
+    const productsJson = JSON.stringify(products, null, 4);
+    fs.writeFileSync(productsFilePath, productsJson);
 
     res.redirect("/productos");
 
@@ -63,10 +79,8 @@ const productos = {
       }
     }
   
-    /*let productsJson = JSON.stringify(products, null, 4)
-    fs.writeFileSync(productsFilePath, productsJson)*/
-  
-    productjsonRepository.change(products);
+    let productsJson = JSON.stringify(products, null, 4)
+    fs.writeFileSync(productsFilePath, productsJson);
     res.redirect('/productos')
   },
   eliminar:(req, res) =>{
@@ -74,13 +88,12 @@ const productos = {
     let newProducts = products.filter(function(nft){
       return nft.id != IdEliminar;
   })
-   /*let productsJson = JSON.stringify(newProducts, null, 4)
-   fs.writeFileSync(productsFilePath, productsJson)*/
 
-   productjsonRepository.delete(newProducts);
-   res.redirect('/productos')
+  const productsJson = JSON.stringify(newProducts, null, 4)
+  fs.writeFileSync(productsFilePath, productsJson);
+  res.redirect('/productos')
    
-  }
+  }*/
 };
 
 module.exports = productos;

@@ -12,10 +12,11 @@
          <%= producto.name %> 
       </div>
     
-      <img class="img_detail" alt="Bored ape nft" src="<%= producto.imagen%> " height="400rem" />
+      <img class="img_detail" alt="Bored ape nft" src="<%= producto.image%> " height="400rem" />
 
       <div class="codigonft">
-        <h4>Coleccion: <%= producto.coleccion %> </h4>
+        <!--Reveer-->
+        <h4>Coleccion: <%= producto.name %> </h4>
         <div class="codigo">
           <h4>Codigo NFT: <%= producto.name %> </h4>
         </div>
@@ -30,11 +31,11 @@
         <p>Precio: <%= producto.price %> </p>
       </div>
     <div class="productDetailButtons">
-      <a href="/productos/productDetail/<%=producto.id%>/edit">
+      <a href="/productos/productDetail/<%=producto.idNFTs%>/edit">
         <button class="button_product">Editar</button>
       </a> 
       <button class="button_product">Añadir al carrito</button>
-      <form action="/productos/productDetail/<%=producto.id%>/delete?_method=DELETE" method="POST">
+      <form action="/productos/productDetail/<%=producto.idNFTs%>/delete?_method=DELETE" method="POST">
         <button class="button_product">Eliminar</button>
       </form>
     </div>  

@@ -8,15 +8,15 @@ module.exports = function(sequelize, dataTypes){
            allowNull: true
        },
        name: {
-           type: DataTypes.STRING(45),
+           type: dataTypes.STRING(45),
            allowNull: true
        },
        banner_image:{
-           type: DataTypes.INTEGER,
+           type: dataTypes.INTEGER,
            allowNull: true
        },
        description:{
-           type: DataTypes.STRING(300),
+           type: dataTypes.STRING(300),
            allowNull: true
        }
    };

@@ -1,34 +1,34 @@
 module.exports = function(sequelize, dataTypes){
  const alias = 'Nfts'
  const cols = {
-    id: {
+    idNFTs: {
         type: dataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: true
     },
     name: {
-        type: DataTypes.STRING(45),
+        type: dataTypes.STRING(45),
         allowNull: true
     },
     price:{
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: true
     },
     image:{
-        type: DataTypes.STRING(45),
+        type: dataTypes.STRING(45),
         allowNull: true
     },
     oddity: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: true
     },
     coleccion_id: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: true
     },
     saleDetail_id: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: true
     },
 };

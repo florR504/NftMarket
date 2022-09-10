@@ -7,20 +7,20 @@ module.exports = function(sequelize, dataTypes){
            autoIncrement: true,
            allowNull: true
        },
-       date: {
-           type: DataTypes.date,
+       /*date: {
+           type: dataTypes.date,
            allowNull: true
-       },
+       },*/
        payment_method:{
-           type: DataTypes.STRING(45),
+           type: dataTypes.STRING(45),
            allowNull: true
        },
        price:{
-           type: DataTypes.STRING(45),
+           type: dataTypes.STRING(45),
            allowNull: true
        },
        user_id_sale:{
-           type: DataTypes.INTEGER,
+           type: dataTypes.INTEGER,
             allowNull: true
        }
    };

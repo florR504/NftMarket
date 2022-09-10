@@ -8,15 +8,15 @@ module.exports = function(sequelize, dataTypes){
            allowNull: true
        },
        nft_id: {
-           type: DataTypes.INTEGER,
+           type: dataTypes.INTEGER,
            allowNull: true
        },
        sale_id:{
-           type: DataTypes.INTEGER,
+           type: dataTypes.INTEGER,
            allowNull: true
        },
        precio:{
-           type: DataTypes.STRING(45),
+           type: dataTypes.STRING(45),
            allowNull: true
        }
    };
