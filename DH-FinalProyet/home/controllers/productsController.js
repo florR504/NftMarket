@@ -21,6 +21,49 @@ const productos = {
       }]
   })
   res.render('productDetail', {producto: producto})
+},
+crear: function(req, res){
+  res.render('createproduct')
+},
+store: async function (req, res){
+ await db.Nfts.create({
+      name: req.body.name,
+      price: req.body.price,
+      image: '/uploads/' + req.file.filename,
+      oddity: req.body.oddity,
+
+  })
+  res.redirect('/productos')
+},
+editForm: async function(req, res){
+  const idProduct = parseInt(req.params.id, 10);
+  const producto = await db.Nfts.findByPk(idProduct,{
+      include: [{
+          association : 'coleccion'
+      }]
+  })
+  res.render('editProduct', {product: producto})
+},
+edit: async function (req, res){
+  const idProducto = parseInt(req.params.id, 10);
+   db.Nfts.update({
+      name: req.body.name,
+      price: req.body.price,
+      image: '/uploads/' + req.file.filename,
+      oddity: req.body.oddity,
+  },{
+      where:{
+          idNFTs: idProducto
+      }
+  })
+  await res.redirect(`/productos/productDetail/${idProducto}`)
+},
+eliminar: async function(req, res){
+  const idParseado = parseInt(req.params.id, 10)
+  await db.Nfts.destroy({
+      where: {idNFTs: idParseado}
+  })
+  res.redirect('/productos')
 }
   /*coleccion: (req, res) => {
     res.render("coleccion", { products: products });

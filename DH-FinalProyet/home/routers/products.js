@@ -17,8 +17,11 @@ var upload = multer({storage: storage});
 
 router.get('/', productsController.coleccion);
 router.get('/productDetail/:id', productsController.detalle);
-/*router.delete('/productDetail/:id/delete', productsController.eliminar);
 router.get('/createProduct', productsController.crear );
+router.post('/createProduct', upload.single("imagen"), productsController.store );
+router.get('/productDetail/:id/edit', productsController.editForm)
+router.delete('/productDetail/:id/delete', productsController.eliminar);
+/*router.get('/createProduct', productsController.crear );
 router.post('/createProduct', upload.single("imagen"), productsController.store );
 router.get('/productDetail/:id/edit', productsController.editForm);
 router.put('/productDetail/:id/edit', upload.single("imagen"), productsController.editar);*/
