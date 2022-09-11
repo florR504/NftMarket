@@ -32,6 +32,15 @@
         <label for="precio">Precio:</label>
         <input type="number" name="price" id="precio" step="0.01" />
       </div>
+      <div>
+        <label for="coleccion">Coleccion:</label>
+        <select name="coleccion" id="coleccion">
+          <option value="null">Selecciona una colección:</option>
+          <% for( let i = 0; i < coleccion.length; i++ ) { %>
+          <option value="<%= coleccion[i].id_coleccion  %> >"><%= coleccion[i].name %> </option>
+          <% } %>
+        </select>
+      </div>
       <div class="submitForm">
         <button type="submit">Publicar Nft</button>
       </div>

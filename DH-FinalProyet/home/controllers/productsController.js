@@ -22,17 +22,20 @@ const productos = {
   })
   res.render('productDetail', {producto: producto})
 },
-crear: function(req, res){
-  res.render('createproduct')
+crear: async function(req, res){
+  const coleccion = await db.Coleccion.findAll()
+  res.render('createproduct', {coleccion: coleccion})
 },
 store: async function (req, res){
  await db.Nfts.create({
       name: req.body.name,
       price: req.body.price,
+      coleccion_id: req.body.coleccion,
       image: '/uploads/' + req.file.filename,
       oddity: req.body.oddity,
 
   })
+ 
   res.redirect('/productos')
 },
 editForm: async function(req, res){
