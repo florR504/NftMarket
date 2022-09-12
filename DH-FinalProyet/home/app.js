@@ -3,9 +3,8 @@ const app = express();
 const path = require("path");
 const publicPath = path.resolve(__dirname, './public');
 const mainRouter = require('./routers/main')
-const rutaLogin = require('./routers/login')
+const rutaUser = require('./routers/user')
 const rutaProductColeccion = require('./routers/products')
-const rutaRegister = require('./routers/register')
 const methodOverride = require('method-override');
 const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
@@ -24,10 +23,10 @@ app.use(express.static(publicPath));
 //le indica a express que vamos a trabajar con JSON//
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
-app.use("/", rutaLogin);
+app.use("/", rutaUser);
 app.use("/home",mainRouter );
 app.use("/productos", rutaProductColeccion);
-app.use("/registro",rutaRegister );
+
 
 
 

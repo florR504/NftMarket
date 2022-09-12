@@ -1,34 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/registro.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <form action="/registro" class="registro" method="post" enctype="multipart/form-data">
-            <a href="/"><img src="/imagenes/Nftlogo.png" alt=""></a>
-
-            <div class="form-box">
-                <label for="nombreU">Nombre:</label>
-                <input type="text" name="nombreU" id="userName" required minlength="4" maxlength="18">
-=======
-<!--head-->
 <%- include('./partials/head.ejs')%>
 <body class="body-register">
     <%-include ('./partials/nav.ejs') %> 
     <STYLE>A {text-decoration: none;} </STYLE>
     <div class="container" >
         <div class="contenedor_register">
-        <form class="form-register" action="/registro" class="registro" method="post" enctype="multipart/form-data">
+        <form class="form-register" action="/register" class="registro" method="post" enctype="multipart/form-data">
             <a href="/home"><img src="/imagenes/Nftlogo.png" alt="" ></a> 
-
             <div class="form-box">
                 <label for="nombreU">Nombre:</label>
                 <input 
@@ -37,7 +16,6 @@
                 id="userName"
                 class="<%= locals.errores && errores.name ? 'input_error': null %> "
                 value="<%= locals.old && old.name ? old.name : null %>" >
->>>>>>> 76f881a9ae05ca2fb6d04a99e90cd04e445f1b81
             </div>
              <% if (locals.errores && errores.name) { %>
               <p class="error"><%=errores.name.msg %></p>
@@ -94,19 +72,11 @@
                 <a href="#"> He leido y acepto los terminos y condiciones</a>
                 <input type="radio" id="termsAndCondition">
             </div>
-
-                <div class="form-submit">
-                    <button type="submit">Registrarse</button>
-                </div>
+            <div class="form-submit">
+                <button type="submit">Registrarse</button>
+            </div>
+            <a href="/">Ya tenes una cuenta? ingresa.</a>
         </form>
-<<<<<<< HEAD
-        <a href="/login">Ya tenes una cuenta? ingresa.</a>
-
-=======
-    </div>
-         
-        
->>>>>>> 76f881a9ae05ca2fb6d04a99e90cd04e445f1b81
     </div>
 </body>
 
