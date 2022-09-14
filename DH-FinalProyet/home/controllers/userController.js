@@ -1,10 +1,18 @@
 const User = require('../LogicUserModel/User');
-const bcryptjs = require('bcryptjs')
+const bcryptjs = require('bcryptjs');
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const {validationResult} = require('express-validator')
 
 const user = {
     ingresar:(req, res)=>{ res.render('login') },
-    process: (req, res) => {
-    let userToLogin = User.findByField('email', req.body.email)
+    process: async function (req, res){
+    let userToLogin = await db.User.findOne({
+        where: {
+            email: req.body.email
+        }
+    });
+
     if(userToLogin){
         let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
        if(isOkThePassword){
@@ -27,13 +35,17 @@ const user = {
     },
     inicio: (req, res) => { res.render('registro') },
      
-    guardar: (req, res) => {
+    guardar: async function (req, res){
           const errores = validationResult(req);
-          console.log(req.body)
+    
           if(errores.isEmpty()){
           //Si no hay errores pero el email ya esta en la base de datos,
           //debe saltar el error de que ya se encuentra registrado el email
-          let userInDB = User.findByField('email', req.body.email);
+          let userInDB = await db.User.findOne({
+            where:{
+                email : req.body.email
+            }
+          });
           if(userInDB){
               return res.render('registro', {errores:{email:{msg: 'Este email ya esta registrado'}},
               old: req.body
@@ -41,13 +53,17 @@ const user = {
           }
           
           let hash = req.body.password;
+          /*let avatar = db.Avatars.create({
+              avatar_name: req.file.filename
+          })*/
+          
           let userToCreate = {
                 ... req.body,
                 password:bcryptjs.hashSync( hash, 10) ,
-                avatar:req.file.filename
+               /* avatar: avatar*/
           }
           
-          User.create(userToCreate)
+          db.User.create(userToCreate)
           res.redirect("/home");
     }else {
          

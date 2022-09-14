@@ -4,7 +4,7 @@ module.exports = function(sequelize, dataTypes){
        id: {
            type: dataTypes.INTEGER,
            primaryKey: true,
-           autoIncrement: true,
+          
            allowNull: true
        },
        name: {
@@ -25,7 +25,9 @@ module.exports = function(sequelize, dataTypes){
        },
        avatar_id: {
            type: dataTypes.INTEGER,
-           allowNull: true
+           autoIncrement: true,
+           allowNull: true,
+           
        },
        type_of_user: {
            type: dataTypes.STRING(45),
@@ -36,12 +38,12 @@ module.exports = function(sequelize, dataTypes){
    
    const User = sequelize.define(alias,cols, config );
 
-  /* User.associate = function(models){
-    User.belongsTo(models.avatar_id,{
+  User.associate = function(models){
+    User.belongsTo(models.Avatars,{
         as: 'avatar_user',
         foreignKey: 'avatar_id'
     })
-   }*/
+   }
    
    return User;
    }

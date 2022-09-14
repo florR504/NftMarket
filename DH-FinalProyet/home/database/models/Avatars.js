@@ -20,12 +20,12 @@ module.exports = function(sequelize, dataTypes){
    
    const Avatars = sequelize.define(alias,cols, config );
 
-   /*Avatars.associate = function(models){
-    Avatars.belongsTo(models.user_id,{
+   Avatars.associate = function(models){
+    Avatars.belongsTo(models.User,{
         as: 'user_avatar',
         foreignKey: 'user_id'
     })
-   }*/
+   }
    
    return Avatars;
    }
