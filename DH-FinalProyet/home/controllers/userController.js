@@ -5,6 +5,7 @@ const sequelize = db.sequelize;
 const {validationResult} = require('express-validator')
 
 const user = {
+    //login
     ingresar:(req, res)=>{ res.render('login') },
     process: async function (req, res){
     let userToLogin = await db.User.findOne({
@@ -25,6 +26,7 @@ const user = {
         
 
     },
+    //perfil de usuario
     profile: (req, res) => {
         //le comparto la informacion de session a la vista
         res.render('perfil', { user: req.session.userLogged })
@@ -33,41 +35,44 @@ const user = {
       req.session.destroy();//borra todo lo que se encuentre en session
       return res.redirect('/home');
     },
-    inicio: (req, res) => { res.render('registro') },
-     
-    guardar: async function (req, res){
-          const errores = validationResult(req);
     
-          if(errores.isEmpty()){
+    //registro
+    inicio: (req, res) => { res.render('registro') },
+
+    guardar: async function (req, res){
+        const errores = validationResult(req);
+    
+        if(errores.isEmpty()){
           //Si no hay errores pero el email ya esta en la base de datos,
           //debe saltar el error de que ya se encuentra registrado el email
-          let userInDB = await db.User.findOne({
+            let userInDB = await db.User.findOne({
             where:{
                 email : req.body.email
+                
             }
-          });
-          if(userInDB){
-              return res.render('registro', {errores:{email:{msg: 'Este email ya esta registrado'}},
-              old: req.body
-              });
+        });
+        if(userInDB){
+            return res.render('registro', {errores:{email:{msg: 'Este email ya esta registrado'}},
+            old: req.body
+            });
           }
           
-          let hash = req.body.password;
-          /*let avatar = db.Avatars.create({
-              avatar_name: req.file.filename
-          })*/
+        let hash = req.body.password;
+
+        let userToCreate = {
+            
+            ... req.body,
+            password:bcryptjs.hashSync( hash, 10) ,
+            avatar:req.file.filename
+        }
+     
           
-          let userToCreate = {
-                ... req.body,
-                password:bcryptjs.hashSync( hash, 10) ,
-               /* avatar: avatar*/
-          }
-          
-          db.User.create(userToCreate)
-          res.redirect("/home");
+        db.User.create(userToCreate)
+        
+        res.redirect("/home");
     }else {
          
-          res.render('registro', {errores: errores.mapped(), old: req.body})
+        res.render('registro', {errores: errores.mapped(), old: req.body})
     
           }
     }

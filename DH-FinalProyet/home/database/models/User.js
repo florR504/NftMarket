@@ -23,9 +23,8 @@ module.exports = function(sequelize, dataTypes){
            type: dataTypes.STRING(255),
            allowNull: true
        },
-       avatar_id: {
-           type: dataTypes.INTEGER,
-           autoIncrement: true,
+       avatar: {
+           type: dataTypes.STRING(100),
            allowNull: true,
            
        },
@@ -38,12 +37,7 @@ module.exports = function(sequelize, dataTypes){
    
    const User = sequelize.define(alias,cols, config );
 
-  User.associate = function(models){
-    User.belongsTo(models.Avatars,{
-        as: 'avatar_user',
-        foreignKey: 'avatar_id'
-    })
-   }
+
    
    return User;
    }
