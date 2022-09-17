@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head.ejs')%>
+<script src="/registerValidations.js"></script>
 <body class="body-register">
     <%-include ('./partials/nav.ejs') %> 
     <STYLE>A {text-decoration: none;} </STYLE>
@@ -20,8 +21,9 @@
              <% if (locals.errores && errores.name) { %>
               <p class="error"><%=errores.name.msg %></p>
              <% } %>
+             <div class="error-name"></div>
             <div class="form-box">
-                <label for="apellidoU">Apellido:</label>
+                <label for="userlastName">Apellido:</label>
                 <input
                  type="text"
                  name="lastName"
@@ -32,6 +34,7 @@
             <% if (locals.errores && errores.lastName) { %>
                 <p class="error"><%=errores.lastName.msg %></p>
                <% } %>
+               <div class="error-lastName"></div>
             <div class="form-box">
                 <label for="userEmail">Email:</label>
                 <input 
@@ -44,6 +47,7 @@
             <% if (locals.errores && errores.email) { %>
                 <p class="error"><%=errores.email.msg %></p>
                <% } %>
+            <div class="error-email"></div>
             <div class="form-box">
                 <label for="userPassword">Contraseña:</label>
                 <input 
@@ -55,7 +59,7 @@
             <% if (locals.errores && errores.password) { %>
                 <p class="error"><%=errores.password.msg %></p>
                <% } %>
-          
+          <div class="error-password"></div>
             <div class="avatar_registro ">
                 <label for="avatar">Sube aquí tu avatar:</label>
                 <input
@@ -72,6 +76,7 @@
                 <a href="#"> He leido y acepto los terminos y condiciones</a>
                 <input type="radio" id="termsAndCondition">
             </div>
+            <div class="error-terms"></div>
             <div class="form-submit">
                 <button type="submit">Registrarse</button>
             </div>
