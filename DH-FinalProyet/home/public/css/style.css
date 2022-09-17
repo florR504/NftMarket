@@ -9,7 +9,7 @@
 }
 
 nav {
-    background-color:white;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,7 +20,7 @@ nav {
     
 }
 #barraDeBusqueda{
-    
+    width: 18rem;
     box-shadow: 0px 0px 3px rgb(100, 100, 100) ;
 }
 .Img_Usuario_nav img {
@@ -200,10 +200,7 @@ a{
     font-size: 2.7rem;
     padding-top: 0.6rem;
     color:white;
-    background-image: url('../imagenes/fondo2.png');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.18);
+    background-color:rgb(32, 129, 226);
     background-blend-mode: darken;
     border-radius: 0.6rem;
     transition: all 450ms;
@@ -212,10 +209,7 @@ a{
 .icons:hover{
     color: white;
     font-size: 3rem;
-    background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.18);
+    background-color:rgb(32, 129, 226);
     background-blend-mode: darken;
     
 }
