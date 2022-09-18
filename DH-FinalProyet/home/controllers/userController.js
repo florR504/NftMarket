@@ -65,6 +65,7 @@ const user = {
             password:bcryptjs.hashSync( hash, 10) ,
             avatar:req.file.filename
         }
+        console.log(req.body.lastName)
      
           
         db.User.create(userToCreate)

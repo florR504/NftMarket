@@ -10,11 +10,11 @@
         <form class="form-register" action="/register" class="registro" method="post" enctype="multipart/form-data">
             <a href="/home"><img src="/imagenes/Nftlogo.png" alt="" ></a> 
             <div class="form-box">
-                <label for="nombreU">Nombre:</label>
+                <label for="userName">Nombre:</label>
                 <input 
                 type="text" 
                 name="name" 
-                id="userName"
+                id="user_name"
                 class="<%= locals.errores && errores.name ? 'input_error': null %> "
                 value="<%= locals.old && old.name ? old.name : null %>" >
             </div>
@@ -27,7 +27,7 @@
                 <input
                  type="text"
                  name="lastName"
-                 id="userlastName" 
+                 id="user_lastName" 
                  class="<%= locals.errores && errores.lastName ? 'input_error': null %> "
                  value="<%= locals.old && old.lastName ? old.lastName : null %>">
             </div>
@@ -40,7 +40,7 @@
                 <input 
                 type="email" 
                 name="email" 
-                id="userEmail" 
+                id="user_email" 
                 class="<%= locals.errores && errores.email ? 'input_error': null %> "
                 value="<%= locals.old && old.email ? old.email : null %> " >
             </div>
@@ -53,7 +53,7 @@
                 <input 
                 type="password" 
                 name="password" 
-                id="userPassword" 
+                id="user_password" 
                 class="<%= locals.errores && errores.password ? 'input_error': null %> ">
             </div>
             <% if (locals.errores && errores.password) { %>
@@ -64,14 +64,14 @@
                 <label for="avatar">Sube aquí tu avatar:</label>
                 <input
                  type="file" 
-                 id="avatar"
+                 id="user_avatar"
                  name="avatar"
                  class="<%= locals.errores && errores.avatar ? 'input_error': null %> ">
             </div>
             <% if (locals.errores && errores.avatar) { %>
                 <p class="error"><%=errores.avatar.msg %></p>
                <% } %>
-
+            <div class="error-avatar"></div>
             <div class="form-term">
                 <a href="#"> He leido y acepto los terminos y condiciones</a>
                 <input type="radio" id="termsAndCondition">
