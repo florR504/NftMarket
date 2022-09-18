@@ -484,7 +484,7 @@ span img{
 .error{
     color:  rgba(179, 0, 0, 1);
     font-size: smaller;
-    margin-right: 26rem;
+    
     margin-top: 0rem;
 }
 .input_error{
@@ -494,6 +494,7 @@ span img{
     background-repeat: no-repeat;
     background-position: 590px;
 }
+
 
 .contenedor_register{
     width: 60rem;
