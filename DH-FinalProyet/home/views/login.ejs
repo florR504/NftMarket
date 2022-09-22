@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/loginValidations.js"></script>
     <title>Log In</title>
 </head>
 <body>
@@ -21,12 +22,14 @@
                     <% if (locals.errors && errors.email) { %>
                         <p class="error"><%= errors.email.msg %> </p>
                       <% } %>
+                    <div class="error-email"></div>
                <div class="separacion-login"></div>
                 <div><label for="contraseña">contraseña:</label></div> 
-                    <input type="password" id="contraseña" class="input-login <%= locals.errors && errors.password ? 'input_error': null%> " name="password">
+                    <input type="password"  id="contraseña" class="input-login <%= locals.errors && errors.password ? 'input_error': null%> " name="password">
                 <% if (locals.errors && errors.password) { %>
                  <span> <p class="error"><%= errors.password.msg %> </p></span>
                 <% } %>
+                <div class="error-password"></div>
                 <div class="separacion-login"></div>
                  <a href="#">Olvidaste tu Contraseña?</a>
                  <button class="ingresar-con-google">
