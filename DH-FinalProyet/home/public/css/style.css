@@ -448,13 +448,15 @@ span img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #cecdcd;
+    background-color: rgb(200, 193, 193);
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     font-family: 'Poppins', sans-serif;
 }
+
 .detalleimgEdit img{
     box-shadow: 0px 0px 3px rgb(100, 100, 100);
-    margin-left: 5.5rem;
+    margin-left: 2.5rem;
+    background-color: white;
 }
 
 .detalleimgEdit input{
@@ -462,10 +464,11 @@ span img{
     width: 30rem;
     height: 3rem;
     border-radius: 0.5rem;
-    margin-left: 8rem;
+    margin-left: 5rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .detalleimgEdit button{
@@ -484,8 +487,11 @@ span img{
 .error{
     color:  rgba(179, 0, 0, 1);
     font-size: smaller;
-    
     margin-top: 0rem;
+}
+ .edit{
+    margin-left: 15rem;
+   
 }
 .input_error{
     border-color: rgba(179, 0, 0, 1);

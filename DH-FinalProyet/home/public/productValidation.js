@@ -38,9 +38,9 @@ window.addEventListener('load', function(){
           let name = event.target.name;
           let value = this.value
        
-          if(value > min || value < max){
+          if(value < min || value > max){
              
-             errors[name] = 'El valor ingresado debe ser mas largo';
+             errors[name] = 'No es posible agregar ese valor ';
  
              let $divError = document.querySelector('.error-'+ name);
              let $inputError = document.querySelector('#product_'+ name);
@@ -65,9 +65,9 @@ window.addEventListener('load', function(){
     $productName.addEventListener('blur', validarVacio);
    
     $productOditty.addEventListener('blur', validarVacio);
-    
+    $productOditty.addEventListener('blur', betweenNumber(2,10));
     $productPrice.addEventListener('blur', validarVacio);
-    $productPrice.addEventListener('blur', betweenNumber(3,10));
+
     
     
  

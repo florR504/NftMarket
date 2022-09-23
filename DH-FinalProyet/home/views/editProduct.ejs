@@ -8,8 +8,11 @@
     <!--Detalle del producto-->
     <div class="detalleimgEdit">
       <form method="POST" action="/productos/productDetail/<%= product.idNFTs %>/edit?_method=PUT" enctype="multipart/form-data">
+      
+        <p class="titulos-edit">Name:</p>
         <input type="text" name="name" id="product_name" value="<%= product.name %> " />
-        <div class="error-name"></div>
+        <div class="error-name edit"></div>
+ 
         <figure>
           <img
             src="<%= product.image ? product.image : '/imagenes/default-placeholder.png' %> "
@@ -20,13 +23,14 @@
         </figure>
 
         <input type="file" id="imagen-nft" name="imagen" required />
-
+        <p class="titulos-edit">Coleccion:</p>
         <input type="text" name="coleccion" value="<%= product.coleccion.name%> " disabled />
-
+        <p class="titulos-edit">Precio:</p>
         <input type="text" name="price" id="product_price" value="<%= product.price %> "  />
-        <div class="error-price"></div>
-        <input type="text" name="oddity" id="product_oddity" value="<%= product.oddity %> " />
-        <div class="error-oddity"></div>
+        <div class="error-price edit"></div>
+        <p class="titulos-edit">Rareza:</p>
+        <input type="number" name="oddity" id="product_oddity" value="<%= product.oddity %> " />
+        <div class="error-oddity edit"></div>
         <button type="submit">Modificar Nft</button>
       </form>
     </div>
