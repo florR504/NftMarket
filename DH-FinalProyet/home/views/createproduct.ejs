@@ -2,7 +2,7 @@
 <html lang="en">
 
   <%- include('./partials/head.ejs')%>
- 
+ <script src="/createProductValidations.js"></script>
  <title>Crear NFT</title>
 <body>
   <main class="fondo">
@@ -20,27 +20,32 @@
         <label for="imagenPrincipal">Seleccionar Imagen</label>
         <input type="file" name="imagen" id="imagenPrincipal" accept="image/*" />
       </div>
+      <div class="error-imagen"></div>
       <div class="tituloForm">
         <label for="titulo">Titulo del NFT:</label>
-        <input type="text" name="name" id="titulo" />
+        <input type="text" name="titulo" id="nft_titulo" />
       </div>
+      <div class="error-titulo"></div>
       <div class="descripcionForm">
         <label for="descripcion">Nivel de rareza:</label>
-        <input name="oddity" id="descripcion" type="number"></input>
+        <input name="oddity" id="nft_oddity" type="number"></input>
       </div>
+      <div class="error-oddity"></div>
       <div class="precioForm">
         <label for="precio">Precio:</label>
-        <input type="number" name="price" id="precio" step="0.01" />
+        <input type="number" name="price" id="nft_price" step="0.01" />
       </div>
+      <div class="error-price"></div>
       <div>
         <label for="coleccion">Coleccion:</label>
-        <select name="coleccion" id="coleccion">
+        <select name="coleccion" id="nft_coleccion">
           <option value="null">Selecciona una colección:</option>
           <% for( let i = 0; i < coleccion.length; i++ ) { %>
           <option value="<%= coleccion[i].id_coleccion  %> >"><%= coleccion[i].name %> </option>
           <% } %>
         </select>
       </div>
+      <div class="error-coleccion"></div>
       <div class="submitForm">
         <button type="submit">Publicar Nft</button>
       </div>

@@ -762,7 +762,7 @@ input:focus, select:focus{
 }
 
 .tituloForm input {
-    width: 100%;
+    width: 90%;
     height: 30px;
     padding-left: 5px;
     outline: none;
@@ -773,7 +773,7 @@ input:focus, select:focus{
 
 .descripcionForm { 
   
-    height: 50px;
+    margin-bottom: 0.5rem;
     justify-content: flex-start;
     font-size: 1.1em;
     color: rgb(132, 147, 173);
@@ -783,7 +783,7 @@ input:focus, select:focus{
 
 .descripcionForm input {
     height: 30px;
-    width: 100%;
+    width: 90%;
     padding: 5px;
     font-size: 1.1em;
     border: 1px solid lightgrey;
@@ -821,7 +821,7 @@ input:focus, select:focus{
 }
 
 .precioForm input{
-    width: 100%;
+    width: 90%;
     height: 30px;
     padding-left: 5px;
     font-size: 1.1em;
