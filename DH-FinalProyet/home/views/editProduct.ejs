@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head')%>
-
+<script src="/productValidation.js"></script>
   <body>
     <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
     <!--Detalle del producto-->
     <div class="detalleimgEdit">
       <form method="POST" action="/productos/productDetail/<%= product.idNFTs %>/edit?_method=PUT" enctype="multipart/form-data">
-        <input type="text" name="name" value="<%= product.name %> " />
+        <input type="text" name="name" id="product_name" value="<%= product.name %> " />
+        <div class="error-name"></div>
         <figure>
           <img
             src="<%= product.image ? product.image : '/imagenes/default-placeholder.png' %> "
@@ -22,10 +23,10 @@
 
         <input type="text" name="coleccion" value="<%= product.coleccion.name%> " disabled />
 
-        <input type="text" name="price" value="<%= product.price %> "  />
-
-        <input type="text" name="oddity" value="<%= product.oddity %> " />
-
+        <input type="text" name="price" id="product_price" value="<%= product.price %> "  />
+        <div class="error-price"></div>
+        <input type="text" name="oddity" id="product_oddity" value="<%= product.oddity %> " />
+        <div class="error-oddity"></div>
         <button type="submit">Modificar Nft</button>
       </form>
     </div>
