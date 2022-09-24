@@ -5,6 +5,7 @@ const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const productjsonRepository = require('../repositories/productJsonRepository')
 const db = require('../database/models');
+const {validationResult} = require('express-validator')
 
 const sequelize = db.sequelize;
 
@@ -27,6 +28,9 @@ crear: async function(req, res){
   res.render('createproduct', {coleccion: coleccion})
 },
 store: async function (req, res){
+ let errores = validationResult(req)
+ const coleccion = await db.Coleccion.findAll()
+ if(errores.isEmpty()){
  await db.Nfts.create({
       name: req.body.name,
       price: req.body.price,
@@ -35,8 +39,12 @@ store: async function (req, res){
       oddity: req.body.oddity,
 
   })
- 
   res.redirect('/productos')
+}else{
+  res.render('createproduct', {errores : errores.mapped(), coleccion: coleccion})
+}
+ 
+  
 },
 editForm: async function(req, res){
   const idProduct = parseInt(req.params.id, 10);

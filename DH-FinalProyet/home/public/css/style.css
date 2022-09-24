@@ -735,7 +735,7 @@ input:focus, select:focus{
     width: 100%;
     max-width: 700px;
     min-width: 400px;
-    height: 40rem;
+    height: 43rem;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
@@ -867,7 +867,7 @@ input:focus, select:focus{
 
 .submitForm {
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
 }
 
 .submitForm button {

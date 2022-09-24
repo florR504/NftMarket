@@ -26,23 +26,34 @@
         <input type="text" name="titulo" id="nft_titulo" />
       </div>
       <div class="error-titulo"></div>
+      <% if (locals.errores && errores.titulo) { %>
+        <p class="error"><%= errores.titulo.msg %> </p>
+       <% } %>
       <div class="descripcionForm">
         <label for="descripcion">Nivel de rareza:</label>
         <input name="oddity" id="nft_oddity" type="number"></input>
       </div>
       <div class="error-oddity"></div>
+      <% if (locals.errores && errores.oddity) { %>
+       <p class="error"><%= errores.oddity.msg %> </p>
+      <% } %>
       <div class="precioForm">
         <label for="precio">Precio:</label>
         <input type="number" name="price" id="nft_price" step="0.01" />
       </div>
       <div class="error-price"></div>
+      <% if (locals.errores && errores.price) { %>
+        <p class="error"><%= errores.price.msg %> </p>
+       <% } %>
       <div>
         <label for="coleccion">Coleccion:</label>
         <select name="coleccion" id="nft_coleccion">
           <option value="null">Selecciona una colección:</option>
-          <% for( let i = 0; i < coleccion.length; i++ ) { %>
+         
+           <% for( let i = 0; i < coleccion.length; i++ ) { %>
           <option value="<%= coleccion[i].id_coleccion  %> >"><%= coleccion[i].name %> </option>
           <% } %>
+        
         </select>
       </div>
       <div class="error-coleccion"></div>
