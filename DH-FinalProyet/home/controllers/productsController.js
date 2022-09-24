@@ -57,7 +57,7 @@ editForm: async function(req, res){
 },
 edit: async function (req, res){
   const idProducto = parseInt(req.params.id, 10);
-   db.Nfts.update({
+   await db.Nfts.update({
       name: req.body.name,
       price: req.body.price,
       image: '/uploads/' + req.file.filename,

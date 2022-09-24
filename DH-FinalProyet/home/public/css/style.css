@@ -353,8 +353,8 @@ a{
   
 }
 .login-body{
-    width: 96rem;
-    height: 47rem;
+    min-width: 100vh;
+    min-height: 100vh;
     background-image: url(https://media0.giphy.com/media/xTiTnumdcQABBLgM92/giphy.gif?cid=ecf05e47rjbad3nyhaxz67o6rpffyb9ajlz00ztizv1ggh1j&rid=giphy.gif&ct=g);;
     background-size: cover;
     background-position: center;
@@ -506,7 +506,7 @@ span img{
     width: 60rem;
     background-color: white;
     margin-top: 3rem;
-    margin-left: 17rem;
+    margin-left: 18rem;
     box-shadow: 0px 0px 5px rgb(100, 100, 100);
     
 }
@@ -518,22 +518,20 @@ span img{
     background-position: center;
     background-color:white;
     background-blend-mode: darken;
-    position: absolute;
+    
   
     
 }
 .container{
     
-    width: 95rem;
-    height: 45rem;
-    margin: 0;
-   
+   min-width: 100vh;
+   min-height: 100vh;
     
 }
 .registro {
     
-    min-width: 900px;
-    height: 100%;
+  
+    height: 100vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -552,7 +550,7 @@ span img{
 }
 
 .form-register {
-    width: 100%;
+   
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -718,6 +716,10 @@ input:focus, select:focus{
 }
 .profile_container {
    display: flex;
+   /*min-width: 100vh;*/
+   min-height: 100vh;
+   margin-top: 3rem;
+   justify-content: center;
    
     
 }
@@ -1326,7 +1328,7 @@ select option{
   /*login*/
   .login-body{
     width: 20rem;
-    height: 40rem;
+    min-height: 40rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
