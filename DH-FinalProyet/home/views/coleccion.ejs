@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/head')%>
+    <script src="/coleccionFront.js"></script>
     <body style="background-color: rgba(248, 237, 244, 0.88) ;">
         <!--Barra de navegación-->
          <%-include ('./partials/nav.ejs') %>
@@ -30,11 +31,12 @@
                 </button>
            </form>
            <select name="opciones" id="opciones">
-                <option class="option" value="porPrecioalto">De más caro a más barato</option>
-                <option class="option" value="porPreciobajo">De más barato a más caro</option>
-                <option class="option" value="MasPopulares">Más populares</option>
-                <option class="option" value="MenosPopulares">Menos populares</option>
-                <option class="option" value="MasRaros">Mayor rareza</option>
+                <option class="option" value="null">Seleccione una opción</option>
+                <option class="option" value="porPrecioalto" id="porPrecioAlto">De más caro a más barato</option>
+                <option class="option" value="porPreciobajo" id="porPrecioBajo">De más barato a más caro</option>
+                <option class="option" value="MasPopulares" id="masPopulares">Más populares</option>
+                <option class="option" value="MenosPopulares" id="menosPopulares">Menos populares</option>
+                <option class="option" value="MasRaros" id="masRaros">Mayor rareza</option>
             </select>
         </div>
     <!--coleccion-->
