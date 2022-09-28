@@ -10,6 +10,7 @@
 </ul>
 
 <h3>Tematica : Marketplace NFT</h3>
+<p>Nft Market es un ecommerce de tokens no fungibles, tambien conocidos como Nfts.Dentro de nuestra web puedes encontrar las colecciones más populares en el mercado, como así tambien las más raras e inalcanzables piezas de arte criptografico.No solo eso, sino que tambien tendrás la posibilidad de convertirte en un artista diseñando tus propios Nfts, y vendiendolos en nuestra plataforma.Únete y forma parte de el mundo del arte digital!
 
 <h4>Sitios de Referencia:</h4>
 <ul>
