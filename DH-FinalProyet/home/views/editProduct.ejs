@@ -11,6 +11,9 @@
       
         <p class="titulos-edit">Name:</p>
         <input type="text" name="name" id="product_name" value="<%= product.name %> " />
+        <% if (locals.errores && errores.name) { %>
+         <p class="error"><%= errores.name.msg %> </p>
+        <% } %>
         <div class="error-name edit"></div>
  
         <figure>
@@ -27,9 +30,15 @@
         <input type="text" name="coleccion" value="<%= product.coleccion.name%> " disabled />
         <p class="titulos-edit">Precio:</p>
         <input type="text" name="price" id="product_price" value="<%= product.price %> "  />
+        <% if (locals.errores && errores.price) { %>
+          <p class="error"><%= errores.price.msg %> </p>
+         <% } %>
         <div class="error-price edit"></div>
         <p class="titulos-edit">Rareza:</p>
         <input type="number" name="oddity" id="product_oddity" value="<%= product.oddity %> " />
+        <% if (locals.errores && errores.oddity) { %>
+          <p class="error"><%= errores.oddity.msg %> </p>
+         <% } %>
         <div class="error-oddity edit"></div>
         <button type="submit">Modificar Nft</button>
       </form>

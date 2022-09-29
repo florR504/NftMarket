@@ -51,9 +51,15 @@ editForm: async function(req, res){
   res.render('editProduct', {product: producto})
 },
 edit: async function (req, res){
+  const idProduct = parseInt(req.params.id, 10);
+  const producto = await db.Nfts.findByPk(idProduct,{
+      include: [{
+          association : 'coleccion'
+      }]
+  })
   let errores = validationResult(req)
   const idProducto = parseInt(req.params.id, 10);
-  
+  if(errores.isEmpty()){
    await db.Nfts.update({
       name: req.body.name,
       price: req.body.price,
@@ -65,6 +71,9 @@ edit: async function (req, res){
       }
   })
   await res.redirect(`/productos/productDetail/${idProducto}`)
+}else{
+  res.render('editProduct', {product: producto, errores: errores.mapped()})
+}
 },
 eliminar: async function(req, res){
   const idParseado = parseInt(req.params.id, 10)
