@@ -27,7 +27,7 @@
                 <div><label for="contraseña">contraseña:</label></div> 
                     <input type="password"  id="contraseña" class="input-login <%= locals.errors && errors.password ? 'input_error': null%> " name="password">
                 <% if (locals.errors && errors.password) { %>
-                 <span> <p class="error"><%= errors.password.msg %> </p></span>
+                 <p class="error"><%= errors.password.msg %> </p>
                 <% } %>
                 <div class="error-password"></div>
                 <div class="separacion-login"></div>

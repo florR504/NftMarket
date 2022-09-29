@@ -51,7 +51,9 @@ editForm: async function(req, res){
   res.render('editProduct', {product: producto})
 },
 edit: async function (req, res){
+  let errores = validationResult(req)
   const idProducto = parseInt(req.params.id, 10);
+  
    await db.Nfts.update({
       name: req.body.name,
       price: req.body.price,

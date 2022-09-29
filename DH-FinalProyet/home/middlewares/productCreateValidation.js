@@ -1,5 +1,5 @@
 const {body} = require('express-validator');
-const validateProduct = [
+const validateCreateProduct = [
     body('titulo').notEmpty().withMessage('Debes completar el titulo').bail()
     .isLength({min: 3}).withMessage('El titulo debe ser más largo'),
     body('oddity').notEmpty().withMessage('Debes completar el nivel de rareza'),
@@ -8,4 +8,4 @@ const validateProduct = [
    
 ]
 
-module.exports = validateProduct;
+module.exports = validateCreateProduct;
