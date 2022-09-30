@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head')%>
- <body style="background-color: white;">
+  <body style="background-color: white">
     <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
     <STYLE>A {text-decoration: none;} </STYLE>
     <!--Detalle del producto-->
-  <div class= 'productDetail_container'>
-    <div class="detalleimg">
-      <div class="titulo">
-         <%= producto.name %> 
-      </div>
-    
-      <img class="img_detail" alt="Bored ape nft" src="<%= producto.image%> " height="400rem" />
+    <div class="productDetail_container">
+      <div class="detalleimg">
+        <div class="titulo"><%= producto.name %></div>
 
-      <div class="codigonft">
-        <!--Reveer-->
-        <h4>Coleccion: <%= producto.coleccion.name %> </h4>
-        <div class="codigo">
-          <h4>Codigo NFT: <%= producto.name %> </h4>
+        <img
+          class="img_detail"
+          alt="Bored ape nft"
+          src="<%= producto.image%> "
+          height="400rem"
+        />
+
+        <div class="codigonft">
+          <!--Reveer-->
+          <h4>Coleccion: <%= producto.coleccion.name %></h4>
+          <div class="codigo">
+            <h4>Codigo NFT: <%= producto.name %></h4>
+          </div>
         </div>
       </div>
-    
-    </div>
-    <div class="detalleimg">
-      <div class="codigonft">
-        <img src="/imagenes/ventas.png" alt="">
+      <div class="detalleimg">
+        <div class="codigonft">
+          <img src="/imagenes/ventas.png" alt="" />
+        </div>
+        <div class="precio">
+          <p>Precio: <%= producto.price %></p>
+        </div>
+        <div class="productDetailButtons">
+          <a href="/productos/productDetail/<%=producto.idNFTs%>/edit">
+            <button class="button_product">Editar</button>
+          </a>
+          <button class="button_product">Añadir al carrito</button>
+          <form
+            action="/productos/productDetail/<%=producto.idNFTs%>/delete?_method=DELETE"
+            method="POST"
+          >
+            <button class="button_product">Eliminar</button>
+          </form>
+        </div>
       </div>
-      <div class="precio">
-        <p>Precio: <%= producto.price %> </p>
-      </div>
-    <div class="productDetailButtons">
-      <a href="/productos/productDetail/<%=producto.idNFTs%>/edit">
-        <button class="button_product">Editar</button>
-      </a> 
-      <button class="button_product">Añadir al carrito</button>
-      <form action="/productos/productDetail/<%=producto.idNFTs%>/delete?_method=DELETE" method="POST">
-        <button class="button_product">Eliminar</button>
-      </form>
-    </div>  
-
     </div>
-  </div>
     <!--Footer-->
-     <%-include('./partials/footer.ejs')%>
+    <%-include('./partials/footer.ejs')%>
   </body>
 </html>
