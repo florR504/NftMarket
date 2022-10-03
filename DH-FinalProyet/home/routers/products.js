@@ -24,9 +24,6 @@ router.post('/createProduct', upload.single("imagen"),productCreateValidation, p
 router.get('/productDetail/:id/edit', productsController.editForm)
 router.put('/productDetail/:id/edit', upload.single("imagen"),productEditValidation, productsController.edit)
 router.delete('/productDetail/:id/delete', productsController.eliminar);
-/*router.get('/createProduct', productsController.crear );
-router.post('/createProduct', upload.single("imagen"), productsController.store );
-router.get('/productDetail/:id/edit', productsController.editForm);
-router.put('/productDetail/:id/edit', upload.single("imagen"), productsController.editar);*/
+
 
 module.exports = router;

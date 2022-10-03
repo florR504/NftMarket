@@ -1,22 +1,37 @@
-const db = require("../database/models");
 const { validationResult } = require("express-validator");
+const db = require('../database/models')
 const sequelize = db.sequelize;
 
 const productos = {
   coleccion: async function (req, res) {
-    const nftsList = await db.Nfts.findAll();
+    const id = parseInt(req.params.id, 10);
+    if (id === 1){
+      const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
+      const image = "bored-ape/";
+      return res.render("coleccion", { products: nftsList, image });
+    }else if (id === 2){
+      const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
+      const image = "CyberKongz VX/";
+      return res.render("coleccion", { products: nftsList, image });
+    }
     res.render("coleccion", { products: nftsList });
   },
   detalle: async function (req, res) {
     const idProduct = parseInt(req.params.id, 10);
-    const producto = await db.Nfts.findByPk(idProduct, {
-      include: [
-        {
-          association: "coleccion",
-        },
-      ],
-    });
-    res.render("productDetail", { producto: producto });
+      const producto = await db.Nfts.findByPk(idProduct, {
+        include: [
+          {
+            association: "coleccion",
+          },
+        ],
+      });
+      if (producto.dataValues.coleccion_id == 1){
+        const image = "bored-ape/";
+        return res.render("productDetail", { producto: producto, image });
+      }else if (producto.dataValues.coleccion_id == 2){
+        const image = "CyberKongz VX/";
+        return res.render("productDetail", { producto: producto, image });
+      }
   },
   crear: async function (req, res) {
     const coleccion = await db.Coleccion.findAll();
@@ -93,5 +108,4 @@ const productos = {
     res.redirect("/productos");
   },
 };
-
 module.exports = productos;

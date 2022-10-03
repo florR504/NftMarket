@@ -9,14 +9,12 @@
     <div class="productDetail_container">
       <div class="detalleimg">
         <div class="titulo"><%= producto.name %></div>
-
         <img
           class="img_detail"
           alt="Bored ape nft"
-          src="<%= producto.image%> "
+          src="/imagenes/<%= image%><%= producto.image%> "
           height="400rem"
         />
-
         <div class="codigonft">
           <!--Reveer-->
           <h4>Coleccion: <%= producto.coleccion.name %></h4>
@@ -50,3 +48,23 @@
     <%-include('./partials/footer.ejs')%>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

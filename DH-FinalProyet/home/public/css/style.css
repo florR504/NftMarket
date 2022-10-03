@@ -1,7 +1,7 @@
 .background {
   /*En revision*/
   height: 780px;
-  background-image: url("../imagenes/Gris.jpg");
+ 
   background-size: cover;
   background-color: white;
   /*filter: blur(8px);*/
@@ -42,8 +42,7 @@ nav {
   margin-top: 0rem;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.18);
-  background-blend-mode: darken;
+
   color: white;
   text-align: center;
   padding-top: 1rem;
