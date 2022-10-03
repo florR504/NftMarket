@@ -8,12 +8,21 @@ const productos = {
     if (id === 1){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
       const image = "bored-ape/";
-      return res.render("coleccion", { products: nftsList, image });
+      return res.render("coleccion", { products: nftsList, image, coleccion: 'Bored Ape' });
     }else if (id === 2){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
       const image = "CyberKongz VX/";
-      return res.render("coleccion", { products: nftsList, image });
-    }
+      return res.render("coleccion", { products: nftsList, image, coleccion: 'CyberKongz' });
+    }else if (id === 3){
+      const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
+      const image = "ethilizards/";
+      return res.render("coleccion", { products: nftsList, image, coleccion: 'Ethilizars' });
+    }else if (id === 4){
+      const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
+      const image = "Edifice/";
+      return res.render("coleccion", { products: nftsList, image, coleccion: 'Edifice' });
+    };
+    const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
     res.render("coleccion", { products: nftsList });
   },
   detalle: async function (req, res) {
@@ -30,6 +39,12 @@ const productos = {
         return res.render("productDetail", { producto: producto, image });
       }else if (producto.dataValues.coleccion_id == 2){
         const image = "CyberKongz VX/";
+        return res.render("productDetail", { producto: producto, image });
+      }else if (producto.dataValues.coleccion_id == 3){
+        const image = "ethilizards/";
+        return res.render("productDetail", { producto: producto, image });
+      }else if (producto.dataValues.coleccion_id == 4){
+        const image = "Edifice/";
         return res.render("productDetail", { producto: producto, image });
       }
   },
