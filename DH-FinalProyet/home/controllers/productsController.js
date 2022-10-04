@@ -8,22 +8,22 @@ const productos = {
     if (id === 1){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
       const image = "bored-ape/";
-      return res.render("coleccion", { products: nftsList, image, coleccion: 'Bored Ape' });
+      return res.render("coleccion", { products: nftsList, image, coleccionName: 'Bored Ape' });
     }else if (id === 2){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
       const image = "CyberKongz VX/";
-      return res.render("coleccion", { products: nftsList, image, coleccion: 'CyberKongz' });
+      return res.render("coleccion", { products: nftsList, image, coleccionName: 'CyberKongz' });
     }else if (id === 3){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
       const image = "ethilizards/";
-      return res.render("coleccion", { products: nftsList, image, coleccion: 'Ethilizars' });
+      return res.render("coleccion", { products: nftsList, image, coleccionName: 'Ethilizars' });
     }else if (id === 4){
-      const nftsList = await db.Nfts.findAll({where: {coleccion_id: 4}});
+      const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
       const image = "Edifice/";
-      return res.render("coleccion", { products: nftsList, image, coleccion: 'Edifice' });
+      return res.render("coleccion", { products: nftsList, image, coleccionName: 'Edifice' });
     };
-    const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
-    res.render("coleccion", { products: nftsList });
+  
+    res.render("coleccion", { products: nftsList  });
   },
   detalle: async function (req, res) {
     const idProduct = parseInt(req.params.id, 10);
@@ -49,8 +49,8 @@ const productos = {
       }
   },
   crear: async function (req, res) {
-    const coleccion = await db.Coleccion.findAll();
-    res.render("createproduct", { coleccion: coleccion });
+    const col = await db.Coleccion.findAll();
+    res.render("createproduct", { coleccion: col });
   },
   store: async function (req, res) {
     let errores = validationResult(req);
@@ -60,10 +60,10 @@ const productos = {
         name: req.body.name,
         price: req.body.price,
         coleccion_id: req.body.coleccion,
-        image: "/uploads/" + req.file.filename,
+        image: req.file.filename,
         oddity: req.body.oddity,
       });
-      res.redirect("/productos");
+      res.redirect("/productos/coleccion/1");
     } else {
       res.render("createproduct", {
         errores: errores.mapped(),
@@ -120,7 +120,7 @@ const productos = {
     await db.Nfts.destroy({
       where: { idNFTs: idParseado },
     });
-    res.redirect("/productos");
+    res.redirect("/home");
   },
 };
 module.exports = productos;
