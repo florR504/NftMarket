@@ -1,11 +1,95 @@
 .background {
   /*En revision*/
-  height: 780px;
+ 
  
   background-size: cover;
   background-color: white;
+ 
   /*filter: blur(8px);*/
 }
+
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index:2 ;
+}
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo{
+  text-transform: uppercase;
+
+}
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+
+}
+.text{
+  position: relative;
+  z-index: 10;
+}
+.text h2{
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3{
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-align: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blueviolet;
+  mix-blend-mode: overlay;
+}
+
 
 nav {
   background-color: white;
@@ -46,9 +130,9 @@ nav {
   color: white;
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 15rem;
+  padding-bottom: 0rem;
   flex-wrap: wrap;
-  padding-top: 6rem;
+  
 }
 
 h1 {
@@ -93,7 +177,7 @@ h3:hover {
 .tendencias{
     display: flex;
    justify-content: center;
-   margin-top: 18rem;
+   margin-top: 0rem;
 }
 .contenedor-tendencias{
     width: 200vh;
@@ -180,12 +264,14 @@ a {
 }
 
 .div-2 {
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 59rem;
   background-color: black;
   padding: 4rem;
+  width: 100%;
  
 }
 

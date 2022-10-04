@@ -18,7 +18,7 @@ const productos = {
       const image = "ethilizards/";
       return res.render("coleccion", { products: nftsList, image, coleccion: 'Ethilizars' });
     }else if (id === 4){
-      const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
+      const nftsList = await db.Nfts.findAll({where: {coleccion_id: 4}});
       const image = "Edifice/";
       return res.render("coleccion", { products: nftsList, image, coleccion: 'Edifice' });
     };
