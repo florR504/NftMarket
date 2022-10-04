@@ -54,6 +54,7 @@ const productos = {
   },
   store: async function (req, res) {
     let errores = validationResult(req);
+ 
     const coleccion = await db.Coleccion.findAll();
     if (errores.isEmpty()) {
       await db.Nfts.create({
@@ -63,7 +64,19 @@ const productos = {
         image: req.file.filename,
         oddity: req.body.oddity,
       });
-      res.redirect("/productos/coleccion/1");
+
+      const idColeccion = parseInt(req.body.coleccion, 10);
+      const carpetFile = await db.Coleccion.findOne({
+        where:{
+          id_coleccion : idColeccion
+        }
+      });
+      const image= `${carpetFile.dataValues.name}/`
+   
+      res.redirect(`/productos/coleccion/${idColeccion}`);
+    
+   
+     
     } else {
       res.render("createproduct", {
         errores: errores.mapped(),
