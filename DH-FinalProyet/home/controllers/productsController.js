@@ -7,20 +7,20 @@ const productos = {
     const id = parseInt(req.params.id, 10);
     if (id === 1){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
-      const image = "bored-ape/";
-      return res.render("coleccion", { products: nftsList, image, coleccionName: 'Bored Ape' });
+      const image = 'monogolden.webp'
+      return res.render("coleccion", { products: nftsList,image,  coleccionName: 'Bored Ape' });
     }else if (id === 2){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
-      const image = "CyberKongz VX/";
-      return res.render("coleccion", { products: nftsList, image, coleccionName: 'CyberKongz' });
+      const image = 'cyberimage.png'
+      return res.render("coleccion", { products: nftsList,image,coleccionName: 'CyberKongz' });
     }else if (id === 3){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
-      const image = "ethilizards/";
-      return res.render("coleccion", { products: nftsList, image, coleccionName: 'Ethilizars' });
+      const image = 'lagarto.jpg'
+      return res.render("coleccion", { products: nftsList,image,coleccionName: 'Ethilizars' });
     }else if (id === 4){
       const nftsList = await db.Nfts.findAll({where: {coleccion_id: id}});
-      const image = "Edifice/";
-      return res.render("coleccion", { products: nftsList, image, coleccionName: 'Edifice' });
+      const image = 'edificio.png'
+      return res.render("coleccion", { products: nftsList,image, coleccionName: 'Edifice' });
     };
   
     res.render("coleccion", { products: nftsList  });
@@ -35,17 +35,13 @@ const productos = {
         ],
       });
       if (producto.dataValues.coleccion_id == 1){
-        const image = "bored-ape/";
-        return res.render("productDetail", { producto: producto, image });
+        return res.render("productDetail", { producto: producto});
       }else if (producto.dataValues.coleccion_id == 2){
-        const image = "CyberKongz VX/";
-        return res.render("productDetail", { producto: producto, image });
+        return res.render("productDetail", { producto: producto});
       }else if (producto.dataValues.coleccion_id == 3){
-        const image = "ethilizards/";
-        return res.render("productDetail", { producto: producto, image });
+        return res.render("productDetail", { producto: producto});
       }else if (producto.dataValues.coleccion_id == 4){
-        const image = "Edifice/";
-        return res.render("productDetail", { producto: producto, image });
+        return res.render("productDetail", { producto: producto });
       }
   },
   crear: async function (req, res) {

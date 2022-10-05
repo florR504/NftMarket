@@ -8,7 +8,7 @@ const productEditValidation = require('../middlewares/productEditValidation')
 
 const storage = multer.diskStorage({
     destination: function(req, file,cb){
-        const rutaUpload = path.resolve(__dirname, '../public/uploads')
+        const rutaUpload = path.resolve(__dirname, '../public/imagenes')
         cb(null, rutaUpload)
     },
     filename : function(req, file, cb){
