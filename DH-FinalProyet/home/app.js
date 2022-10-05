@@ -8,7 +8,8 @@ const rutaProductColeccion = require('./routers/products')
 const methodOverride = require('method-override');
 const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-
+const dbRouter = require('./routers/apiRoutes');
+const dbUserRouter = require('./routers/apiUsersRoutes');
 
 app.set('view engine', 'ejs');
 
@@ -26,6 +27,8 @@ app.use(express.json());
 app.use("/", rutaUser);
 app.use("/home",mainRouter );
 app.use("/productos", rutaProductColeccion);
+app.use("/nfts", dbRouter);
+app.use("/users", dbUserRouter)
 
 
 
