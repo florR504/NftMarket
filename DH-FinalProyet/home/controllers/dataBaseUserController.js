@@ -6,9 +6,24 @@ const Users = DB.User;
 const DataBaseUser = {
   allUsers: async (req, res) => {
     const usuarios = await Users.findAll();
-    return res.json({
-      count: usuarios.length,
-      users: usuarios,
+    let userToSend = [];
+    let count = usuarios.length;
+
+    usuarios.forEach((user) => {
+      let userInfoToSend = {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        detail: "http://localhost:3030/api/users/" + user.id 
+      };
+
+      userToSend.push(userInfoToSend);
+    });
+    res.status(200).json({
+      status: 200,
+      count: count,
+      users: userToSend,
+  
     });
   },
   oneUser: async (req, res) => {
