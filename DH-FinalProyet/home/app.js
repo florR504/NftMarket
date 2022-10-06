@@ -27,8 +27,8 @@ app.use(express.json());
 app.use("/", rutaUser);
 app.use("/home",mainRouter );
 app.use("/productos", rutaProductColeccion);
-app.use("/nfts", dbRouter);
-app.use("/users", dbUserRouter)
+app.use("/api", dbRouter);
+app.use("/api", dbUserRouter)
 
 
 
