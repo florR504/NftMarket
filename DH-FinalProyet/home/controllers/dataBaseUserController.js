@@ -28,7 +28,19 @@ const DataBaseUser = {
   },
   oneUser: async (req, res) => {
     const id = req.params.id;
-    return res.send(await Users.findOne({ where: { id: id } }));
+    const userInformation = await Users.findOne({
+      where: {
+        id: id
+      }
+    })
+    res.status(200).json({
+      id: userInformation.id,
+      name: userInformation.name,
+      lastName: userInformation.lastName,
+      email: userInformation.email,
+      avatar: "http://localhost:3031/imagenes/" + userInformation.avatar
+
+  })
   },
   userByName: async (req, res) => {
     const name = req.query.name;
