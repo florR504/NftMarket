@@ -18,13 +18,21 @@ const DataBase = {
             association: 'nfts'
         }]
     });
-    const categories = allColeccions.forEach(coleccion => console.log(coleccion))
-
+  
+    const orderByColeccion = [];
     const productsToSend = [];
     const count = allProducts.length;
 
-
-
+    allColeccions.forEach((coleccion) => {
+      
+      let sameColeccion = 0;
+      allProducts.forEach((product) => {product.dataValues.coleccion_id === coleccion.dataValues.id_coleccion ? sameColeccion++ : "";})
+      console.log(allProducts);
+      orderByColeccion.push({
+          name: coleccion.dataValues.name,
+          count: sameColeccion,
+  })});
+    
     allProducts.forEach((product) => {
       const productInfo = {
         id: product.idNFTs,
@@ -39,8 +47,9 @@ const DataBase = {
     res.status(200).json({
       status: 200,
       count: count,
-      //countByCategory:
+      countByCategory: orderByColeccion,
       products: productsToSend,
+    
     });
   },
   oneNft: async (req, res) => {

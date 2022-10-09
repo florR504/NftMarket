@@ -10,6 +10,7 @@ const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 const dbRouter = require('./routers/apiRoutes');
 const dbUserRouter = require('./routers/apiUsersRoutes');
+const cors = require('cors');
 
 app.set('view engine', 'ejs');
 
@@ -19,6 +20,10 @@ app.use(session({
     saveUninitialized: false
 }))
 app.use(userLoggedMiddleware);//Middleware de aplicación
+app.use(cors({
+ origin: 'http://localhost:3000'
+}))
+
 app.use(methodOverride('_method'))
 app.use(express.static(publicPath));
 //le indica a express que vamos a trabajar con JSON//
