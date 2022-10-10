@@ -48,5 +48,13 @@
   "email": "florenciar504@gmail.com",
   "password": "$2a$10$ydIRs74qnAU2VwsKXOUgMeXq11TxNl1AkFM7IG3dy6IDSTMqKmRJW",
   "avatar": "avatar-1660093217590"
- }
+ },
+ {
+    "id": 7,
+    "name": " Helado",
+    "lastName": " Uva",
+    "email": "HeladoUva@gmail.com",
+    "password": "$2a$10$ydIRs74qnAU2VwsKXOUgM253252352352352353dy6IDSTMqKmRJW",
+    "avatar": "avatar-1660093217590"
+   }
 ]
