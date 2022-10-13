@@ -8,6 +8,11 @@
   /*filter: blur(8px);*/
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .showcase{
   position: absolute;
   right: 0;
