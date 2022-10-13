@@ -2,7 +2,7 @@
 <html lang="en">
     <!--head-->
     <%- include('./partials/head.ejs')%>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <body>
         <!--Barra de navegación-->
         <%-include ('./partials/nav.ejs') %> 
@@ -40,40 +40,75 @@
         <!--Guía y cajas-->
             <div class="div-2">
                 <div class="contenedor">
-                    <a href="/profile">
-                        <div class="cajas" id="user-icon" >
-                            <div class="icons" >
-                                 <i class="fas fa-user"></i>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+        
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <a href="/profile">
+                                        <div class="cajas" id="user-icon" >
+                                           
+                                            <div class="icons" >
+                                                <i class="fas fa-user"></i>
+                                             </div>
+                                            <h4>Tu cuenta</h4>
+                                            <p>Ingresa a tu perfil</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        <h4>Tu cuenta</h4>
-                        <p>Ingresa a tu perfil</p>
-                    </div>
-                </a>
-                    <a href="/productos/createProduct">
-                    <div class="cajas">
-                        <div class="icons">
-                            <i class="fas fa-paint-brush"></i>
-                         </div>
-                        <h4>Conviertete en un artista!</h4>
-                        <p>Crea y vende tus propios NFT's</p>
-                    </div>
-                    </a>
-                    <div class="cajas" >
-                        <div class="icons">
-                            <i class="fas fa-shopping-cart"></i>
-                         </div>
-                        <h4>Organiza tus compras</h4>
-                        <p>Tus productos te esperan!</p>
-                    </div>
-                    <div class="cajas">
-                        <div class="icons">
-                            <i class="fas fa-level-up-alt" ></i>
-                         </div>
-                        <h4>Tus inversiones, en alza</h4>
-                        <p>Los valores de los NFT's aumentan cada día</p>
+
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <a href="/productos/createProduct">
+                                        <div class="cajas">
+                                            <div class="icons">
+                                                <i class="fas fa-paint-brush"></i>
+                                             </div>
+                                            <h4>Conviertete en un artista!</h4>
+                                            <p>Crea y vende tus propios NFT's</p>
+                                        </div>
+                                        </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <div class="cajas" >
+                                        <div class="icons">
+                                            <i class="fas fa-shopping-cart"></i>
+                                         </div>
+                                        <h4>Organiza tus compras</h4>
+                                        <p>Tus productos te esperan!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <div class="cajas">
+                                        <div class="icons">
+                                            <i class="fas fa-level-up-alt" ></i>
+                                         </div>
+                                        <h4>Tus inversiones, en alza</h4>
+                                        <p>Los valores de los NFT's aumentan cada día</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons-->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> --> 
                     </div>
                 </div>
-        </div>
+            </div>
     </div>
     <div class="tendencias">
     <div class="contenedor-tendencias">
@@ -362,6 +397,7 @@
         <div class="separe"></div>
  <!--Footer-->
         <%-include('./partials/footer.ejs')%>
-       
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="/slider.js"></script>
     </body>
 </html>
