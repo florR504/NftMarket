@@ -64,5 +64,14 @@ const DataBase = {
       })
     );
   },
+  nftByOddity: async (req, res) => {
+    return res.send(
+      await Products.findAll({
+       order: [
+        ['oddity', 'DESC']
+       ]
+      })
+    );
+  },
 };
 module.exports = DataBase;

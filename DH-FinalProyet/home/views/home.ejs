@@ -3,6 +3,7 @@
     <!--head-->
     <%- include('./partials/head.ejs')%>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="/homeFront.js"></script>
     <body>
         <!--Barra de navegación-->
         <%-include ('./partials/nav.ejs') %> 
@@ -10,6 +11,16 @@
         <main>
         <!--Banner-->
        <div class="background">
+        <div id="mySidebar" class="sidebar" style="z-index:100;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+         
+            <!--<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->  
             <div class="div-1">
                 <section class="showcase">
                     <video autoplay loop muted src="https://media.niftygateway.com/video/upload/f_webm,q_auto/v1664740212/Anka/LuchoPoletti/oct2022/Promo/Cypherpunk_Paradise_Banner_8_Seconds_title_centered_kb9nni.mp4"></video>
