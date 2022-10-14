@@ -1,10 +1,10 @@
 <nav>
-    <button type="menu" class="buttonsofnav openbtn" id="menu"  onclick="openNav()"><i class="fas fa-bars" ></i></button>
+    <button type="menu" class="buttonsofnav openbtn" id="menu"><i class="fas fa-bars" ></i></button>
     <a href="/home"> 
         <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="40px" id="logo">
     </a>
         <div class="separar"></div>
-        <form action="#" method="get" >
+        <form action="#" method="get" id="buscador_nav">
             <input type="text" placeholder="Qué estas buscando?" class="buscador" id="barraDeBusqueda">
             <button type="submit" id="lupa" class="buttonsofnav">
                 <i class="fas fa-search"></i>
@@ -12,19 +12,19 @@
         </form>
         <div class="separar"></div>
         <% if (locals.isLogged) { %>
-        <div class="Img_Usuario_nav">
+        <div class="Img_Usuario_nav" id="user_nav">
             <img src="/uploads/<%= locals.userLogged.avatar %> " alt="">
             <a href="/profile">
                 <p>Hi <%= locals.userLogged.name %>   <i class="fas fa-angle-down"></i></p>
             </a>
         </div>
       <% } else { %>
-          <form method="get" action="/">
+          <form method="get" action="/" id="form_nav">
             <button type="submit" class="buttonsofnav" id="botondeingresar">
                Login
             </button>
         </form>
-        <form method="get"  action="/register">
+        <form method="get"  action="/register" id="register_nav">
             <button type="submit" class="buttonsofnav" id="botonderegistro">
                 Registrate
          </button>
