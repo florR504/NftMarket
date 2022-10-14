@@ -298,9 +298,7 @@ h3:hover {
   background-color: rgb(32, 129, 226);
   color: white;
 }
-.login_sidebar{
-  display: none;
-}
+
 .buttonsofnav {
   padding: 0.6rem;
   background-color: black;
