@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <%- include('./partials/head.ejs')%>
+    <script src="/homeFront.js"></script>
     <title>Perfil</title>
 </head>
 <body style="background-color: rgba(236, 236, 236, 0.88);">
     <!--Nav Bar-->
     <%-include ('./partials/nav.ejs') %> 
+    <div id="mySidebar" class="sidebar" style="z-index:100;">
+        <a href="javascript:void(0)" class="closebtn" id="close">×</a>
+        <a href="/productos/createProduct">Crea tu Nft</a>
+        <a href="#">Cart</a>
+        <a href="/profile">Mi cuenta</a>
+        <a href="#">Contáctanos</a>
+      </div>
     <STYLE>A {text-decoration: none;} </STYLE>
     <!--Body-->
 <div class="profile_container">

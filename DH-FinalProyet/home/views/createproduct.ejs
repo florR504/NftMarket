@@ -3,10 +3,18 @@
 
   <%- include('./partials/head.ejs')%>
  <script src="/createProductValidations.js"></script>
+ <script src="/homeFront.js"></script>
  <title>Crear NFT</title>
 <body>
   <main class="fondo">
   <%-include ('./partials/nav.ejs') %> 
+  <div id="mySidebar" class="sidebar" style="z-index:100;">
+    <a href="javascript:void(0)" class="closebtn" id="close">×</a>
+    <a href="/productos/createProduct">Crea tu Nft</a>
+    <a href="#">Cart</a>
+    <a href="/profile">Mi cuenta</a>
+    <a href="#">Contáctanos</a>
+  </div>
  
   <div class="productForm">
     <div class="logo">

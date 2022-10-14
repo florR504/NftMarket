@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head')%>
+  <script src="/homeFront.js"></script>
   <body style="background-color: white">
     <!--Barra de navegacion-->
     <%-include ('./partials/nav.ejs') %>
+    <div id="mySidebar" class="sidebar" style="z-index:100;">
+      <a href="javascript:void(0)" class="closebtn" id="close">×</a>
+      <a href="/productos/createProduct">Crea tu Nft</a>
+      <a href="#">Cart</a>
+      <a href="/profile">Mi cuenta</a>
+      <a href="#">Contáctanos</a>
+    </div>
     <STYLE>A {text-decoration: none;} </STYLE>
     <!--Detalle del producto-->
     <div class="productDetail_container">

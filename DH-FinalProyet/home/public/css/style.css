@@ -99,9 +99,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
   opacity: 0.8;
+
 
 }
 .text{
@@ -152,11 +153,15 @@
 nav {
   background-color: black;
   display: flex;
+  position: fixed;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  min-width: 98vw;
+  z-index: 20;
+ 
 }
 #barraDeBusqueda {
   width: 18rem;
@@ -184,7 +189,7 @@ nav {
   margin-top: 0rem;
   background-size: cover;
   background-position: center;
-
+  position: relative;
   color: white;
  
   padding-top: 1rem;
@@ -335,6 +340,7 @@ a {
   background-color: black;
   padding: 4rem;
   width: 100rem;
+  position: relative;
  
 }
 
@@ -346,11 +352,31 @@ a {
   box-shadow: 0px 0px 10px gray;
   text-align: center;
   width: 20.5rem;
-  height: 16rem;
+  height: 18rem;
   border-color: gray;
   border-radius: 0.6rem;
   transition: all 450ms;
+  position: relative;
+  z-index: 2;
 
+
+}
+.cajas p{
+  z-index: 3;
+  color: white;
+  position: relative;
+  bottom: 60px;
+}
+.cajas img{
+  width: 20.5rem;
+  height: 18rem;
+  border-radius: 0.6rem;
+ 
+}
+.swiper-slide p{
+  opacity: 100;
+  color: white;
+  
 }
 .cajas:hover {
   box-shadow: 0px 0px 10px cyan;
@@ -371,12 +397,7 @@ a {
   border-radius: 0.6rem;
   transition: all 450ms;
 }
-.icons:hover {
-  color: white;
-  font-size: 3rem;
-  background-color: rgb(32, 129, 226);
-  background-blend-mode: darken;
-}
+
 #colecciones {
   color: rgba(0, 0, 63, 0.992);
   font-size: 1.8rem;
@@ -517,17 +538,8 @@ a {
   color: white;
 }
 
-.cajas h4 {
-  font-family: "Poppins", sans-serif;
-}
-.cajas p {
-  font-family: "Poppins", sans-serif;
-  opacity: 0;
-  transition: all 450ms;
-}
-.cajas p:hover {
-  opacity: 100;
-}
+
+
 .description {
   text-align: center;
   display: flex;
@@ -859,7 +871,7 @@ select:focus {
   align-items: center;
   flex-direction: flex-end;
   background-color: white;
-  margin-top: 3rem;
+  margin-top: 6rem;
   width: 30rem;
   height: 5rem;
   margin-left: 10rem;
@@ -888,7 +900,7 @@ select:focus {
   background-color: white;
   width: 45rem;
   height: 36rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-left: 2rem;
   border-radius: 1rem;
 }
@@ -896,7 +908,6 @@ select:focus {
   display: flex;
   /*min-width: 100vh;*/
   min-height: 100vh;
-  margin-top: 3rem;
   justify-content: center;
 }
 .profile_misNfts .mis_nft {
@@ -920,7 +931,8 @@ select:focus {
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 25rem;
-  margin-top: 2rem;
+ 
+  
 }
 
 .form_create div {
@@ -1068,6 +1080,7 @@ select:focus {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  margin-top: 3rem;
 }
 .logo i {
   font-size: 3rem;
