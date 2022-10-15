@@ -5,34 +5,48 @@ $opciones.addEventListener('change', (e)=>{
     switch (e.target.value) {
         
             case "porPrecioalto":
-                fetch('http://localhost:3031/api/products/oddity')
-                    .then(res => res.json())
-                    .then((data) => {data.forEach((data) => {console.log(data.oddity);})})
-             
-                $slideContainer.forEach((slide, i) => {
-                    console.log(slide.children[i].children[0]);
-                })
+                 fetch('http://localhost:3031/api/products/higherPrice')
+                     .then(res => res.json())
+                     .then((data) => {console.log(data)})
+
+                // let childrenNodes = [];
+                // let childValues = [];
+
+                // $slideContainer.forEach((slide) => {
+                //     childrenNodes.push(slide.children);
+                // })
+
+                // childrenNodes.forEach((child) => {
+                //     for(let i = 0; i < child.length; i++){
+                //         let price;
+                //         price = child[i].children[0].children[2].textContent;
+                //         price = parseInt(price.trimStart().slice(6,price.length));
+                        
+                //     }
+                // })
                 break;
         
             case "porPreciobajo":
-                console.log("porPreciobajo");
+                fetch('http://localhost:3031/api/products/lowerPrice')
+                .then(res => res.json())
+                .then((data) => {console.log(data)})
                    
                     break;
 
-            case "MasPopulares":
-                console.log("MasPopulares");
-
-                    break;
-
-            case "MenosPopulares":
-                console.log("MenosPopulares");
-                   
-                    break;
+        
 
             case "MasRaros":
-                console.log("MasRaros");
+                fetch('http://localhost:3031/api/products/oddity')
+                .then(res => res.json())
+                .then((data) => {console.log(data)})
                        
                     break;   
+            case "MenosRaros":
+                fetch('http://localhost:3031/api/products/lowerOddity')
+                    .then(res => res.json())
+                    .then((data) => {console.log(data)})
+                               
+                     break; 
         };
 });
 

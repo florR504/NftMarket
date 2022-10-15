@@ -62,7 +62,7 @@
 }
 .swiper {
   width: 90vw;
-  height: 300px;
+  height: 200px;
 }
 
 .showcase{
@@ -159,7 +159,7 @@ nav {
   align-items: center;
   padding: 0.3rem;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  min-width: 98vw;
+  min-width: 98.5vw;
   z-index: 20;
  
 }
@@ -336,7 +336,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 47rem;
+  margin-top: 43rem;
   background-color: black;
   padding: 4rem;
   width: 100rem;
@@ -560,6 +560,40 @@ a {
   font-family: "Poppins", sans-serif;
   color: white;
 }
+/*Cart*/
+.container_cart{
+  display: flex;
+  justify-content: center;
+  
+}
+.box_cart{
+  width: 15rem;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.box_cart img{
+  width: 15rem;
+}
+.cart_div{
+  margin-top: 5rem;
+  width: 80rem;
+  height: 20rem;
+  background-color: white;
+  border-color: #111;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.item_carrito{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 75rem;
+  height: 8rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+.item_carrito img{
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
 /*Login*/
 .caja-de-login {
   background-color: rgba(248, 237, 244, 0.88);
@@ -656,19 +690,23 @@ span img {
   width: 21rem;
 }
 /*Formulario de edicion*/
+
 .detalleimgEdit {
-  margin: 5% 25% 10% 25%;
-  background-color: white;
+  margin: 7% 25% 10% 25%;
+  background-color: black;
   border-color: gray;
   transition: all 450ms;
   display: flex;
+  width: 50rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgb(200, 193, 193);
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
   font-family: "Poppins", sans-serif;
+  position:absolute
 }
+
 
 .detalleimgEdit img {
   box-shadow: 0px 0px 3px rgb(100, 100, 100);
@@ -1089,7 +1127,7 @@ select:focus {
   height: 50rem;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.18);
+  background-color:white;
   /*background-blend-mode: darken;*/
 }
 /*Coleccion*/

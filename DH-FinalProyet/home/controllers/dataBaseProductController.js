@@ -73,5 +73,32 @@ const DataBase = {
       })
     );
   },
+  nftByLowerOddity: async (req, res) => {
+    return res.send(
+      await Products.findAll({
+       order: [
+        ['oddity', 'ASC']
+       ]
+      })
+    );
+  },
+  nftByHigherPrice: async (req, res) => {
+    let products = await Products.findAll({
+      order: [
+       ['price', 'DESC']
+      ]
+     })
+    
+     return res.render("coleccion", { products: nftsList,image,  coleccionName: 'Bored Ape' });
+  },
+  nftByLowerPrice: async (req, res) => {
+    return res.send(
+      await Products.findAll({
+       order: [
+        ['price', 'ASC']
+       ]
+      })
+    );
+  },
 };
 module.exports = DataBase;

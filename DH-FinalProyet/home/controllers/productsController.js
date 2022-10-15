@@ -124,6 +124,9 @@ const productos = {
       });
     }
   },
+  cart:(req, res)=>{ res.render('cart') },
+  
+
   eliminar: async function (req, res) {
     const idParseado = parseInt(req.params.id, 10);
     await db.Nfts.destroy({
