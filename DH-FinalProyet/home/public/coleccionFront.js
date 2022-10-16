@@ -1,13 +1,13 @@
-const $opciones = document.querySelector('#opciones');
-const $slideContainer = document.querySelectorAll('.slider-container')
+/*const $opciones = document.querySelector('#opciones');
+const $slideContainer = document.querySelectorAll('.slider-container')*/
 
-$opciones.addEventListener('change', (e)=>{
-    switch (e.target.value) {
+//$opciones.addEventListener('change', (e)=>{
+    //switch (e.target.value) {
         
-            case "porPrecioalto":
-                 fetch('http://localhost:3031/api/products/higherPrice')
-                     .then(res => res.json())
-                     .then((data) => {console.log(data)})
+            //case "porPrecioalto":
+                 //fetch('http://localhost:3031/api/products/higherPrice')
+                    // .then(res => res.json())
+                     //.then((data) => {console.log(data)})
 
                 // let childrenNodes = [];
                 // let childValues = [];
@@ -24,9 +24,9 @@ $opciones.addEventListener('change', (e)=>{
                         
                 //     }
                 // })
-                break;
+                //break;
         
-            case "porPreciobajo":
+           /* case "porPreciobajo":
                 fetch('http://localhost:3031/api/products/lowerPrice')
                 .then(res => res.json())
                 .then((data) => {console.log(data)})
@@ -48,7 +48,7 @@ $opciones.addEventListener('change', (e)=>{
                                
                      break; 
         };
-});
+});*/
 
 // $slideContainer.forEach((slide) => {console.log(slide);})
 // post de fetch

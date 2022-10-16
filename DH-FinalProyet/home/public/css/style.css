@@ -7,7 +7,19 @@
  
   /*filter: blur(8px);*/
 }
+.shop2{
+  height: 10rem;
+  width: 15rem;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  margin-left: 75rem;
+  background-color:#818181;
+  position: relative;
 
+}
+.shop1{
+  height: 0rem;
+  width: 0rem;
+}
 
 .sidebar {
   height: 100%;
@@ -62,7 +74,7 @@
 }
 .swiper {
   width: 90vw;
-  height: 200px;
+  height: 300px;
 }
 
 .showcase{
@@ -162,6 +174,9 @@ nav {
   min-width: 98.5vw;
   z-index: 20;
  
+}
+.shopping_cart{
+  margin-right: 1.5rem;
 }
 #barraDeBusqueda {
   width: 18rem;
@@ -967,8 +982,10 @@ select:focus {
   border-radius: 5px;
   box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   margin-left: 25rem;
+  margin-top: 5rem;
+  position: absolute;
  
   
 }
@@ -1209,6 +1226,9 @@ select option {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 /*Coleccion de NFT's*/
+.form_coleccion_filter{
+  margin-right: 1rem;
+}
 
 .buynow {
   background-color: rgb(32, 129, 226);
