@@ -7,6 +7,7 @@
  
   /*filter: blur(8px);*/
 }
+
 .shop2{
   height: 10rem;
   width: 15rem;
@@ -475,19 +476,28 @@ a {
 
 .footer {
   background-color: rgb(32, 129, 226);
-  height: 40rem;
+  height: 22rem;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
   font-size: 1.2rem;
+
+}
+.footer_politics{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:x-small ;
+  color: #fff;
 }
 .footer_container_1{
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 90rem;
+  margin-bottom: 3rem;
 }
 .footer_suscribe{
  width: 28rem;
@@ -501,7 +511,7 @@ a {
 .footer_container_2{
   display: flex;
   justify-content: space-between;
-  margin-top: 6rem;
+
 }
 .footer_container_2 p{
   width: 24rem;
@@ -590,10 +600,12 @@ a {
 }
 .cart_div{
   margin-top: 5rem;
+  margin-bottom: 20rem;
   width: 80rem;
   height: 20rem;
   background-color: white;
   border-color: #111;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .item_carrito{
@@ -602,6 +614,7 @@ a {
   width: 75rem;
   height: 8rem;
   background-color: white;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
 }
@@ -772,9 +785,10 @@ span img {
 .contenedor_register {
   width: 60rem;
   background-color: white;
-  margin-top: 3rem;
-  margin-left: 18rem;
+  top: 8rem;
+  left: 18rem;
   box-shadow: 0px 0px 5px rgb(100, 100, 100);
+  position:absolute;
 }
 
 .body-register {
@@ -782,6 +796,11 @@ span img {
   background-position: center;
   background-color: white;
   background-blend-mode: darken;
+}
+.footer_register{
+  position: absolute;
+  top: 45rem;
+  min-width: 100vw;
 }
 .container {
   min-width: 100vh;
@@ -977,10 +996,10 @@ select:focus {
   width: 100%;
   max-width: 700px;
   min-width: 400px;
-  height: 43rem;
+  height: 41rem;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 2px 1px 2px rgb(20 31 56 / 10%);
+  box-shadow: 0px 0px 5px rgb(100, 100, 100);
   padding: 10px;
   margin-bottom: 23px;
   margin-left: 25rem;
@@ -1153,7 +1172,6 @@ select:focus {
   display: flex;
   align-items: center;
   justify-content: center;
- ;
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1342,7 +1360,7 @@ select option {
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 991px) {
   /*barra de navegacion*/
   html {
     width: max-content;
@@ -1417,39 +1435,57 @@ select option {
   .background {
     height: max-content;
     width: max-content;
-    margin-left: 2rem;
+    
+  }
+  .overlay{
+    min-width: 100vw;
+   position: absolute;
+   
+  }
+  .showcase{
+    min-width: 100vw;
+    position: relative;
   }
   .div-1 {
-    width: 55.2rem;
-    height: 95rem;
+   
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
   }
+  .showcase video{
+    height: 200rem;
+  }
+
+  .text{
+    font-size: 3rem ;
+    margin-top: 270rem;
+    z-index: 10;
+
+  }
+ 
   .div-1 button {
     padding: 3rem;
     margin: 8rem;
     font-size: 2.5rem;
     border-radius: 0.6rem;
   }
-  .div-1 h1 {
-    font-size: 8rem;
-  }
-  .div-1 h2 {
-    font-size: 7rem;
-  }
-  .div-1 h3 {
-    font-size: 5rem;
-  }
+
+
   .div-2 {
+    display: none;
+  }
+  .contenedor-tendencias{
+   display:none;
+  }
+  .en-tendencia{
     display: none;
   }
   /*main*/
   main {
-    width: max-content;
-    height: max-content;
+    min-width: 100vw;
+    min-height: 100vh;
     margin: none;
   }
   .guide {
@@ -1531,16 +1567,12 @@ select option {
     font-size: 2rem;
   }
   /*Footer*/
-  .redes {
-    width: 55rem;
-  }
-  .footer {
-    width: 55rem;
-  }
+ 
+ 
   /*login*/
   .login-body {
-    width: 20rem;
-    min-height: 40rem;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1597,8 +1629,8 @@ select option {
   }
 
   nav {
-    width: 61.5rem;
-    height: 8rem;
+    min-width: 98.5vw;
+    min-height: 20rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1744,15 +1776,43 @@ select option {
     margin-bottom: 20rem;
   }
   /*Footer*/
-  .redes {
-    width: 60.1rem;
+
+  /*Perfil*/
+  .profile_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 2rem;
   }
-  .footer {
-    width: 61.5rem;
+  .profile_misNfts{
+    display:none
   }
+  .profile_misDatos{
+    width: 60rem;
+    height: 20rem;
+    
+  }
+  .profile_imagen{
+    width: 60rem;
+    height: 20rem;
+    
+  }
+  .profile_imagen img{
+    width: 20rem;
+    height: 20rem;
+  }
+  .profile_misDatos p{
+    font-size: 3rem;
+  }
+  .profile_imagen p{
+    font-size: 3rem;
+  }
+ 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .contenedor {
     display: flex;
     flex-direction: row;

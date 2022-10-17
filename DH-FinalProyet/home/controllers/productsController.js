@@ -1,6 +1,7 @@
 const { validationResult } = require("express-validator");
 const db = require("../database/models");
 const sequelize = db.sequelize;
+const Op = db.Sequelize.Op;
 
 async function getOrderColeccion (id, filter){
   if(filter == undefined){
@@ -63,6 +64,7 @@ const productos = {
 
     res.render("coleccion", { products: nftsList });
   },
+
   detalle: async function (req, res) {
     const idProduct = parseInt(req.params.id, 10);
     const producto = await db.Nfts.findByPk(idProduct, {

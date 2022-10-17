@@ -24,6 +24,7 @@ router.post('/createProduct', upload.single("imagen"),productCreateValidation, p
 router.get('/productDetail/:id/edit', productsController.editForm)
 router.put('/productDetail/:id/edit', upload.single("imagen"),productEditValidation, productsController.edit)
 router.get('/cart', productsController.cart);
+
 router.delete('/productDetail/:id/delete', productsController.eliminar);
 
 

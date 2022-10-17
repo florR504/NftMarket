@@ -16,10 +16,10 @@ window.addEventListener("load", function () {
     if ($login && $register) {
       $login.style.display = "none";
       $register.style.display = "none";
-      //$buscador.style.display = "none";
+      $buscador.style.display = "none";
     } else if ($user) {
       $user.style.display = "none";
-      //$buscador.style.display = "none";
+      $buscador.style.display = "none";
     }
   }
   function closeNav() {
@@ -28,10 +28,10 @@ window.addEventListener("load", function () {
     if ($login && $register) {
       $login.style.display = "block";
       $register.style.display = "block";
-      //$buscador.style.display = "block";
+      $buscador.style.display = "block";
     } else if ($user) {
       $user.style.display = "flex";
-      //$buscador.style.display = "block";
+      $buscador.style.display = "block";
     }
   }
 

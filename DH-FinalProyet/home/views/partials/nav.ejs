@@ -4,19 +4,19 @@
         <img src="/imagenes/Nftlogo.png" alt="icono de NftMarket" width="150px" height="40px" id="logo">
     </a>
         <div class="separar"></div>
-        <!--<form action="#" method="get" id="buscador_nav">
+        <form action="#" method="get" id="buscador_nav">
             <input type="text" placeholder="Qué estas buscando?" class="buscador" id="barraDeBusqueda">
             <button type="submit" id="lupa" class="buttonsofnav">
                 <i class="fas fa-search"></i>
             </button>
-        </form>-->
+        </form>
         <div class="separar"></div>
         <% if (locals.isLogged) { %>
         <div class="Img_Usuario_nav" id="user_nav">
-            <p class="shopping_cart" id="shopping_cart"><i class="fa-solid fa-bag-shopping"></i></p>
+            <!--<p class="shopping_cart" id="shopping_cart"><i class="fa-solid fa-bag-shopping"></i></p>-->
             <img src="/uploads/<%= locals.userLogged.avatar %> " alt="">
             <a href="/profile">
-                <p>Hi <%= locals.userLogged.name %>   <i class="fas fa-angle-down"></i></p>
+                <p>Hi <%= locals.userLogged.name %>  <i class="fas fa-angle-down "></i> </p>
             </a>
         </div>
       <% } else { %>
