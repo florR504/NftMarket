@@ -602,25 +602,89 @@ a {
   margin-top: 5rem;
   margin-bottom: 20rem;
   width: 80rem;
-  height: 20rem;
+  height: 40rem;
   background-color: white;
   border-color: #111;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  display: flex;
+  flex-direction: row;
+  
 }
 .item_carrito{
   margin-top: 2rem;
   margin-left: 2rem;
-  width: 75rem;
+  width: 55rem;
   height: 8rem;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.item_carrito p{
+  border-left: 1px solid black;
+  width: 100px;
+  height: 30px;
+  padding-left: 2px ;
+  margin-right: 20px;
+
+}
+.products_cart{
+  margin-top: 50px;
+}
+.products_cart h4{
+  margin-left: 30px;
 
 }
 .item_carrito img{
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
+}
+.cuenta_cart{
+  width: 270px;
+  height: 270px;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  position: relative;
+  top: 125px;
+  left: 40px;
+
+}
+.cuenta_button{
+  display: flex;
+  justify-content: space-between;
+}
+.cuenta_button button{
+ padding-top: 1px;
+ padding-bottom: 1px;
+ padding-left: 2px;
+ padding-right: 2px;
+ margin-left: 5px;
+ height: 35px;
+ background-color: rgb(32, 129, 226);
+ color: white;
+ border:rgb(32, 129, 226) ;
+ border-radius: 5px;
+}
+.cuenta_button h4{
+  margin-right: 25px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.cuenta_div p{
+  margin: 10px;
+}
+.cuenta_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cuenta_cart hr{
+  margin-top: 80px;
 }
 /*Login*/
 .caja-de-login {
@@ -729,7 +793,7 @@ span img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(200, 193, 193);
+  color: white;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
   font-family: "Poppins", sans-serif;
   position:absolute
@@ -755,7 +819,7 @@ span img {
 
 .detalleimgEdit button {
   width: 10rem;
-  margin-left: 18rem;
+  margin-left: 14rem;
   margin-bottom: 2rem;
   font-family: "Poppins", sans-serif;
 }
@@ -800,6 +864,11 @@ span img {
 .footer_register{
   position: absolute;
   top: 45rem;
+  min-width: 100vw;
+}
+.footer_edit{
+  position: absolute;
+  top: 80rem;
   min-width: 100vw;
 }
 .container {

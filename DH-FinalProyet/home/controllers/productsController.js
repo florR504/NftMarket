@@ -94,7 +94,7 @@ const productos = {
     const coleccion = await db.Coleccion.findAll();
     if (errores.isEmpty()) {
       await db.Nfts.create({
-        name: req.body.name,
+        name: req.body.titulo,
         price: req.body.price,
         coleccion_id: req.body.coleccion,
         image: req.file.filename,
@@ -144,7 +144,7 @@ const productos = {
         {
           name: req.body.name,
           price: req.body.price,
-          image: "/uploads/" + req.file.filename,
+          image:  req.file.filename,
           oddity: req.body.oddity,
         },
         {

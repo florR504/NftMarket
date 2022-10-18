@@ -8,7 +8,7 @@
     <div id="mySidebar" class="sidebar" style="z-index:100;">
       <a href="javascript:void(0)" class="closebtn" id="close">×</a>
       <a href="/productos/createProduct">Crea tu Nft</a>
-      <a href="#">Cart</a>
+      <a href="/productos/cart">Cart</a>
       <a href="/profile">Mi cuenta</a>
       <a href="#">Contáctanos</a>
     </div>
@@ -42,7 +42,10 @@
           <a href="/productos/productDetail/<%=producto.idNFTs%>/edit">
             <button class="button_product">Editar</button>
           </a>
-          <button class="button_product">Añadir al carrito</button>
+          <a href="/productos/cart">
+            <button class="button_product">Añadir al carrito</button>
+          </a>
+        
           <form
             action="/productos/productDetail/<%=producto.idNFTs%>/delete?_method=DELETE"
             method="POST"
